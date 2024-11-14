@@ -1,0 +1,88 @@
+:root {
+  --acier: 96, 163, 185;
+  --combat: 255, 129, 0;
+  --dragon: 79, 96, 226;
+  --eau: 36, 129, 239;
+  --électrik: 250, 193, 2;
+  --fée: 239, 113, 239;
+  --feu: 231, 35, 36;
+  --glace: 61, 215, 255;
+  --insecte: 146, 163, 18;
+  --normal: 160, 163, 160;
+  --plante: 61, 163, 36;
+  --poison: 146, 63, 204;
+  --psy: 239, 63, 122;
+  --roche: 177, 171, 130;
+  --sol: 145, 81, 33;
+  --spectre: 112, 65, 112;
+  --ténèbres: 80, 65, 63;
+  --vol: 130, 186, 239;
+}
+
+html {
+  height: 100%;
+}
+body {
+  background-color: black;
+  font-family: "Montserrat", sans-serif;
+  background: url("/backgrounds/default.webp") no-repeat center;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+* {
+  box-sizing: border-box;
+  font-weight: normal;
+}
+.root {
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  font-weight: bold;
+  font-family: "Kode Mono";
+  font-size: 2.5rem;
+  text-shadow: 0 0 50px white, 0 0 50px white, 0 0 50px white;
+}
+
+.carillion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.itemContainer {
+  margin: 10px;
+  flex-grow: 1;
+  flex-basis: 200px;
+}
+.item {
+  padding: 20px;
+  border-radius: 20px;
+  aspect-ratio: 1;
+  width: fit-content;
+  max-width: 200px;
+}
+.item:hover img {
+  transform: scale(1.5);
+  filter: drop-shadow(0 0 5px black);
+}
+.item img {
+  transition: .5s;
+  filter: drop-shadow(0 0 0 black);
+  width: 100%;
+}
+#itemId {
+  font-size: x-small;
+  margin-bottom: 10px;
+}
