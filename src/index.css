@@ -68,18 +68,28 @@ h1 {
 }
 .item {
   padding: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 20px;
   aspect-ratio: 1;
   width: fit-content;
   max-width: 200px;
+  position: relative;
+}
+.item::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  border-radius: 30px;
+  padding: 10px;
+  background: linear-gradient(to bottom, rgba(var(--primaryColor)), rgba(var(--secondaryColor)));
+  z-index: -1;
 }
 .item:hover img {
   transform: scale(1.5);
   filter: drop-shadow(0 0 5px black);
 }
 .item img {
-  transition: .5s;
-  filter: drop-shadow(0 0 0 black);
+  transition: 0.5s;
   width: 100%;
 }
 #itemId {

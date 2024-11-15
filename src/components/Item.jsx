@@ -7,15 +7,18 @@ function Item(props) {
     secondaryColor = props.types[1].toLowerCase();
   } catch {}
 
+  // Définir les variables CSS pour les couleurs
+  const style = {
+    '--primaryColor': `var(--${primaryColor})`,
+    '--secondaryColor': `var(--${secondaryColor})`,
+  };
+
   return (
     <div className="itemContainer">
       <div
         className="item"
-        style={{
-          backgroundColor: "rgba(var(--" + primaryColor + "), .4)",
-          border: "2px solid rgba(var(--" + secondaryColor + "))",
-        }}
         id={props.id}
+        style={style}
       >
         <div className="item-in" id="itemTitle">
           {props.name}
