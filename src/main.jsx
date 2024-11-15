@@ -65,7 +65,6 @@ const DATA = [
   {id: `pkmn-${nanoid()}`, name: "Grodoudou", num: "40", types: ["Normal","Fée"], category: "Bouboule"},
   {id: `pkmn-${nanoid()}`, name: "Nosferapti", num: "41", types: ["Poison","Vol"], category: "Chovsouris"},
   {id: `pkmn-${nanoid()}`, name: "Nosferalto", num: "42", types: ["Poison","Vol"], category: "Chovsouris"},
-  {id: `pkmn-${nanoid()}`, name: "Brutalibré", num: "701", types: ["Combat","Vol"], category: "Catcheur"},
   {id: `pkmn-${nanoid()}`, name: "Brutalibré", num: "701", types: ["Combat", "Vol"], category: "Catcheur", location: "brutalibre.png"},
 
 ]
