@@ -58,4 +58,7 @@ Rondoudou \ 39 \ Normal - Fée \ Bouboule
 Grodoudou \ 40 \ Normal - Fée \ Bouboule
 Nosferapti \ 41 \ Poison - Vol \ Chovsouris
 Nosferalto \ 42 \ Poison - Vol \ Chovsouris
+Mystherbe \ 43 \ Plante - Poison \ Racine
+Ortide \ 44 \ Plante - Poison \ Racine
+Rafflesia \ 45 \ Plante - Poison \ Fleur
 Brutalibré \ 701 \ Combat - Vol \ Catcheur
