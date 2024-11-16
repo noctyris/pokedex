@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function Item(props) {
   const primaryColor = props.types[0].toLowerCase();
   let secondaryColor = primaryColor;
@@ -9,17 +7,13 @@ function Item(props) {
 
   // Définir les variables CSS pour les couleurs
   const style = {
-    '--primaryColor': `var(--${primaryColor})`,
-    '--secondaryColor': `var(--${secondaryColor})`,
+    "--primaryColor": `var(--${primaryColor})`,
+    "--secondaryColor": `var(--${secondaryColor})`,
   };
 
   return (
     <div className="itemContainer">
-      <div
-        className="item"
-        id={props.id}
-        style={style}
-      >
+      <div className="item" id={props.id} style={style}>
         <div className="item-in" id="itemTitle">
           {props.name}
         </div>

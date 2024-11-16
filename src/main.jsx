@@ -72,6 +72,7 @@ const truc =[
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <h1>Pokedex</h1>
     <App pokemons={DATA} />
   </StrictMode>
 );
