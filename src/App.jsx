@@ -1,9 +1,9 @@
 import Item from "./components/Item";
+import Search from "./components/Search";
 import { useState } from "react";
 
 function App(props) {
   const [pkmns] = useState(props.pokemons);
-  const [crossData, sendData] = useState({});
 
   const pkmnList = pkmns.map((pk) => (
     <Item
@@ -18,6 +18,7 @@ function App(props) {
 
   return (
     <div className="subroot">
+      <Search />
       <div className="carillion">{pkmnList}</div>
     </div>
   );
