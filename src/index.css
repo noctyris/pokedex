@@ -35,7 +35,7 @@ body {
   box-sizing: border-box;
   font-weight: normal;
 }
-.root {
+.subroot {
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   color: white;
@@ -166,4 +166,32 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+}
+
+.detailed header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.detailed header {
+  margin-left: 25%;
+}
+
+.detailed header p {
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  width: 40px;
+  aspect-ratio: 1;
+  padding: 10px;
+}
+
+.detailed main img {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  margin: 20px;
+  padding: 10px;
 }

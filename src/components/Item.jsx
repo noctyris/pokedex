@@ -5,14 +5,13 @@ function Item(props) {
     secondaryColor = props.types[1].toLowerCase();
   } catch {}
 
-  // Définir les variables CSS pour les couleurs
   const style = {
     "--primaryColor": `var(--${primaryColor})`,
     "--secondaryColor": `var(--${secondaryColor})`,
   };
 
   return (
-    <div className="itemContainer">
+    <div className="itemContainer" onClick={() => props.onClick(props.id)}>
       <div className="item" id={props.id} style={style}>
         <div className="item-in" id="itemTitle">
           {props.name}

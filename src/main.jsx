@@ -5,7 +5,7 @@ import App from "./App.jsx";
 import { nanoid } from "nanoid";
 
 const DATA = [
-  {id: `pkmn-${nanoid()}`, name: "Bulbizarre", num: "1", types: ["Plante","Poison"], category: "Graine", location: "bulbizarre.png"},
+  {id: `pkmn-${nanoid()}`, name: "Bulbizarre", num: "1", types: ["Plante","Poison"], category: "Graine", location: "bulbizarre.png", images: ["C-bulbizarre.png"]},
   {id: `pkmn-${nanoid()}`, name: "Herbizarre", num: "2", types: ["Plante","Poison"], category: "Graine", location: "herbizarre.png"},
   {id: `pkmn-${nanoid()}`, name: "Florizarre", num: "3", types: ["Plante","Poison"], category: "Graine", location: "florizarre.png"},
   {id: `pkmn-${nanoid()}`, name: "Salamèche", num: "4", types: ["Feu"], category: "Lézard", location: "salameche.png"},
@@ -72,7 +72,6 @@ const truc =[
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <h1>Pokedex</h1>
     <App pokemons={DATA} />
   </StrictMode>
 );

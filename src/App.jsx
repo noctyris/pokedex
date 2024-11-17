@@ -4,7 +4,41 @@ import { useState } from "react";
 
 function App(props) {
   const pkmns = props.pokemons;
-  const [isDetailed, setDetailed] = useState(false);
+  const [detailedId, setDetailed] = useState(null);
+
+  function getDetailedTemplate(id) {
+    try {
+      let data = {};
+      pkmns.forEach((pk) => {
+        if (id.detailedId === pk.id) {
+          data = pk;
+        }
+      });
+
+      const imagesList = [data.location, ...data.images].map((im) => (
+       <img src={"/imagesp/" + im} />
+      ));
+
+      return (
+        <div className="detailed subroot">
+          <header>
+            <h1>{data.name}</h1>
+            <p onClick={() => setDetailed(false)}>&#x2715;</p>
+          </header>
+          <main>{imagesList}</main>
+        </div>
+      );
+    } catch (TypeError) {
+      return (
+        <div className="detailed subroot">
+          <header>
+            <h1>Rien ici...</h1>
+            <p onClick={() => setDetailed(false)}>&#x2715;</p>
+          </header>
+        </div>
+      );
+    }
+  }
 
   const pkmnList = pkmns.map((pk) => (
     <Item
@@ -26,13 +60,9 @@ function App(props) {
     </div>
   );
 
-  const detailedTemplate = (
-  <div className="subroot">
-    <h1>hello world!</h1>
-    <p onClick={setDetailed(false)}>&#x2715;</p>
-  </div>);
+  const detailedTemplate = getDetailedTemplate({ detailedId });
 
-  return isDetailed ? detailedTemplate : homeTemplate;
+  return detailedId ? detailedTemplate : homeTemplate;
 }
 
 export default App;
