@@ -3,7 +3,8 @@ import Search from "./components/Search";
 import { useState } from "react";
 
 function App(props) {
-  const [pkmns] = useState(props.pokemons);
+  const pkmns = props.pokemons;
+  const [isDetailed, setDetailed] = useState(false);
 
   const pkmnList = pkmns.map((pk) => (
     <Item
@@ -13,15 +14,25 @@ function App(props) {
       num={pk.num}
       location={pk.location}
       types={pk.types}
+      onClick={setDetailed}
     />
   ));
 
-  return (
+  const homeTemplate = (
     <div className="subroot">
-      <Search />
+      <h1>Pokedex</h1>
+      {/* <Search /> */}
       <div className="carillion">{pkmnList}</div>
     </div>
   );
+
+  const detailedTemplate = (
+  <div className="subroot">
+    <h1>hello world!</h1>
+    <p onClick={setDetailed(false)}>&#x2715;</p>
+  </div>);
+
+  return isDetailed ? detailedTemplate : homeTemplate;
 }
 
 export default App;
