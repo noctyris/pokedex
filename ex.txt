@@ -1,4 +1,0 @@
-Dans un fichier, noter les données. Format de notation (avec des antislash) :
-NOM \ NUMÉRO \ TYPE(S) \ CATÉGORIE
-
-Images dans un dossier, nommées EXACTEMENT avec la MÊME ÉCRTURE que celle notée dans le fichier, tout en minuscule (on s'en fout du format)

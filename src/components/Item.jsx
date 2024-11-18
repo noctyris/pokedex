@@ -1,22 +1,18 @@
-import { useState } from "react";
-
 function Item(props) {
-  const primaryColor = props.types[0].toLowerCase();
-  let secondaryColor = primaryColor;
-  try {
-    secondaryColor = props.types[1].toLowerCase();
-  } catch {}
+  // console.log(props.types);
+  const primaryColor = props.types[1].toLowerCase();
+  const secondaryColor = props.types[0]!=="" ? props.types[0].toLowerCase() : props.types[1].toLowerCase();
+
+  // console.log(primaryColor, secondaryColor);
+
+  const style = {
+    "--primaryColor": `var(--${primaryColor})`,
+    "--secondaryColor": `var(--${secondaryColor})`,
+  };
 
   return (
-    <div className="itemContainer">
-      <div
-        className="item"
-        style={{
-          backgroundColor: "rgba(var(--" + primaryColor + "), .4)",
-          border: "2px solid rgba(var(--" + secondaryColor + "))",
-        }}
-        id={props.id}
-      >
+    <div className="itemContainer" onClick={() => props.onClick(props.id)}>
+      <div className="item" id={props.id} style={style}>
         <div className="item-in" id="itemTitle">
           {props.name}
         </div>
