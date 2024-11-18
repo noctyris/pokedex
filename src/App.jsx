@@ -20,7 +20,7 @@ function App(props) {
       ));
 
       return (
-        <div className="detailed subroot">
+        <div key={data.id} className="detailed subroot">
           <header>
             <h1>{data.name}</h1>
             <p onClick={() => setDetailed(false)}>&#x2715;</p>

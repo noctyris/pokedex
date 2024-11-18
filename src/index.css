@@ -28,11 +28,7 @@ body {
   font-family: "Montserrat", sans-serif;
   background: url("/backgrounds/default.webp") no-repeat center;
   background-size: cover;
-<<<<<<< HEAD
   background-attachment: fixed;
-=======
-  background-attachement: fixed;
->>>>>>> main
   padding-bottom: 50px;
 }
 * {
