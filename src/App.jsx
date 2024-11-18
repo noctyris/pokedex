@@ -16,7 +16,7 @@ function App(props) {
       });
 
       const imagesList = [data.location, ...data.images].map((im) => (
-       <img src={"/imagesp/" + im} />
+        <img src={"/imagesp/" + im} />
       ));
 
       return (
