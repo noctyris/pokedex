@@ -41,7 +41,9 @@ function App(props) {
                     {"Pokémon " + data.types[1]}
                   </span>
                 </p>
-                {data.types[0] !== "" ? (
+              </div>
+              {data.types[0] !== "" ? (
+                <div className="dataitem">
                   <p>
                     Type secondaire :{" "}
                     <span
@@ -56,10 +58,10 @@ function App(props) {
                       {"Pokémon " + data.types[0]}
                     </span>
                   </p>
-                ) : (
-                  ""
-                )}
-              </div>
+                </div>
+              ) : (
+                ""
+              )}
             </div>
           </main>
         </div>

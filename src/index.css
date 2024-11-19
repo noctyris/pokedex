@@ -173,7 +173,6 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  margin-left: 25%;
 }
 
 .detailed header p {
@@ -184,7 +183,9 @@ h1 {
   aspect-ratio: 1;
   padding: 10px;
 }
-
+.detailed header h1 {
+  margin: 0 auto;
+}
 .detailed main img {
   width: 300px;
   background-color: rgba(255, 255, 255, 0.4);
@@ -193,7 +194,8 @@ h1 {
   padding: 10px;
 }
 
-.detailed #type {
+.detailed .dataitem #type {
+  line-height: 3rem;
   padding: 5px;
   border-radius: 10px;
 }
