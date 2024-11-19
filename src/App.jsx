@@ -25,7 +25,43 @@ function App(props) {
             <h1>{data.name}</h1>
             <p onClick={() => setDetailed(false)}>&#x2715;</p>
           </header>
-          <main>{imagesList}</main>
+          <main>
+            {imagesList}
+            <div className="datafield">
+              <div className="dataitem">
+                <p>
+                  Type {data.types[0] !== "" ? "principal" : ""} :{" "}
+                  <span
+                    style={{
+                      backgroundColor:
+                        "rgba(var(--" + data.types[1].toLowerCase() + "), .7)",
+                    }}
+                    id="type"
+                  >
+                    {"Pokémon " + data.types[1]}
+                  </span>
+                </p>
+                {data.types[0] !== "" ? (
+                  <p>
+                    Type secondaire :{" "}
+                    <span
+                      style={{
+                        backgroundColor:
+                          "rgba(var(--" +
+                          data.types[0].toLowerCase() +
+                          "), .7)",
+                      }}
+                      id="type"
+                    >
+                      {"Pokémon " + data.types[0]}
+                    </span>
+                  </p>
+                ) : (
+                  ""
+                )}
+              </div>
+            </div>
+          </main>
         </div>
       );
     } catch (TypeError) {

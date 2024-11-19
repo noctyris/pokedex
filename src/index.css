@@ -173,9 +173,6 @@ h1 {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-}
-
-.detailed header {
   margin-left: 25%;
 }
 
@@ -196,18 +193,15 @@ h1 {
   padding: 10px;
 }
 
-@media only screen and (max-width: 787px) {
-  .detailed header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin-left: 0;
-  }
-  
-.detailed header h1 {
-  font-size: 150%;
+.detailed #type {
+  padding: 5px;
+  border-radius: 10px;
 }
+
+@media only screen and (max-width: 787px) {
+  .detailed header h1 {
+    font-size: 150%;
+  }
 
   .detailed header p {
     background-color: white;
@@ -217,7 +211,7 @@ h1 {
     height: 24px;
     padding: 3px 4px;
   }
-  
+
   .detailed main img {
     width: 50%;
     background-color: rgba(255, 255, 255, 0.4);
@@ -225,5 +219,17 @@ h1 {
     margin: 20px;
     padding: 10px;
   }
-  
+}
+
+.dataitem {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 30px 5px;
+}
+.datafield {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+  gap: 50px;
+  justify-content: center;
+  align-content: center;
 }
