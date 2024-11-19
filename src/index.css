@@ -189,9 +189,41 @@ h1 {
 }
 
 .detailed main img {
-  width: 50%;
+  width: 300px;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 20px;
   margin: 20px;
   padding: 10px;
+}
+
+@media only screen and (max-width: 787px) {
+  .detailed header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-left: 0;
+  }
+  
+.detailed header h1 {
+  font-size: 150%;
+}
+
+  .detailed header p {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    padding: 3px 4px;
+  }
+  
+  .detailed main img {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+  }
+  
 }
