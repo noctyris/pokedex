@@ -25,7 +25,7 @@ function Main() {
           num: row.num,
           types: [row.type1, row.type2],
           category: row.category,
-          location: row.location,
+          location: row.name.toLowerCase()+".png",//row.location,
           images: row.images ? row.images.split(",") : [], // Gestion des images multiples
         }));
 

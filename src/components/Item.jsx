@@ -10,6 +10,8 @@ function Item(props) {
     "--secondaryColor": `var(--${secondaryColor})`,
   };
 
+  console.log(props.location);
+
   return (
     <div className="itemContainer" onClick={() => props.onClick(props.id)}>
       <div className="item" id={props.id} style={style}>
