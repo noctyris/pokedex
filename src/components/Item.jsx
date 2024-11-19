@@ -1,7 +1,7 @@
 function Item(props) {
   // console.log(props.types);
-  const primaryColor = props.types[1].toLowerCase();
-  const secondaryColor = props.types[0]!=="" ? props.types[0].toLowerCase() : props.types[1].toLowerCase();
+  const primaryColor = props.types[0].toLowerCase();
+  const secondaryColor = props.types[1]!=="" ? props.types[1].toLowerCase() : props.types[0].toLowerCase();
 
   // console.log(primaryColor, secondaryColor);
 

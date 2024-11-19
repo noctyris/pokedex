@@ -194,12 +194,6 @@ h1 {
   padding: 10px;
 }
 
-.detailed .dataitem #type {
-  line-height: 3rem;
-  padding: 5px;
-  border-radius: 10px;
-}
-
 @media only screen and (max-width: 787px) {
   .detailed header h1 {
     font-size: 150%;
@@ -211,11 +205,11 @@ h1 {
     border-radius: 50%;
     width: 24px;
     height: 24px;
-    padding: 3px 4px;
+    padding: 2px 4px;
   }
 
   .detailed main img {
-    width: 50%;
+    width: 80%;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 20px;
     margin: 20px;
@@ -231,7 +225,15 @@ h1 {
 .datafield {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
-  gap: 50px;
+  gap: 30px;
   justify-content: center;
   align-content: center;
+}
+.dataitem #type {
+  line-height: 3rem;
+  padding: 5px;
+  border-radius: 10px;
+}
+.dataitem #num {
+  text-shadow: 0 0 20px white, 0 0 20px white, 0 0 20px white;
 }

@@ -1,3 +1,4 @@
+import { nanoid } from "nanoid";
 import Item from "./components/Item";
 import Search from "./components/Search";
 import { useState } from "react";
@@ -16,7 +17,7 @@ function App(props) {
       });
 
       const imagesList = [data.location, ...data.images].map((im) => (
-        <img src={"/imagesp/" + im} />
+        <img src={"/imagesp/" + im} key={nanoid()} />
       ));
 
       return (
@@ -27,7 +28,12 @@ function App(props) {
           </header>
           <main>
             {imagesList}
+            
             <div className="datafield">
+              <div className="dataitem">
+                <p>Numéro :</p>
+                <p id="num">{data.num}</p>
+              </div>
               <div className="dataitem">
                 <p>
                   Type {data.types[0] !== "" ? "principal" : ""} :{" "}
@@ -62,6 +68,14 @@ function App(props) {
               ) : (
                 ""
               )}
+              <div className="dataitem">
+                <p>Poids :</p>
+                <p id="num">{data.weight} kg</p>
+              </div>
+              <div className="dataitem">
+                <p>Taille :</p>
+                <p id="num">{data.size} m</p>
+              </div>
             </div>
           </main>
         </div>
