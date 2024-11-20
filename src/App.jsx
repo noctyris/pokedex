@@ -35,6 +35,10 @@ function App(props) {
                 <p id="num">{data.num}</p>
               </div>
               <div className="dataitem">
+                <p>Catégorie :</p>
+                <p>Pokémon {data.category}</p>
+              </div>
+              <div className="dataitem">
                 <p>
                   Type {data.types[0] !== "" ? "principal" : ""} :{" "}
                   <span
