@@ -41,7 +41,7 @@ function App(props) {
               <div className="dataitem">
                 <p>
                   Type {data.types[0] !== "" ? "principal" : ""} :{" "}
-                  <span
+                  <p
                     style={{
                       backgroundColor:
                         "rgba(var(--" + data.types[0].toLowerCase() + "), .7)",
@@ -49,14 +49,14 @@ function App(props) {
                     id="type"
                   >
                     {data.types[0]}
-                  </span>
+                  </p>
                 </p>
               </div>
               {data.types[1] !== "" ? (
                 <div className="dataitem">
                   <p>
                     Type secondaire :{" "}
-                    <span
+                    <p
                       style={{
                         backgroundColor:
                           "rgba(var(--" +
@@ -66,7 +66,7 @@ function App(props) {
                       id="type"
                     >
                       {data.types[1]}
-                    </span>
+                    </p>
                   </p>
                 </div>
               ) : (
