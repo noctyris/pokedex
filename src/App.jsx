@@ -40,15 +40,15 @@ function App(props) {
                   <span
                     style={{
                       backgroundColor:
-                        "rgba(var(--" + data.types[1].toLowerCase() + "), .7)",
+                        "rgba(var(--" + data.types[0].toLowerCase() + "), .7)",
                     }}
                     id="type"
                   >
-                    {"Pokémon " + data.types[1]}
+                    {"Pokémon " + data.types[0]}
                   </span>
                 </p>
               </div>
-              {data.types[0] !== "" ? (
+              {data.types[1] !== "" ? (
                 <div className="dataitem">
                   <p>
                     Type secondaire :{" "}
@@ -56,12 +56,12 @@ function App(props) {
                       style={{
                         backgroundColor:
                           "rgba(var(--" +
-                          data.types[0].toLowerCase() +
+                          data.types[1].toLowerCase() +
                           "), .7)",
                       }}
                       id="type"
                     >
-                      {"Pokémon " + data.types[0]}
+                      {"Pokémon " + data.types[1]}
                     </span>
                   </p>
                 </div>
