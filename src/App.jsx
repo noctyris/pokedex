@@ -44,7 +44,7 @@ function App(props) {
                     }}
                     id="type"
                   >
-                    {"Pokémon " + data.types[0]}
+                    {data.types[0]}
                   </span>
                 </p>
               </div>
@@ -61,7 +61,7 @@ function App(props) {
                       }}
                       id="type"
                     >
-                      {"Pokémon " + data.types[1]}
+                      {data.types[1]}
                     </span>
                   </p>
                 </div>
