@@ -74,11 +74,11 @@ function App(props) {
               )}
               <div className="dataitem">
                 <p>Poids :</p>
-                <p id="num">{data.weight} {data.weight!=="" ? "kg" : ""}</p>
+                <p id="num">{data.weight !== "" || data.weight !== "?" ? data.weight + "kg" : "?"}</p>
               </div>
               <div className="dataitem">
                 <p>Taille :</p>
-                <p id="num">{data.size} {data.size !== "" ? "m" : ""}</p>
+                <p id="num">{data.size !== "" || data.size !== "?" ? data.size + "m" : "?"}</p>
               </div>
             </div>
           </main>
