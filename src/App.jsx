@@ -6,6 +6,7 @@ import { useState } from "react";
 function App(props) {
   const pkmns = props.pokemons;
   const [detailedId, setDetailed] = useState(null);
+  const [search, setSearch] = useState("");
 
   function getDetailedTemplate(id) {
     try {
@@ -28,7 +29,7 @@ function App(props) {
           </header>
           <main>
             {imagesList}
-            
+
             <div className="datafield">
               <div className="dataitem">
                 <p>Numéro :</p>
@@ -41,14 +42,20 @@ function App(props) {
               <div className="dataitem">
                 <p>
                   Type {data.types[0] !== "" ? "principal" : ""} :
-                    <img id="type" src={"/types/"+data.types[0].toLowerCase()+".svg"} />
+                  <img
+                    id="type"
+                    src={"/types/" + data.types[0].toLowerCase() + ".svg"}
+                  />
                 </p>
               </div>
               {data.types[1] !== "" ? (
                 <div className="dataitem">
                   <p>
                     Type secondaire :
-                    <img src={"/types/"+data.types[1].toLowerCase()+".svg"} id="type" />
+                    <img
+                      src={"/types/" + data.types[1].toLowerCase() + ".svg"}
+                      id="type"
+                    />
                   </p>
                 </div>
               ) : (
@@ -78,7 +85,9 @@ function App(props) {
     }
   }
 
-  const pkmnList = pkmns.map((pk) => (
+  const searchFilter = (pk) => pk.name.toLowerCase().includes(search.toLowerCase());
+
+  const pkmnList = pkmns.filter(searchFilter).map((pk) => (
     <Item
       key={pk.id}
       id={pk.id}
@@ -92,8 +101,10 @@ function App(props) {
 
   const homeTemplate = (
     <div className="subroot">
-      <h1>P<img src="/favicon.svg" id="pokeh1" />kedex</h1>
-      {/* <Search /> */}
+      <h1>
+        P<img src="/favicon.svg" id="pokeh1" />kedex
+      </h1>
+      <Search setSearch={setSearch} search={search} />
       <div className="carillion">{pkmnList}</div>
     </div>
   );
