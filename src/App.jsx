@@ -17,7 +17,7 @@ function App(props) {
       });
 
       const imagesList = [data.location, ...data.images].map((im) => (
-        <img src={"/imagesp/" + im} key={nanoid()} />
+        <img id="main" src={"/imagesp/" + im} key={nanoid()} />
       ));
 
       return (
@@ -40,33 +40,15 @@ function App(props) {
               </div>
               <div className="dataitem">
                 <p>
-                  Type {data.types[0] !== "" ? "principal" : ""} :{" "}
-                  <p
-                    style={{
-                      backgroundColor:
-                        "rgba(var(--" + data.types[0].toLowerCase() + "), .7)",
-                    }}
-                    id="type"
-                  >
-                    {data.types[0]}
-                  </p>
+                  Type {data.types[0] !== "" ? "principal" : ""} :
+                    <img id="type" src={"/types/"+data.types[0].toLowerCase()+".svg"} />
                 </p>
               </div>
               {data.types[1] !== "" ? (
                 <div className="dataitem">
                   <p>
-                    Type secondaire :{" "}
-                    <p
-                      style={{
-                        backgroundColor:
-                          "rgba(var(--" +
-                          data.types[1].toLowerCase() +
-                          "), .7)",
-                      }}
-                      id="type"
-                    >
-                      {data.types[1]}
-                    </p>
+                    Type secondaire :
+                    <img src={"/types/"+data.types[1].toLowerCase()+".svg"} id="type" />
                   </p>
                 </div>
               ) : (
@@ -74,11 +56,11 @@ function App(props) {
               )}
               <div className="dataitem">
                 <p>Poids :</p>
-                <p id="num">{data.weight !== "" || data.weight !== "?" ? data.weight + "kg" : "?"}</p>
+                <p id="num">{data.weight ? data.weight + "kg" : "?"}</p>
               </div>
               <div className="dataitem">
                 <p>Taille :</p>
-                <p id="num">{data.size !== "" || data.size !== "?" ? data.size + "m" : "?"}</p>
+                <p id="num">{data.size ? data.size + "m" : "?"}</p>
               </div>
             </div>
           </main>
