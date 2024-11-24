@@ -92,7 +92,7 @@ function App(props) {
 
   const homeTemplate = (
     <div className="subroot">
-      <h1>Pokedex</h1>
+      <h1>P<img src="/favicon.svg" id="pokeh1" />kedex</h1>
       {/* <Search /> */}
       <div className="carillion">{pkmnList}</div>
     </div>
