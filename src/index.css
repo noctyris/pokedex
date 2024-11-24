@@ -114,7 +114,6 @@ h1 {
 }
 #itemId {
   font-size: x-small;
-  margin-bottom: 10px;
 }
 
 .inputbox {
@@ -132,7 +131,7 @@ h1 {
   color: #23242a;
   font-size: 1em;
   letter-spacing: 0.05em;
-  transition: 0.5s;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: 10;
 }
 .inputbox span {
@@ -142,7 +141,7 @@ h1 {
   font-size: 1em;
   color: #b0b0b0;
   letter-spacing: 00.05em;
-  transition: 0.5s;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   pointer-events: none;
 }
 .inputbox input:valid ~ span,
@@ -246,4 +245,23 @@ h1 {
 }
 .dataitem #num {
   text-shadow: 0 0 20px white, 0 0 20px white, 0 0 20px white;
+}
+
+.filterbutton {
+  margin-bottom: 20px;
+  background: transparent;
+  border-radius: 20px;
+  border: 2px solid #b0b0b0;
+  color: #b0b0b0;
+  padding: 10px;
+}
+.filterbutton[aria-pressed=true] {
+  color: white;
+  border-color: white;
+  box-shadow: 0 0 20px white;
+}
+#resultscounter {
+  font-size: small;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }

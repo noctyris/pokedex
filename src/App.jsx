@@ -2,11 +2,19 @@ import { nanoid } from "nanoid";
 import Item from "./components/Item";
 import Search from "./components/Search";
 import { useState } from "react";
+import FilterButton from "./components/FilterButton";
 
 function App(props) {
   const pkmns = props.pokemons;
   const [detailedId, setDetailed] = useState(null);
   const [search, setSearch] = useState("");
+  const [filter, setFilter] = useState("Tous");
+
+  const FILTER_MAP = {
+    Tous: () => true,
+  };
+
+  const FILTER_NAMES = Object.keys(FILTER_MAP);
 
   function getDetailedTemplate(id) {
     try {
@@ -85,26 +93,42 @@ function App(props) {
     }
   }
 
-  const searchFilter = (pk) => pk.name.toLowerCase().includes(search.toLowerCase());
+  const searchFilter = (pk) =>
+    pk.name.toLowerCase().includes(search.toLowerCase());
 
-  const pkmnList = pkmns.filter(searchFilter).map((pk) => (
-    <Item
-      key={pk.id}
-      id={pk.id}
-      name={pk.name}
-      num={pk.num}
-      location={pk.location}
-      types={pk.types}
-      onClick={setDetailed}
+  const pkmnList = pkmns
+    .filter(searchFilter)
+    .filter(FILTER_MAP[filter])
+    .map((pk) => (
+      <Item
+        key={pk.id}
+        id={pk.id}
+        name={pk.name}
+        num={pk.num}
+        location={pk.location}
+        types={pk.types}
+        onClick={setDetailed}
+      />
+    ));
+
+  const filterList = FILTER_NAMES.map((name) => (
+    <FilterButton
+      key={name}
+      name={name}
+      isPressed={name === filter}
+      setFilter={setFilter}
     />
   ));
 
   const homeTemplate = (
     <div className="subroot">
       <h1>
-        P<img src="/favicon.svg" id="pokeh1" />kedex
+        P<img src="/favicon.svg" id="pokeh1" />
+        kedex
       </h1>
       <Search setSearch={setSearch} search={search} />
+      {search ? <div id="resultscounter">{pkmnList.length ? pkmnList.length : "Aucun"} résultat{(pkmnList.length === 2) ? "" :"s"}</div> : ""}
+      {filterList}
       <div className="carillion">{pkmnList}</div>
     </div>
   );
