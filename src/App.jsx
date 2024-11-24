@@ -12,6 +12,31 @@ function App(props) {
 
   const FILTER_MAP = {
     Tous: () => true,
+    ...Object.fromEntries(
+      [
+        "acier",
+        "combat",
+        "dragon",
+        "eau",
+        "électrik",
+        "fée",
+        "feu",
+        "glace",
+        "insecte",
+        "normal",
+        "plante",
+        "poison",
+        "psy",
+        "roche",
+        "sol",
+        "spectre",
+        "ténèbres",
+        "vol",
+      ].map((type) => [
+        type.charAt(0).toUpperCase() + type.slice(1),
+        (pk) => pk.types.some((t) => t.toLowerCase() === type),
+      ])
+    ),
   };
 
   const FILTER_NAMES = Object.keys(FILTER_MAP);
@@ -94,7 +119,15 @@ function App(props) {
   }
 
   const searchFilter = (pk) =>
-    pk.name.toLowerCase().includes(search.toLowerCase());
+    pk.name
+      .toLowerCase()
+      .split("")
+      .map((t) => {
+        if (t.includes(search.toLowerCase())) {
+          return true;
+        }
+        return false;
+      });
 
   const pkmnList = pkmns
     .filter(searchFilter)
@@ -111,15 +144,6 @@ function App(props) {
       />
     ));
 
-  const filterList = FILTER_NAMES.map((name) => (
-    <FilterButton
-      key={name}
-      name={name}
-      isPressed={name === filter}
-      setFilter={setFilter}
-    />
-  ));
-
   const homeTemplate = (
     <div className="subroot">
       <h1>
@@ -127,8 +151,15 @@ function App(props) {
         kedex
       </h1>
       <Search setSearch={setSearch} search={search} />
-      {search ? <div id="resultscounter">{pkmnList.length ? pkmnList.length : "Aucun"} résultat{(pkmnList.length === 2) ? "" :"s"}</div> : ""}
-      {filterList}
+      {search ? (
+        <div id="resultscounter">
+          {pkmnList.length ? pkmnList.length : "Aucun"} résultat
+          {pkmnList.length === 2 ? "" : "s"}
+        </div>
+      ) : (
+        ""
+      )}
+      <FilterButton options={FILTER_NAMES} filter={filter} setFilter={setFilter} />
       <div className="carillion">{pkmnList}</div>
     </div>
   );
