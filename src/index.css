@@ -59,6 +59,10 @@ h1 {
 }
 #pokeh1 {
   height: 1.5rem;
+  transition: .75s cubic-bezier(.68,-0.55,.27,1.55);
+}
+#pokeh1:hover {
+  transform: rotateZ(360deg) scale(2.5);
 }
 
 .carillion {
@@ -99,13 +103,13 @@ h1 {
   z-index: -1;
 }
 .item img {
-  transition: 0.5s;
+  transition: .5s cubic-bezier(.68,-0.55,.27,1.55);
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
 .item:hover img {
-  transform: scale(1.5);
+  transform: scale(1.75);
   filter: drop-shadow(0 0 5px black);
 }
 #itemId {
