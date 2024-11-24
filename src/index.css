@@ -1,5 +1,5 @@
 :root {
-  --acier: 96, 163, 185;
+  --acier: 79, 79, 79;
   --combat: 255, 129, 0;
   --dragon: 79, 96, 226;
   --eau: 36, 129, 239;
@@ -28,7 +28,7 @@ body {
   font-family: "Montserrat", sans-serif;
   background: url("/backgrounds/default.webp") no-repeat center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   padding-bottom: 50px;
 }
 * {
@@ -37,7 +37,7 @@ body {
 }
 .subroot {
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
@@ -53,8 +53,16 @@ body {
 h1 {
   font-weight: bold;
   font-family: "Kode Mono";
+  padding-bottom: 20px;
   font-size: 2.5rem;
   text-shadow: 0 0 50px white, 0 0 50px white, 0 0 50px white;
+}
+#pokeh1 {
+  height: 1.5rem;
+  transition: .75s cubic-bezier(.68,-0.55,.27,1.55);
+}
+#pokeh1:hover {
+  transform: rotateZ(360deg) scale(2.5);
 }
 
 .carillion {
@@ -95,18 +103,17 @@ h1 {
   z-index: -1;
 }
 .item img {
-  transition: 0.5s;
+  transition: .5s cubic-bezier(.68,-0.55,.27,1.55);
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
 .item:hover img {
-  transform: scale(1.5);
+  transform: scale(1.75);
   filter: drop-shadow(0 0 5px black);
 }
 #itemId {
   font-size: x-small;
-  margin-bottom: 10px;
 }
 
 .inputbox {
@@ -124,7 +131,7 @@ h1 {
   color: #23242a;
   font-size: 1em;
   letter-spacing: 0.05em;
-  transition: 0.5s;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: 10;
 }
 .inputbox span {
@@ -132,11 +139,10 @@ h1 {
   left: 0;
   padding: 20px 10px 10px;
   font-size: 1em;
-  color: #8f8f8f;
+  color: #b0b0b0;
   letter-spacing: 00.05em;
-  transition: 0.5s;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   pointer-events: none;
-  text-shadow: 0 0 2px white;
 }
 .inputbox input:valid ~ span,
 .inputbox input:focus ~ span {
@@ -175,10 +181,6 @@ h1 {
   padding: 0 20px;
 }
 
-.detailed header {
-  margin-left: 25%;
-}
-
 .detailed header p {
   background-color: white;
   color: black;
@@ -187,11 +189,80 @@ h1 {
   aspect-ratio: 1;
   padding: 10px;
 }
-
-.detailed main img {
-  width: 50%;
+.detailed header h1 {
+  margin: 0 auto;
+}
+.detailed #main {
+  width: 300px;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 20px;
   margin: 20px;
   padding: 10px;
+}
+
+@media only screen and (max-width: 787px) {
+  .detailed header h1 {
+    font-size: 150%;
+  }
+
+  .detailed header p {
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    padding: 2px 4px;
+  }
+
+  .detailed main img {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+  }
+}
+
+.dataitem {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 30px 5px;
+}
+.datafield {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+}
+.dataitem #type {
+  line-height: 3rem;
+  padding: 15px 5px 5px 5px;
+  border-radius: 10px;
+  background-color: transparent;
+  height: 100px;
+  margin-bottom: -15px;
+}
+.dataitem #num {
+  text-shadow: 0 0 20px white, 0 0 20px white, 0 0 20px white;
+}
+
+.filterbutton {
+  margin-bottom: 40px;
+  background: transparent;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 0 20px white;
+}
+.filterbutton[aria-pressed=false] {
+  color: #b0b0b0;
+  border-color: #b0b0b0;
+}
+
+#resultscounter {
+  font-size: small;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
