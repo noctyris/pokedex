@@ -76,9 +76,18 @@ function App(props) {
                 <p>
                   Type {data.types[0] !== "" ? "principal" : ""} :
                   <img
-                    id="type"
+                    id="typeI"
                     src={"/types/" + data.types[0].toLowerCase() + ".svg"}
                   />
+                  <p
+                    style={{
+                      backgroundColor:
+                        "rgba(var(--" + data.types[0].toLowerCase() + "), .8)",
+                    }}
+                    id="typeT"
+                  >
+                    {data.types[0]}
+                  </p>
                 </p>
               </div>
               {data.types[1] !== "" ? (
@@ -87,8 +96,12 @@ function App(props) {
                     Type secondaire :
                     <img
                       src={"/types/" + data.types[1].toLowerCase() + ".svg"}
-                      id="type"
+                      id="typeI"
                     />
+                    <p style={{
+                      backgroundColor:
+                        "rgba(var(--" + data.types[1].toLowerCase() + "), .8)",
+                    }} id="typeT">{data.types[0]}</p>
                   </p>
                 </div>
               ) : (
@@ -119,7 +132,7 @@ function App(props) {
   }
 
   const searchFilter = (pk) =>
-    pk.name.toLowerCase().includes(search.toLowerCase())
+    pk.name.toLowerCase().includes(search.toLowerCase());
 
   const pkmnList = pkmns
     .filter(searchFilter)
@@ -151,7 +164,11 @@ function App(props) {
       ) : (
         ""
       )}
-      <FilterButton options={FILTER_NAMES} filter={filter} setFilter={setFilter} />
+      <FilterButton
+        options={FILTER_NAMES}
+        filter={filter}
+        setFilter={setFilter}
+      />
       <div className="carillion">{pkmnList}</div>
     </div>
   );
