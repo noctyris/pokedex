@@ -73,7 +73,7 @@ function App(props) {
                 <p>Pokémon {data.category}</p>
               </div>
               <div className="dataitem">
-                <p>
+                <p className="type">
                   Type {data.types[0] !== "" ? "principal" : ""} :
                   <img
                     id="typeI"
@@ -92,16 +92,23 @@ function App(props) {
               </div>
               {data.types[1] !== "" ? (
                 <div className="dataitem">
-                  <p>
+                  <p className="type">
                     Type secondaire :
                     <img
                       src={"/types/" + data.types[1].toLowerCase() + ".svg"}
                       id="typeI"
                     />
-                    <p style={{
-                      backgroundColor:
-                        "rgba(var(--" + data.types[1].toLowerCase() + "), .8)",
-                    }} id="typeT">{data.types[0]}</p>
+                    <p
+                      style={{
+                        backgroundColor:
+                          "rgba(var(--" +
+                          data.types[1].toLowerCase() +
+                          "), .8)",
+                      }}
+                      id="typeT"
+                    >
+                      {data.types[0]}
+                    </p>
                   </p>
                 </div>
               ) : (

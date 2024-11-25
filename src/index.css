@@ -21,6 +21,7 @@
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
   overscroll-behavior: none;
 }
 body {
@@ -188,6 +189,7 @@ h1 {
   width: 40px;
   aspect-ratio: 1;
   padding: 10px;
+  transition: .75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .detailed header h1 {
   margin: 0 auto;
@@ -199,7 +201,9 @@ h1 {
   margin: 20px;
   padding: 10px;
 }
-
+.detailed header p:hover {
+  transform: rotateZ(360deg);
+}
 @media only screen and (max-width: 787px) {
   .detailed header h1 {
     font-size: 150%;
@@ -212,6 +216,7 @@ h1 {
     width: 24px;
     height: 24px;
     padding: 2px 4px;
+    transition: .75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .detailed #main {
@@ -246,11 +251,17 @@ h1 {
 .detailed #typeT {
   border-radius: 20px;
   width: fit-content;
-  margin: 20px auto;
   padding: 10px;
+  margin: 20px auto;
 }
 .dataitem #num {
   text-shadow: 0 0 20px white, 0 0 20px white, 0 0 20px white;
+}
+.detailed .type {
+  transition: .75s cubic-bezier(0.68, 0, 0.265, 1.55);
+}
+.detailed .type:hover {
+  filter: drop-shadow(0 0 10px black);
 }
 
 .filterbutton {
