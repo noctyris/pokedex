@@ -123,6 +123,7 @@ function App(props) {
 
   const pkmnList = pkmns
     .filter(searchFilter)
+    .filter(FILTER_MAP[filter])
     .map((pk) => (
       <Item
         key={pk.id}
