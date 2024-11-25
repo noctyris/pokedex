@@ -119,19 +119,10 @@ function App(props) {
   }
 
   const searchFilter = (pk) =>
-    pk.name
-      .toLowerCase()
-      .split("")
-      .map((t) => {
-        if (t.includes(search.toLowerCase())) {
-          return true;
-        }
-        return false;
-      });
+    pk.name.toLowerCase().includes(search.toLowerCase())
 
   const pkmnList = pkmns
     .filter(searchFilter)
-    .filter(FILTER_MAP[filter])
     .map((pk) => (
       <Item
         key={pk.id}
