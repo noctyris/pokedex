@@ -38,7 +38,8 @@ body {
   box-sizing: border-box;
   font-weight: normal;
 }
-.subroot, .about {
+.subroot,
+.about {
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
@@ -52,7 +53,8 @@ body {
   width: 80%;
   text-align: center;
 }
-.subroot section, .about {
+.subroot section,
+.about {
   padding: 20px;
 }
 h1 {
@@ -296,7 +298,7 @@ h1 {
   width: 100%;
   margin-top: 20px;
   border-radius: 0 0 20px 20px;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 .footer p {
@@ -321,4 +323,40 @@ h1 {
 
 .footer nav ul li a:hover {
   color: #f1f1f1;
+}
+
+.about .sectionA {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sectionA .dataA {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #f1f1f1;
+  transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.sectionA .dataA:hover {
+  backdrop-filter: blur(10px);
+}
+.sectionA .dataA a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.sectionA .dataA a::before {
+  content: "[";
+  padding-right: 5px;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.sectionA .dataA a::after {
+  content: "]";
+  padding-left: 5px;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.sectionA .dataA a:hover::before {
+  padding-right: 15px;
+}
+.sectionA .dataA a:hover::after {
+  padding-left: 15px;
 }
