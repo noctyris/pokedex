@@ -107,7 +107,7 @@ function App(props) {
                       }}
                       id="typeT"
                     >
-                      {data.types[0]}
+                      {data.types[1]}
                     </p>
                   </p>
                 </div>
