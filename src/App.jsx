@@ -158,7 +158,7 @@ function App(props) {
 
   const homeTemplate = (
     <div className="subroot">
-      <h1>
+      <section><h1>
         P<img src="/favicon.svg" id="pokeh1" />
         kedex
       </h1>
@@ -177,6 +177,17 @@ function App(props) {
         setFilter={setFilter}
       />
       <div className="carillion">{pkmnList}</div>
+      </section>
+      <footer class="footer">
+      <p>&copy; 2024 <a style={{color: "whitesmoke"}} href="https://github.com/onyyyyx">Onyx</a>. Tous droits réservés.</p>
+      <nav>
+        <ul>
+          <li><a onClick={() => window.location.href = "/about.html"}>About</a></li>
+          {/* <li><a href="#">Lien 2</a></li>
+          <li><a href="#">Lien 3</a></li> */}
+        </ul>
+      </nav>
+    </footer>
     </div>
   );
 

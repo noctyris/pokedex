@@ -21,10 +21,12 @@
 
 html {
   height: 100%;
+  margin: 0;
   scroll-behavior: smooth;
   overscroll-behavior: none;
 }
 body {
+  margin: 0;
   background-color: black;
   font-family: "Montserrat", sans-serif;
   background: url("/backgrounds/default.webp") no-repeat center;
@@ -36,7 +38,7 @@ body {
   box-sizing: border-box;
   font-weight: normal;
 }
-.subroot {
+.subroot, .about {
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
@@ -48,8 +50,10 @@ body {
   transform: translate(-50%, 0);
   z-index: 2;
   width: 80%;
-  padding: 20px;
   text-align: center;
+}
+.subroot section, .about {
+  padding: 20px;
 }
 h1 {
   font-weight: bold;
@@ -60,7 +64,7 @@ h1 {
 }
 #pokeh1 {
   height: 1.5rem;
-  transition: .75s cubic-bezier(.68,-0.55,.27,1.55);
+  transition: 0.75s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 #pokeh1:hover {
   transform: rotateZ(360deg) scale(2.5);
@@ -104,7 +108,7 @@ h1 {
   z-index: -1;
 }
 .item img {
-  transition: .5s cubic-bezier(.68,-0.55,.27,1.55);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   height: 100%;
   width: 100%;
   object-fit: contain;
@@ -189,7 +193,7 @@ h1 {
   width: 40px;
   aspect-ratio: 1;
   padding: 10px;
-  transition: .75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .detailed header h1 {
   margin: 0 auto;
@@ -216,7 +220,7 @@ h1 {
     width: 24px;
     height: 24px;
     padding: 2px 4px;
-    transition: .75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .detailed #main {
@@ -258,7 +262,7 @@ h1 {
   text-shadow: 0 0 20px white, 0 0 20px white, 0 0 20px white;
 }
 .detailed .type {
-  transition: .75s cubic-bezier(0.68, 0, 0.265, 1.55);
+  transition: 0.75s cubic-bezier(0.68, 0, 0.265, 1.55);
 }
 .detailed .type:hover {
   filter: drop-shadow(0 0 10px black);
@@ -273,7 +277,7 @@ h1 {
   padding: 10px;
   box-shadow: 0 0 20px white;
 }
-.filterbutton[aria-pressed=false] {
+.filterbutton[aria-pressed="false"] {
   color: #b0b0b0;
   border-color: #b0b0b0;
 }
@@ -282,4 +286,39 @@ h1 {
   font-size: small;
   margin-top: -10px;
   margin-bottom: 20px;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 0 0 20px 20px;
+  font-size: .85rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer nav ul li a:hover {
+  color: #f1f1f1;
 }
