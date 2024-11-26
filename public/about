@@ -52,6 +52,7 @@
           <div class="sectionA"><ul class="dataA">
             <li>À compléter</li>
           </ul></div>
+          <a id="quitA" href="/">&#x2715;</a>
       </div>
   </body>
 </html>
