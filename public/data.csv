@@ -1,0 +1,146 @@
+name;num;type1;type2;category;size;weight;generation
+Bulbizarre;1;Plante;Poison;Graine;0.7;6.9;1
+Herbizarre;2;Plante;Poison;Graine;1;13;1
+Florizarre;3;Plante;Poison;Graine;2;100;1
+Méga-Florizarre;3;Plante;Poison;Graine;2.4;155.5;1
+Florizarre Gigamax;3;Plante;Poison;Graine;+ 24;;1
+Salamèche;4;Feu;;Lézard;0.6;8.5;1
+Reptincel;5;Feu;;Flamme;1.1;19;1
+Dracaufeu;6;Feu;Vol;Flamme;1.7;90.5;1
+Méga-Dracaufeu X;6;Feu;Dragon;Flamme;1.7;110.5;1
+Méga-Dracaufeu Y;6;Feu;Vol;Flamme;1.7;100.5;1
+Dracaufeu Gigamax;6;Feu;Vol;Flamme;+ 28;;1
+Carapuce;7;Eau;;Minitortue;0.5;9;1
+Carabaffe;8;Eau;;Tortue;1;22.5;1
+Tortank;9;Eau;;Carapace;1.6;85.5;1
+Méga-Tortank;9;Eau;;Carapace;1.6;101.1;1
+Tortank Gigamax;9;Eau;;Carapace;+ 25;;1
+Chenipan;10;Insecte;;Ver;0.3;2.9;1
+Chrysacier;11;Insecte;;Cocon;0.7;9.9;1
+Papilusion;12;Insecte;Vol;Papillon;1.1;32;1
+Papilusion Gigamax;12;Insecte;Vol;Papillon;+ 17;;1
+Aspicot;13;Insecte;Poison;Insectopic;0.3;3.2;1
+Coconfort;14;Insecte;Poison;Cocon;0.6;10;1
+Dardargnan;15;Insecte;Poison;Guêpoison;1;29.5;1
+Méga-Dardargnan;15;Insecte;Poison;Guêpoison;1.4;40.5;1
+Roucool;16;Normal;Vol;Minoiseau;0.3;1.8;1
+Roucoups;17;Normal;Vol;Oiseau;1.1;30;1
+Roucarnage;18;Normal;Vol;Oiseau;1.5;39.5;1
+Méga-Roucarnage;18;Normal;Vol;Oiseau;2.2;50.5;1
+Rattata;19;Normal;;Souris;0.3;3.5;1
+Rattata d'Alola;19;Ténèbres;Normal;Souris;0.3;3.8;7
+Rattatac;20;Normal;;Souris;0.7;18.5;1
+Rattatac d'Alola;20;Ténèbres;Normal;Souris;0.7;25.5;7
+Piafabec;21;Normal;Vol;Minoiseau;0.3;2;1
+Rapasdepic;22;Normal;Vol;Bec-Oiseau;1.2;38;1
+Abo;23;Poison;;Serpent;2;6.9;1
+Arbok;24;Poison;;Cobra;3.5;65;1
+Pikachu;25;Électrik;;Souris;0.4;6;1
+Pikachu Gigamax;25;Électrik;;Souris;+ 21;;1
+Raichu;26;Électrik;;Souris;0.8;30;1
+Raichu d'Alola;26;Électrik;Psy;Souris;0.7;21;7
+Sabelette;27;Sol;;Souris;0.6;12;1
+Sabelette d'Alola;27;Glace;Acier;Souris;0.7;40;7
+Sablaireau;28;Sol;;Souris;1;29.5;1
+Sablaireau d'Alola;28;Glace;Acier;Souris;1.2;55;7
+Nidoran ?;29;Poison;;Vénépic;0.4;7;1
+Nidorina;30;Poison;;Vénépic;0.9;20;1
+Nidoqueen;31;Poison;Sol;Perceur;1.3;60;1
+Nidoran ?;32;Poison;;Vénépic;0.5;9;1
+Nidorino;33;Poison;;Vénépic;0.9;19.5;1
+Nidoking;34;Poison;Sol;Vénépic;1.4;62;1
+Mélofée;35;Fée;;Fée;0.6;7.5;1
+Mélodelfe;36;Fée;;Fée;1.3;40;1
+Goupix;37;Feu;;Renard;0.6;9.9;1
+Goupix d'Alola;37;Glace;;Renard;0.6;9.9;7
+Feunard;38;Feu;;Renard;1.1;19.9;1
+Feunard d'Alola;38;Glace;;Renard;1.1;19.9;7
+Rondoudou;39;Normal;Fée;Bouboule;0.5;5.5;1
+Grodoudou;40;Normal;Fée;Bouboule;1;12;1
+Nosferapti;41;Poison;Vol;Chovsouris;0.8;7.5;1
+Nosferalto;42;Poison;Vol;Chovsouris;1.6;55;1
+Mystherbe;43;Plante;Poison;Racine;0.5;5.4;1
+Ortide;44;Plante;Poison;Racine;0.8;8.6;1
+Rafflesia;45;Plante;Poison;Fleur;1.2;18.6;1
+Brutalibré;701;Combat;Vol;Catcheur;0.8;21.5;1
+Paras;46;Insecte;Plante;Champignon;0.3;5.4;1
+Parasect;47;Insecte ;Plante;Champignon;1;29.5;1
+Mimitoss;48;Insecte;Poison;Vermine;1;30;1
+Aéromite;49;Insecte;Poison;Papipoison;1.5;12.5;1
+Taupiqueur;50;Sol;;Taupe;0.2;0.8;1
+Taupiqueur d'Alola;50;Sol;Acier;Taupe;0.2;1;7
+Triopikeur;51;Sol;;Taupe;0.7;33.3;1
+Triopikeur d'Alola;51;Sol;Acier;Taupe;0.7;66.6;7
+Miaouss;52;Normal;;Chadégout;0.4;4.2;1
+Miaouss Gigamax;52;Normal;;Chadégout;+ 33;;1
+Miaouss d'Alola;52;Ténèbres;;Chadégout;0.4;4.2;7
+Miaouss de Galar;52;Acier;;Chadégout;0.4;7.5;8
+Persian;53;Normal;;Chadeville;1;32;1
+Persian d'Alola;53;Ténèbres;;Chadeville;1.1;33;7
+Psykokwak;54;Eau;;Canard;0.8;19.6;1
+Akwakwak;55;Eau;;Canard;1.7;76.6;1
+Férosinge;56;Combat;;Porsinge;0.5;28;1
+Colossinge;57;Combat;;Porsinge;1;32;1
+Caninos;58;Feu;;Chiot;0.7;19;1
+Caninos de Hisui;58;Feu;Roche;Espion;0.8;22.7;8
+Arcanin;59;Feu;;Légendaire;1.9;155;1
+Arcanin de Hisui;59;Feu;Roche;Légendaire;1.85;148.04;8
+Ptitard;60;Eau;;Têtard;0.6;12.4;1
+Têtarte;61;Eau;;Têtard;1;20;1
+Tartard;62;Eau;Combat;Têtard;1.3;54;1
+Abra;63;Psy;;Psy;0.9;19.5;1
+Kadabra;64;Psy;;Psy;1.3;56.5;1
+Alakazam;65;Psy;;Psy;1.5;48;1
+Méga-Alakazam;65;Psy;;Psy;1.2;48;1
+Machoc;66;Combat;;Colosse;0.8;19.5;1
+Machopeur;67;Combat;;Colosse;1.5;70.5;1
+Mackogneur;68;Combat;;Colosse;1.6;130;1
+Mackogneur Gigamax;68;Combat;;Colosse;+ 25;;1
+Chétiflor;69;Plante;Poison;Fleur;0.7;4;1
+Boustiflor;70;Plante;Poison;Carnivore;1;6.4;1
+Empiflor;71;Plante;Poison;Carnivore;1.7;15.5;1
+Tentacool;72;Eau;Poison;Mollusque;0.9;45.5;1
+Tentacruel;73;Eau;Poison;Mollusque;1.6;55;1
+Racaillou;74;Roche;Sol;Roche;0.4;20;1
+Racaillou d'Alola;74;Roche;Électrik;Roche;0.4;20.3;7
+Gravalanch;75;Roche;Sol;Roche;1;105;1
+Gravalanch d'Alola;75;Roche;Électrik;Roche;1;110;7
+Grolem;76;Roche;Sol;Titanesque;1.4;300;1
+Grolem d'Alola;76;Roche;Électrik;Titanesque;1.7;316;7
+Ponyta;77;Feu;;Cheval Feu;1;30;1
+Ponyta de Galar;77;Psy;;Monocorne;0.8;24;8
+Galopa ;78;Feu;;Cheval Feu;1.7;95;1
+Galopa de Galar;78;Psy;Fée;Monocorne;1.7;80;8
+Ramoloss;79;Eau;Psy;Crétin;1.2;36;1
+Ramoloss de Galar;79;Psy;;Crétin;1.2;36;8
+Flagadoss;80;Eau ;Psy;Symbiose;1.6;78.5;1
+Flagadoss de Galar;80;Poison;Psy;Symbiose;1.6;70.5;8
+Magnéti;81;Électrik;Acier;Magnétique;0.3;6;1
+Magnéton;82;Électrik;Acier;Magnétique;1;60;1
+Canarticho;83;Normal;Vol;Canard Fou;0.8;15;1
+Canarticho de Galar;83;Combat;;Canard Fou;0.8;42;8
+Doduo;84;Normal;Vol;Duoiseau;1.4;39.2;1
+Dodrio;85;Normal;Vol;Trioiseau;1.8;85.2;1
+Otaria;86;Eau;;Otarie;1.1;90;1
+Lamantine;87;Eau;Glace;Otarie;1.7;120;1
+Tadmorv;88;Poison;;Dégueu;0.9;30;1
+Tadmorv d'Alola;88;Poison;Ténèbres;Dégueu;0.7;42;7
+Grotadmorv;89;Poison;;Dégueu;1.2;30;1
+Grotadmorv d'Alola;89;Poison;Ténèbres;Dégueu;1;52;7
+Kokiyas;90;Eau;;Bivalve;0.3;4;1
+Crustabri;91;Eau;Glace;Bivalve;1.5;132.5;1
+Fantominus;92;Spectre;Poison;Gaz;1.3;0.1;1
+Spectrum;93;Spectre;Poison;Gaz;1.6;0.1;1
+Ectoplasma;94;Spectre;Poison;Ombre;1.5;40.5;1
+Méga-Ectoplasma;94;Spectre;Poison;Ombre;1.4;40.5;1
+Ectoplasma Gigamax;94;Spectre;Poison;Ombre;+ 20;;1
+Onix;95;Roche;Sol;Serpenroc;8.8;210;1
+Soporifik;96;Psy;;Hypnose;1;32.4;1
+Hypnomade;97;Psy;;Hypnose;1.6;75.6;1
+Krabby;98;Eau;;Doux Crabe;0.4;6.5;1
+Krabboss;99;Eau;;Pince;1.3;60;1
+Krabboss Gigamax;99;Eau;;Pince;+ 19;;1
+Voltorbe;100;Électrik;;Balle;0.5;10.4;1
+Voltorbe de Hisui;100;Électrik;Plante;Sphère ;0.5;13;8
+Électrode;101;Électrik;;Balle;1.2;66.6;1
+Électrode de Hisui;101;Électrik;Plante;Sphère ;1.17;68.67;8
