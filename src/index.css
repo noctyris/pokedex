@@ -287,7 +287,9 @@ h1 {
   padding: 20px;
   border-radius: 20px;
   border: 2px solid whitesmoke;
+  transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+.select:hover {backdrop-filter: blur(10px);}
 .select label {
   font-size: small;
   padding-bottom: 12px;
