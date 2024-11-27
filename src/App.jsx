@@ -122,6 +122,13 @@ function App(props) {
                 <p>Taille :</p>
                 <p id="num">{data.size ? data.size + "m" : "?"}</p>
               </div>
+              <div className="dataitem">
+                <p>Génération</p>
+                <p>
+                  {data.gen}
+                  <sup>e</sup> génération
+                </p>
+              </div>
             </div>
           </main>
         </div>
@@ -158,36 +165,47 @@ function App(props) {
 
   const homeTemplate = (
     <div className="subroot">
-      <section><h1>
-        P<img src="/favicon.svg" id="pokeh1" />
-        kedex
-      </h1>
-      <Search setSearch={setSearch} search={search} />
-      {search ? (
-        <div id="resultscounter">
-          {pkmnList.length ? pkmnList.length : "Aucun"} résultat
-          {pkmnList.length === 2 ? "" : "s"}
-        </div>
-      ) : (
-        ""
-      )}
-      <FilterButton
-        options={FILTER_NAMES}
-        filter={filter}
-        setFilter={setFilter}
-      />
-      <div className="carillion">{pkmnList}</div>
+      <section>
+        <h1>
+          P<img src="/favicon.svg" id="pokeh1" />
+          kedex
+        </h1>
+        <Search setSearch={setSearch} search={search} />
+        {search ? (
+          <div id="resultscounter">
+            {pkmnList.length ? pkmnList.length : "Aucun"} résultat
+            {pkmnList.length === 2 ? "" : "s"}
+          </div>
+        ) : (
+          ""
+        )}
+        <FilterButton
+          options={FILTER_NAMES}
+          filter={filter}
+          setFilter={setFilter}
+        />
+        <div className="carillion">{pkmnList}</div>
       </section>
       <footer class="footer">
-      <p>&copy; 2024 <a style={{color: "whitesmoke"}} href="https://github.com/onyyyyx">Onyx</a>. Tous droits réservés.</p>
-      <nav>
-        <ul>
-          <li><a onClick={() => window.location.href = "/about.html"}>About</a></li>
-          {/* <li><a href="#">Lien 2</a></li>
+        <p>
+          &copy; 2024{" "}
+          <a style={{ color: "whitesmoke" }} href="https://github.com/onyyyyx">
+            Onyx
+          </a>
+          . Tous droits réservés.
+        </p>
+        <nav>
+          <ul>
+            <li>
+              <a onClick={() => (window.location.href = "/about.html")}>
+                About
+              </a>
+            </li>
+            {/* <li><a href="#">Lien 2</a></li>
           <li><a href="#">Lien 3</a></li> */}
-        </ul>
-      </nav>
-    </footer>
+          </ul>
+        </nav>
+      </footer>
     </div>
   );
 

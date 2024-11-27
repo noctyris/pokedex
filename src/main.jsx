@@ -28,6 +28,7 @@ function Main() {
           location: row.name.toLowerCase()+".png",
           weight: row.weight,
           size: row.size,
+          gen: row.gen,
           images: row.images ? row.images.split(",") : [],
         }));
 

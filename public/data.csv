@@ -1,66 +1,65 @@
-name,num,type1,type2,category,weight,size
-Bulbizarre,1,Plante,Poison,Graine,6.9,0.7
-
-Herbizarre,2,Plante,Poison,Graine,13,1
-Florizarre,3,Plante,Poison,Graine,100,2
-Méga-Florizarre,3,Plante,Poison,Graine,155.5,2.4
-Florizarre Gigamax,3,Plante,Poison,Graine,,+ 24
-Salamèche,4,Feu,,Lézard,8.5,0.6
-Reptincel,5,Feu,,Flamme,19,1.1
-Dracaufeu,6,Feu,Vol,Flamme,90.5,1.7
-Méga-Dracaufeu X,6,Feu,Dragon,Flamme,110.5,1.7
-Méga-Dracaufeu Y,6,Feu,Vol,Flamme,100.5,1.7
-Dracaufeu Gigamax,6,Feu,Vol,Flamme,,+ 28
-Carapuce,7,Eau,,Minitortue,9,0.5
-Carabaffe,8,Eau,,Tortue,22.5,1
-Tortank,9,Eau,,Carapace,85.5,1.6
-Méga-Tortank,9,Eau,,Carapace,101.1,1.6
-Tortank Gigamax,9,Eau,,Carapace,,+ 25
-Chenipan,10,Insecte,,Ver,2.9,0.3
-Chrysacier,11,Insecte,,Cocon,9.9,0.7
-Papilusion,12,Insecte,Vol,Papillon,32,1.1
-Papilusion Gigamax,12,Insecte,Vol,Papillon,,+ 17
-Aspicot,13,Insecte,Poison,Insectopic,3.2,0.3
-Coconfort,14,Insecte,Poison,Cocon,10,0.6
-Dardargnan,15,Insecte,Poison,Guêpoison,29.5,1
-Méga-Dardargnan,15,Insecte,Poison,Guêpoison,40.5,1.4
-Roucool,16,Normal,Vol,Minoiseau,1.8,0.3
-Roucoups,17,Normal,Vol,Oiseau,30,1.1
-Roucarnage,18,Normal,Vol,Oiseau,39.5,1.5
-Méga-Roucarnage,18,Normal,Vol,Oiseau,50.5,2.2
-Rattata,19,Normal,,Souris,3.5,0.3
-Rattata d'Alola,19,Ténèbres,Normal,Souris,3.8,0.3
-Rattatac,20,Normal,,Souris,18.5,0.7
-Rattatac d'Alola,20,Ténèbres,Normal,Souris,25.5,0.7
-Piafabec,21,Normal,Vol,Minoiseau,2,0.3
-Rapasdepic,22,Normal,Vol,Bec-Oiseau,38,1.2
-Abo,23,Poison,,Serpent,6.9,2
-Arbok,24,Poison,,Cobra,65,3.5
-Pikachu,25,Électrik,,Souris,6,0.4
-Pikachu Gigamax,25,Électrik,,Souris,,+ 21
-Raichu,26,Électrik,,Souris,30,0.8
-Raichu d'Alola,26,Électrik,Psy,Souris,21,0.7
-Sabelette,27,Sol,,Souris,12,0.6
-Sabelette d'Alola,27,Glace,Acier,Souris,40,0.7
-Sablaireau,28,Sol,,Souris,29.5,1
-Sablaireau,28,Glace,Acier,Souris,55,1.2
-Nidoran ♀,29,Poison,,Vénépic,7,0.4
-Nidorina,30,Poison,,Vénépic,20,0.9
-Nidoqueen,31,Poison,Sol,Perceur,60,1.3
-Nidoran ♂,32,Poison,,Vénépic,9,0.5
-Nidorino,33,Poison,,Vénépic,19.5,0.9
-Nidoking,34,Poison,Sol,Vénépic,62,1.4
-Mélofée,35,Fée,,Fée,,
-Mélodelfe,36,Fée,,Fée,,
-Goupix,37,Feu,,Renard,,
-Goupix d'Alola,37,Glace,,Renard,,
-Feunard,38,Feu,,Renard,,
-Feunard d'Alola,38,Glace,,Renard,,
-Rondoudou,39,Normal,Fée,Bouboule,,
-Grodoudou,40,Normal,Fée,Bouboule,,
-Nosferapti,41,Poison,Vol,Chovsouris,,
-Nosferalto,42,Poison,Vol,Chovsouris,,
-Mystherbe,43,Plante,Poison,Racine,,
-Ortide,44,Plante,Poison,Racine,,
-Rafflesia,45,Plante,Poison,Fleur,,
-Brutalibré,701,Combat,Vol,Catcheur,,
+name,num,type1,type2,category,size,weight,gen
+Bulbizarre,1,Plante,Poison,Graine,6.9,0.7,1
+Herbizarre,2,Plante,Poison,Graine,13,1,1
+Florizarre,3,Plante,Poison,Graine,100,2,1
+Méga-Florizarre,3,Plante,Poison,Graine,155.5,2.4,1
+Florizarre Gigamax,3,Plante,Poison,Graine,,+ 24,1
+Salamèche,4,Feu,,Lézard,8.5,0.6,1
+Reptincel,5,Feu,,Flamme,19,1.1,1
+Dracaufeu,6,Feu,Vol,Flamme,90.5,1.7,1
+Méga-Dracaufeu X,6,Feu,Dragon,Flamme,110.5,1.7,1
+Méga-Dracaufeu Y,6,Feu,Vol,Flamme,100.5,1.7,1
+Dracaufeu Gigamax,6,Feu,Vol,Flamme,,+ 28,1
+Carapuce,7,Eau,,Minitortue,9,0.5,1
+Carabaffe,8,Eau,,Tortue,22.5,1,1
+Tortank,9,Eau,,Carapace,85.5,1.6,1
+Méga-Tortank,9,Eau,,Carapace,101.1,1.6,1
+Tortank Gigamax,9,Eau,,Carapace,,+ 25,1
+Chenipan,10,Insecte,,Ver,2.9,0.3,1
+Chrysacier,11,Insecte,,Cocon,9.9,0.7,1
+Papilusion,12,Insecte,Vol,Papillon,32,1.1,1
+Papilusion Gigamax,12,Insecte,Vol,Papillon,,+ 17,1
+Aspicot,13,Insecte,Poison,Insectopic,3.2,0.3,1
+Coconfort,14,Insecte,Poison,Cocon,10,0.6,1
+Dardargnan,15,Insecte,Poison,Guêpoison,29.5,1,1
+Méga-Dardargnan,15,Insecte,Poison,Guêpoison,40.5,1.4,1
+Roucool,16,Normal,Vol,Minoiseau,1.8,0.3,1
+Roucoups,17,Normal,Vol,Oiseau,30,1.1,1
+Roucarnage,18,Normal,Vol,Oiseau,39.5,1.5,1
+Méga-Roucarnage,18,Normal,Vol,Oiseau,50.5,2.2,1
+Rattata,19,Normal,,Souris,3.5,0.3,1
+Rattata d'Alola,19,Ténèbres,Normal,Souris,3.8,0.3,7
+Rattatac,20,Normal,,Souris,18.5,0.7,1
+Rattatac d'Alola,20,Ténèbres,Normal,Souris,25.5,0.7,7
+Piafabec,21,Normal,Vol,Minoiseau,2,0.3,1
+Rapasdepic,22,Normal,Vol,Bec-Oiseau,38,1.2,1
+Abo,23,Poison,,Serpent,6.9,2,1
+Arbok,24,Poison,,Cobra,65,3.5,1
+Pikachu,25,Électrik,,Souris,6,0.4,1
+Pikachu Gigamax,25,Électrik,,Souris,,+ 21,1
+Raichu,26,Électrik,,Souris,30,0.8,1
+Raichu d'Alola,26,Électrik,Psy,Souris,21,0.7,7
+Sabelette,27,Sol,,Souris,12,0.6,1
+Sabelette d'Alola,27,Glace,Acier,Souris,40,0.7,7
+Sablaireau,28,Sol,,Souris,29.5,1,1
+Sablaireau,28,Glace,Acier,Souris,55,1.2,7
+Nidoran ♀,29,Poison,,Vénépic,7,0.4,1
+Nidorina,30,Poison,,Vénépic,20,0.9,1
+Nidoqueen,31,Poison,Sol,Perceur,60,1.3,1
+Nidoran ♂,32,Poison,,Vénépic,9,0.5,1
+Nidorino,33,Poison,,Vénépic,19.5,0.9,1
+Nidoking,34,Poison,Sol,Vénépic,62,1.4,1
+Mélofée,35,Fée,,Fée,,,1
+Mélodelfe,36,Fée,,Fée,,,1
+Goupix,37,Feu,,Renard,,,1
+Goupix d'Alola,37,Glace,,Renard,,,7
+Feunard,38,Feu,,Renard,,,1
+Feunard d'Alola,38,Glace,,Renard,,,7
+Rondoudou,39,Normal,Fée,Bouboule,,,1
+Grodoudou,40,Normal,Fée,Bouboule,,,1
+Nosferapti,41,Poison,Vol,Chovsouris,,,1
+Nosferalto,42,Poison,Vol,Chovsouris,,,1
+Mystherbe,43,Plante,Poison,Racine,,,1
+Ortide,44,Plante,Poison,Racine,,,1
+Rafflesia,45,Plante,Poison,Fleur,,,1
+Brutalibré,701,Combat,Vol,Catcheur,,,
