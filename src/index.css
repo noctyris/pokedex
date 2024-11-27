@@ -271,7 +271,6 @@ h1 {
 }
 
 .filterbutton {
-  margin-bottom: 40px;
   background: transparent;
   border-radius: 20px;
   border: 2px solid #ffffff;
@@ -279,9 +278,19 @@ h1 {
   padding: 10px;
   box-shadow: 0 0 20px white;
 }
-.filterbutton[aria-pressed="false"] {
-  color: #b0b0b0;
-  border-color: #b0b0b0;
+.select {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: fit-content;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid whitesmoke;
+}
+.select label {
+  font-size: small;
+  padding-bottom: 12px;
 }
 
 #resultscounter {

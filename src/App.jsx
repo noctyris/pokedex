@@ -201,8 +201,6 @@ function App(props) {
                 About
               </a>
             </li>
-            {/* <li><a href="#">Lien 2</a></li>
-          <li><a href="#">Lien 3</a></li> */}
           </ul>
         </nav>
       </footer>
