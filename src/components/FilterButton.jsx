@@ -9,11 +9,11 @@ function FilterButton(props) {
 
   const select = (
     <div className="select">
-      <label htmlFor={id}>Type</label>
+      <label htmlFor={id}>{props.name}</label>
       <select
         onChange={handleChange}
         id={`select-${id}`}
-        value={props.filter ? props.filter : "TYPE"}
+        value={props.filter}
         className="filterbutton"
       >
         {props.options.map((t) => (

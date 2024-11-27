@@ -198,11 +198,13 @@ function App(props) {
         <FilterButton
           options={TYPES_NAMES}
           filter={typeFilter}
+          name="Type"
           setFilter={setTypeFilter}
         />
         <FilterButton
           options={GEN_NAMES}
           filter={genFilter}
+          name="Génération"
           setFilter={setGenFilter}
         />
         </div>
