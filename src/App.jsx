@@ -182,7 +182,7 @@ function App(props) {
       <p>&copy; 2024 <a style={{color: "whitesmoke"}} href="https://github.com/onyyyyx">Onyx</a>. Tous droits réservés.</p>
       <nav>
         <ul>
-          <li><a onClick={() => window.location.href = "/about"}>About</a></li>
+          <li><a onClick={() => window.location.href = "/about.html"}>About</a></li>
           {/* <li><a href="#">Lien 2</a></li>
           <li><a href="#">Lien 3</a></li> */}
         </ul>
