@@ -8,9 +8,10 @@ function App(props) {
   const pkmns = props.pokemons;
   const [detailedId, setDetailed] = useState(null);
   const [search, setSearch] = useState("");
-  const [filter, setFilter] = useState("Tous");
+  const [typeFilter, setTypeFilter] = useState("Tous");
+  const [genFilter, setGenFilter] = useState("Tous");
 
-  const FILTER_MAP = {
+  const TYPES_MAP = {
     Tous: () => true,
     ...Object.fromEntries(
       [
@@ -38,8 +39,21 @@ function App(props) {
       ])
     ),
   };
+  const TYPES_NAMES = Object.keys(TYPES_MAP);
 
-  const FILTER_NAMES = Object.keys(FILTER_MAP);
+  const GEN_MAP = {
+    Tous: () => true,
+    1: (pk) => pk.gen === "1",
+    2: (pk) => pk.gen === "2",
+    3: (pk) => pk.gen === "3",
+    4: (pk) => pk.gen === "4",
+    5: (pk) => pk.gen === "5",
+    6: (pk) => pk.gen === "6",
+    7: (pk) => pk.gen === "7",
+    8: (pk) => pk.gen === "8",
+    9: (pk) => pk.gen === "9",
+  };
+  const GEN_NAMES = Object.keys(GEN_MAP);
 
   function getDetailedTemplate(id) {
     try {
@@ -150,7 +164,8 @@ function App(props) {
 
   const pkmnList = pkmns
     .filter(searchFilter)
-    .filter(FILTER_MAP[filter])
+    .filter(TYPES_MAP[typeFilter])
+    .filter(GEN_MAP[genFilter])
     .map((pk) => (
       <Item
         key={pk.id}
@@ -179,11 +194,18 @@ function App(props) {
         ) : (
           ""
         )}
+        <div className="filterbuttons">
         <FilterButton
-          options={FILTER_NAMES}
-          filter={filter}
-          setFilter={setFilter}
+          options={TYPES_NAMES}
+          filter={typeFilter}
+          setFilter={setTypeFilter}
         />
+        <FilterButton
+          options={GEN_NAMES}
+          filter={genFilter}
+          setFilter={setGenFilter}
+        />
+        </div>
         <div className="carillion">{pkmnList}</div>
       </section>
       <footer class="footer">
