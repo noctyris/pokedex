@@ -1,4 +1,4 @@
-name,num,type1,type2,category,size,weight,gen
+name,num,type1,type2,category,weight,size,gen
 Bulbizarre,1,Plante,Poison,Graine,6.9,0.7,1
 Herbizarre,2,Plante,Poison,Graine,13,1,1
 Florizarre,3,Plante,Poison,Graine,100,2,1
