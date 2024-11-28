@@ -183,7 +183,7 @@ h1 {
 
 .detailed header {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   padding: 0 20px;
 }
@@ -245,6 +245,9 @@ h1 {
   gap: 30px;
   justify-content: center;
   align-content: center;
+}
+.detailed {
+  padding-top: 20px;
 }
 .dataitem #typeI {
   line-height: 3rem;
