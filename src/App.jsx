@@ -3,11 +3,13 @@ import Item from "./components/Item";
 import Search from "./components/Search";
 import { useState } from "react";
 import FilterButton from "./components/FilterButton";
+import AboutPage from "./components/AboutPage";
 
 function App(props) {
   const pkmns = props.pokemons;
   const [detailedId, setDetailed] = useState(null);
   const [search, setSearch] = useState("");
+  const [aboutView, setAboutView] = useState(false);
   const [typeFilter, setTypeFilter] = useState("Tous");
   const [genFilter, setGenFilter] = useState("Tous");
 
@@ -43,15 +45,15 @@ function App(props) {
 
   const GEN_MAP = {
     Tous: () => true,
-    "1": (pk) => pk.gen === "1",
-    "2": (pk) => pk.gen === "2",
-    "3": (pk) => pk.gen === "3",
-    "4": (pk) => pk.gen === "4",
-    "5": (pk) => pk.gen === "5",
-    "6": (pk) => pk.gen === "6",
-    "7": (pk) => pk.gen === "7",
-    "8": (pk) => pk.gen === "8",
-    "9": (pk) => pk.gen === "9",
+    1: (pk) => pk.gen === "1",
+    2: (pk) => pk.gen === "2",
+    3: (pk) => pk.gen === "3",
+    4: (pk) => pk.gen === "4",
+    5: (pk) => pk.gen === "5",
+    6: (pk) => pk.gen === "6",
+    7: (pk) => pk.gen === "7",
+    8: (pk) => pk.gen === "8",
+    9: (pk) => pk.gen === "9",
     Méga: (pk) => pk.gen.toLowerCase() === "méga",
     Gigamax: (pk) => pk.gen.toLowerCase() === "gigamax",
   };
@@ -141,15 +143,16 @@ function App(props) {
               <div className="dataitem">
                 <p>Génération</p>
                 <p>
-                  {
-                    (data.gen.match(/^\d+$/)===null) ? (
-                      // Méga / Gigamax
-                      <p>{data.gen}</p>
-                    ) : (
-                      // Normaux
-                      <p>{data.gen}<sup>e</sup> génération</p>
-                    )
-                  }
+                  {data.gen.match(/^\d+$/) === null ? (
+                    // Méga / Gigamax
+                    <p>{data.gen}</p>
+                  ) : (
+                    // Normaux
+                    <p>
+                      {data.gen}
+                      <sup>e</sup> génération
+                    </p>
+                  )}
                 </p>
               </div>
             </div>
@@ -204,18 +207,18 @@ function App(props) {
           ""
         )}
         <div className="filterbuttons">
-        <FilterButton
-          options={TYPES_NAMES}
-          filter={typeFilter}
-          name="Type"
-          setFilter={setTypeFilter}
-        />
-        <FilterButton
-          options={GEN_NAMES}
-          filter={genFilter}
-          name="Génération"
-          setFilter={setGenFilter}
-        />
+          <FilterButton
+            options={TYPES_NAMES}
+            filter={typeFilter}
+            name="Type"
+            setFilter={setTypeFilter}
+          />
+          <FilterButton
+            options={GEN_NAMES}
+            filter={genFilter}
+            name="Génération"
+            setFilter={setGenFilter}
+          />
         </div>
         <div className="carillion">{pkmnList}</div>
       </section>
@@ -230,9 +233,7 @@ function App(props) {
         <nav>
           <ul>
             <li>
-              <a onClick={() => (window.location.href = "/about.html")}>
-                About
-              </a>
+              <a onClick={() => setAboutView(true)}>About</a>
             </li>
           </ul>
         </nav>
@@ -242,7 +243,13 @@ function App(props) {
 
   const detailedTemplate = getDetailedTemplate({ detailedId });
 
-  return detailedId ? detailedTemplate : homeTemplate;
+  if (detailedId) {
+    return detailedTemplate;
+  } else if (aboutView) {
+    return <AboutPage quit={setAboutView} />;
+  } else {
+    return homeTemplate;
+  }
 }
 
 export default App;
