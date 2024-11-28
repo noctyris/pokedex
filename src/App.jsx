@@ -43,15 +43,15 @@ function App(props) {
 
   const GEN_MAP = {
     Tous: () => true,
-    1: (pk) => pk.gen === "1",
-    2: (pk) => pk.gen === "2",
-    3: (pk) => pk.gen === "3",
-    4: (pk) => pk.gen === "4",
-    5: (pk) => pk.gen === "5",
-    6: (pk) => pk.gen === "6",
-    7: (pk) => pk.gen === "7",
-    8: (pk) => pk.gen === "8",
-    9: (pk) => pk.gen === "9",
+    "1": (pk) => pk.gen === "1",
+    "2": (pk) => pk.gen === "2",
+    "3": (pk) => pk.gen === "3",
+    "4": (pk) => pk.gen === "4",
+    "5": (pk) => pk.gen === "5",
+    "6": (pk) => pk.gen === "6",
+    "7": (pk) => pk.gen === "7",
+    "8": (pk) => pk.gen === "8",
+    "9": (pk) => pk.gen === "9",
   };
   const GEN_NAMES = Object.keys(GEN_MAP);
 
