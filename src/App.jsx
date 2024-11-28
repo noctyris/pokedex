@@ -8,9 +8,10 @@ function App(props) {
   const pkmns = props.pokemons;
   const [detailedId, setDetailed] = useState(null);
   const [search, setSearch] = useState("");
-  const [filter, setFilter] = useState("Tous");
+  const [typeFilter, setTypeFilter] = useState("Tous");
+  const [genFilter, setGenFilter] = useState("Tous");
 
-  const FILTER_MAP = {
+  const TYPES_MAP = {
     Tous: () => true,
     ...Object.fromEntries(
       [
@@ -38,8 +39,23 @@ function App(props) {
       ])
     ),
   };
+  const TYPES_NAMES = Object.keys(TYPES_MAP);
 
-  const FILTER_NAMES = Object.keys(FILTER_MAP);
+  const GEN_MAP = {
+    Tous: () => true,
+    "1": (pk) => pk.gen === "1",
+    "2": (pk) => pk.gen === "2",
+    "3": (pk) => pk.gen === "3",
+    "4": (pk) => pk.gen === "4",
+    "5": (pk) => pk.gen === "5",
+    "6": (pk) => pk.gen === "6",
+    "7": (pk) => pk.gen === "7",
+    "8": (pk) => pk.gen === "8",
+    "9": (pk) => pk.gen === "9",
+    Méga: (pk) => pk.gen.toLowerCase() === "méga",
+    Gigamax: (pk) => pk.gen.toLowerCase() === "gigamax",
+  };
+  const GEN_NAMES = Object.keys(GEN_MAP);
 
   function getDetailedTemplate(id) {
     try {
@@ -73,22 +89,42 @@ function App(props) {
                 <p>Pokémon {data.category}</p>
               </div>
               <div className="dataitem">
-                <p>
+                <p className="type">
                   Type {data.types[0] !== "" ? "principal" : ""} :
                   <img
-                    id="type"
+                    id="typeI"
                     src={"/types/" + data.types[0].toLowerCase() + ".svg"}
                   />
+                  <p
+                    style={{
+                      backgroundColor:
+                        "rgba(var(--" + data.types[0].toLowerCase() + "), .8)",
+                    }}
+                    id="typeT"
+                  >
+                    {data.types[0]}
+                  </p>
                 </p>
               </div>
               {data.types[1] !== "" ? (
                 <div className="dataitem">
-                  <p>
+                  <p className="type">
                     Type secondaire :
                     <img
                       src={"/types/" + data.types[1].toLowerCase() + ".svg"}
-                      id="type"
+                      id="typeI"
                     />
+                    <p
+                      style={{
+                        backgroundColor:
+                          "rgba(var(--" +
+                          data.types[1].toLowerCase() +
+                          "), .8)",
+                      }}
+                      id="typeT"
+                    >
+                      {data.types[1]}
+                    </p>
                   </p>
                 </div>
               ) : (
@@ -101,6 +137,20 @@ function App(props) {
               <div className="dataitem">
                 <p>Taille :</p>
                 <p id="num">{data.size ? data.size + "m" : "?"}</p>
+              </div>
+              <div className="dataitem">
+                <p>Génération</p>
+                <p>
+                  {
+                    (data.gen.match(/^\d+$/)===null) ? (
+                      // Méga / Gigamax
+                      <p>{data.gen}</p>
+                    ) : (
+                      // Normaux
+                      <p>{data.gen}<sup>e</sup> génération</p>
+                    )
+                  }
+                </p>
               </div>
             </div>
           </main>
@@ -119,19 +169,12 @@ function App(props) {
   }
 
   const searchFilter = (pk) =>
-    pk.name
-      .toLowerCase()
-      .split("")
-      .map((t) => {
-        if (t.includes(search.toLowerCase())) {
-          return true;
-        }
-        return false;
-      });
+    pk.name.toLowerCase().includes(search.toLowerCase());
 
   const pkmnList = pkmns
     .filter(searchFilter)
-    .filter(FILTER_MAP[filter])
+    .filter(TYPES_MAP[typeFilter])
+    .filter(GEN_MAP[genFilter])
     .map((pk) => (
       <Item
         key={pk.id}
@@ -146,21 +189,54 @@ function App(props) {
 
   const homeTemplate = (
     <div className="subroot">
-      <h1>
-        P<img src="/favicon.svg" id="pokeh1" />
-        kedex
-      </h1>
-      <Search setSearch={setSearch} search={search} />
-      {search ? (
-        <div id="resultscounter">
-          {pkmnList.length ? pkmnList.length : "Aucun"} résultat
-          {pkmnList.length === 2 ? "" : "s"}
+      <section>
+        <h1>
+          P<img src="/favicon.svg" id="pokeh1" />
+          kedex
+        </h1>
+        <Search setSearch={setSearch} search={search} />
+        {search ? (
+          <div id="resultscounter">
+            {pkmnList.length ? pkmnList.length : "Aucun"} résultat
+            {pkmnList.length === 2 ? "" : "s"}
+          </div>
+        ) : (
+          ""
+        )}
+        <div className="filterbuttons">
+        <FilterButton
+          options={TYPES_NAMES}
+          filter={typeFilter}
+          name="Type"
+          setFilter={setTypeFilter}
+        />
+        <FilterButton
+          options={GEN_NAMES}
+          filter={genFilter}
+          name="Génération"
+          setFilter={setGenFilter}
+        />
         </div>
-      ) : (
-        ""
-      )}
-      <FilterButton options={FILTER_NAMES} filter={filter} setFilter={setFilter} />
-      <div className="carillion">{pkmnList}</div>
+        <div className="carillion">{pkmnList}</div>
+      </section>
+      <footer className="footer">
+        <p>
+          &copy; 2024{" "}
+          <a style={{ color: "whitesmoke" }} href="https://github.com/onyyyyx">
+            Onyx
+          </a>
+          . Tous droits réservés.
+        </p>
+        <nav>
+          <ul>
+            <li>
+              <a onClick={() => (window.location.href = "/about.html")}>
+                About
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
     </div>
   );
 
