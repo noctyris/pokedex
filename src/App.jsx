@@ -79,63 +79,66 @@ function App(props) {
       />
     ));
 
-  const homeTemplate = (
-    <div className="subroot">
-      <section>
-        <h1>
-          P<img src="/favicon.svg" id="pokeh1" />
-          kedex
-        </h1>
-        <Search setSearch={setSearch} search={search} />
-        {search ? (
-          <div id="resultscounter">
-            {pkmnList.length ? pkmnList.length : "Aucun"} résultat
-            {pkmnList.length === 2 ? "" : "s"}
-          </div>
-        ) : (
-          ""
-        )}
-        <div className="filterbuttons">
-          <FilterButton
-            options={TYPES_NAMES}
-            filter={typeFilter}
-            name="Type"
-            setFilter={setTypeFilter}
-          />
-          <FilterButton
-            options={GEN_NAMES}
-            filter={genFilter}
-            name="Génération"
-            setFilter={setGenFilter}
-          />
-        </div>
-        <div className="carillion">{pkmnList}</div>
-      </section>
-      <footer className="footer">
-        <p>
-          &copy; 2024{" "}
-          <a style={{ color: "whitesmoke" }} href="https://github.com/onyyyyx">
-            Onyx
-          </a>
-          . Tous droits réservés.
-        </p>
-        <nav>
-          <ul>
-            <li>
-              <a onClick={() => setAboutView(true)}>About</a>
-            </li>
-          </ul>
-        </nav>
-      </footer>
-    </div>
-  );
-
   if (detailedId) {
-    return <DetailedPage id={detailedId} pkmns={pkmns} setDetailed={setDetailed} />;
+    return (
+      <DetailedPage setTypeFilter={setTypeFilter} id={detailedId} pkmns={pkmns} setDetailed={setDetailed} />
+    );
   } else if (aboutView) {
     return <AboutPage quit={setAboutView} />;
   } else {
-    return homeTemplate;
+    return (
+      <div className="subroot">
+        <section>
+          <h1>
+            P<img src="/favicon.svg" id="pokeh1" />
+            kedex
+          </h1>
+          <Search setSearch={setSearch} search={search} />
+          {search ? (
+            <div id="resultscounter">
+              {pkmnList.length ? pkmnList.length : "Aucun"} résultat
+              {pkmnList.length === 2 ? "" : "s"}
+            </div>
+          ) : (
+            ""
+          )}
+          <div className="filterbuttons">
+            <FilterButton
+              options={TYPES_NAMES}
+              filter={typeFilter}
+              name="Type"
+              setFilter={setTypeFilter}
+            />
+            <FilterButton
+              options={GEN_NAMES}
+              filter={genFilter}
+              name="Génération"
+              setFilter={setGenFilter}
+            />
+          </div>
+          <div className="carillion">{pkmnList}</div>
+        </section>
+        <footer className="footer">
+          <p>
+            &copy; 2024{" "}
+            <a
+              style={{ color: "whitesmoke" }}
+              href="https://github.com/onyyyyx"
+            >
+              Onyx
+            </a>
+            . Tous droits réservés.
+          </p>
+          <nav>
+            <ul>
+              <li>
+                <a onClick={() => setAboutView(true)}>About</a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+      </div>
+    );
   }
 }
 
