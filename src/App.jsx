@@ -52,6 +52,8 @@ function App(props) {
     "7": (pk) => pk.gen === "7",
     "8": (pk) => pk.gen === "8",
     "9": (pk) => pk.gen === "9",
+    Méga: (pk) => pk.gen.toLowerCase() === "méga",
+    Gigamax: (pk) => pk.gen.toLowerCase() === "gigamax",
   };
   const GEN_NAMES = Object.keys(GEN_MAP);
 
