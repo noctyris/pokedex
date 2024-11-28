@@ -2,31 +2,31 @@ name,num,type1,type2,category,weight,size,gen
 Bulbizarre,1,Plante,Poison,Graine,6.9,0.7,1
 Herbizarre,2,Plante,Poison,Graine,13,1,1
 Florizarre,3,Plante,Poison,Graine,100,2,1
-Méga-Florizarre,3,Plante,Poison,Graine,155.5,2.4,1
-Florizarre Gigamax,3,Plante,Poison,Graine,,+ 24,1
+Méga-Florizarre,3,Plante,Poison,Graine,155.5,2.4,Méga
+Florizarre Gigamax,3,Plante,Poison,Graine,,+ 24,Gigamax
 Salamèche,4,Feu,,Lézard,8.5,0.6,1
 Reptincel,5,Feu,,Flamme,19,1.1,1
 Dracaufeu,6,Feu,Vol,Flamme,90.5,1.7,1
-Méga-Dracaufeu X,6,Feu,Dragon,Flamme,110.5,1.7,1
-Méga-Dracaufeu Y,6,Feu,Vol,Flamme,100.5,1.7,1
-Dracaufeu Gigamax,6,Feu,Vol,Flamme,,+ 28,1
+Méga-Dracaufeu X,6,Feu,Dragon,Flamme,110.5,1.7,Méga
+Méga-Dracaufeu Y,6,Feu,Vol,Flamme,100.5,1.7,Méga
+Dracaufeu Gigamax,6,Feu,Vol,Flamme,,+ 28,Gigamax
 Carapuce,7,Eau,,Minitortue,9,0.5,1
 Carabaffe,8,Eau,,Tortue,22.5,1,1
 Tortank,9,Eau,,Carapace,85.5,1.6,1
-Méga-Tortank,9,Eau,,Carapace,101.1,1.6,1
-Tortank Gigamax,9,Eau,,Carapace,,+ 25,1
+Méga-Tortank,9,Eau,,Carapace,101.1,1.6,Méga
+Tortank Gigamax,9,Eau,,Carapace,,+ 25,Gigamax
 Chenipan,10,Insecte,,Ver,2.9,0.3,1
 Chrysacier,11,Insecte,,Cocon,9.9,0.7,1
 Papilusion,12,Insecte,Vol,Papillon,32,1.1,1
-Papilusion Gigamax,12,Insecte,Vol,Papillon,,+ 17,1
+Papilusion Gigamax,12,Insecte,Vol,Papillon,,+ 17,Gigamax
 Aspicot,13,Insecte,Poison,Insectopic,3.2,0.3,1
 Coconfort,14,Insecte,Poison,Cocon,10,0.6,1
 Dardargnan,15,Insecte,Poison,Guêpoison,29.5,1,1
-Méga-Dardargnan,15,Insecte,Poison,Guêpoison,40.5,1.4,1
+Méga-Dardargnan,15,Insecte,Poison,Guêpoison,40.5,1.4,Méga
 Roucool,16,Normal,Vol,Minoiseau,1.8,0.3,1
 Roucoups,17,Normal,Vol,Oiseau,30,1.1,1
 Roucarnage,18,Normal,Vol,Oiseau,39.5,1.5,1
-Méga-Roucarnage,18,Normal,Vol,Oiseau,50.5,2.2,1
+Méga-Roucarnage,18,Normal,Vol,Oiseau,50.5,2.2,Méga
 Rattata,19,Normal,,Souris,3.5,0.3,1
 Rattata d'Alola,19,Ténèbres,Normal,Souris,3.8,0.3,7
 Rattatac,20,Normal,,Souris,18.5,0.7,1
@@ -36,7 +36,7 @@ Rapasdepic,22,Normal,Vol,Bec-Oiseau,38,1.2,1
 Abo,23,Poison,,Serpent,6.9,2,1
 Arbok,24,Poison,,Cobra,65,3.5,1
 Pikachu,25,Électrik,,Souris,6,0.4,1
-Pikachu Gigamax,25,Électrik,,Souris,,+ 21,1
+Pikachu Gigamax,25,Électrik,,Souris,,+ 21,Gigamax
 Raichu,26,Électrik,,Souris,30,0.8,1
 Raichu d'Alola,26,Électrik,Psy,Souris,21,0.7,7
 Sabelette,27,Sol,,Souris,12,0.6,1

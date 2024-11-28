@@ -139,8 +139,15 @@ function App(props) {
               <div className="dataitem">
                 <p>Génération</p>
                 <p>
-                  {data.gen}
-                  <sup>e</sup> génération
+                  {
+                    (data.gen.match(/^\d+$/)===null) ? (
+                      // Méga / Gigamax
+                      <p>{data.gen}</p>
+                    ) : (
+                      // Normaux
+                      <p>{data.gen}<sup>e</sup> génération</p>
+                    )
+                  }
                 </p>
               </div>
             </div>
@@ -210,7 +217,7 @@ function App(props) {
         </div>
         <div className="carillion">{pkmnList}</div>
       </section>
-      <footer class="footer">
+      <footer className="footer">
         <p>
           &copy; 2024{" "}
           <a style={{ color: "whitesmoke" }} href="https://github.com/onyyyyx">
