@@ -4,6 +4,7 @@ import Search from "./components/Search";
 import { useState } from "react";
 import FilterButton from "./components/FilterButton";
 import AboutPage from "./components/AboutPage";
+import DetailedPage from "./components/DetailedPage";
 
 function App(props) {
   const pkmns = props.pokemons;
@@ -58,118 +59,6 @@ function App(props) {
     Gigamax: (pk) => pk.gen.toLowerCase() === "gigamax",
   };
   const GEN_NAMES = Object.keys(GEN_MAP);
-
-  function getDetailedTemplate(id) {
-    try {
-      let data = {};
-      pkmns.forEach((pk) => {
-        if (id.detailedId === pk.id) {
-          data = pk;
-        }
-      });
-
-      const imagesList = [data.location, ...data.images].map((im) => (
-        <img id="main" src={"/imagesp/" + im} key={nanoid()} />
-      ));
-
-      return (
-        <div key={data.id} className="detailed subroot">
-          <header>
-            <h1>{data.name}</h1>
-            <p onClick={() => setDetailed(false)}>&#x2715;</p>
-          </header>
-          <main>
-            {imagesList}
-
-            <div className="datafield">
-              <div className="dataitem">
-                <p>Numéro :</p>
-                <p id="num">{data.num}</p>
-              </div>
-              <div className="dataitem">
-                <p>Catégorie :</p>
-                <p>Pokémon {data.category}</p>
-              </div>
-              <div className="dataitem">
-                <p className="type">
-                  Type {data.types[0] !== "" ? "principal" : ""} :
-                  <img
-                    id="typeI"
-                    src={"/types/" + data.types[0].toLowerCase() + ".svg"}
-                  />
-                  <p
-                    style={{
-                      backgroundColor:
-                        "rgba(var(--" + data.types[0].toLowerCase() + "), .8)",
-                    }}
-                    id="typeT"
-                  >
-                    {data.types[0]}
-                  </p>
-                </p>
-              </div>
-              {data.types[1] !== "" ? (
-                <div className="dataitem">
-                  <p className="type">
-                    Type secondaire :
-                    <img
-                      src={"/types/" + data.types[1].toLowerCase() + ".svg"}
-                      id="typeI"
-                    />
-                    <p
-                      style={{
-                        backgroundColor:
-                          "rgba(var(--" +
-                          data.types[1].toLowerCase() +
-                          "), .8)",
-                      }}
-                      id="typeT"
-                    >
-                      {data.types[1]}
-                    </p>
-                  </p>
-                </div>
-              ) : (
-                ""
-              )}
-              <div className="dataitem">
-                <p>Poids :</p>
-                <p id="num">{data.weight ? data.weight + "kg" : "?"}</p>
-              </div>
-              <div className="dataitem">
-                <p>Taille :</p>
-                <p id="num">{data.size ? data.size + "m" : "?"}</p>
-              </div>
-              <div className="dataitem">
-                <p>Génération</p>
-                <p>
-                  {data.gen.match(/^\d+$/) === null ? (
-                    // Méga / Gigamax
-                    <p>{data.gen}</p>
-                  ) : (
-                    // Normaux
-                    <p>
-                      {data.gen}
-                      <sup>e</sup> génération
-                    </p>
-                  )}
-                </p>
-              </div>
-            </div>
-          </main>
-        </div>
-      );
-    } catch (TypeError) {
-      return (
-        <div className="detailed subroot">
-          <header>
-            <h1>Rien ici...</h1>
-            <p onClick={() => setDetailed(false)}>&#x2715;</p>
-          </header>
-        </div>
-      );
-    }
-  }
 
   const searchFilter = (pk) =>
     pk.name.toLowerCase().includes(search.toLowerCase());
@@ -241,10 +130,8 @@ function App(props) {
     </div>
   );
 
-  const detailedTemplate = getDetailedTemplate({ detailedId });
-
   if (detailedId) {
-    return detailedTemplate;
+    return <DetailedPage id={detailedId} pkmns={pkmns} setDetailed={setDetailed} />;
   } else if (aboutView) {
     return <AboutPage quit={setAboutView} />;
   } else {
