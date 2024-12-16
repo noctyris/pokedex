@@ -8,7 +8,7 @@ function AboutPage(props) {
           Développement
           <br />
           <br />
-          <a href="https://github.com/onyyyyx">Onyx</a>
+          <a href="https://github.com/noctyris">Noctyris</a>
         </div>
         <div className="dataA">
           Recherche
