@@ -279,10 +279,7 @@ h1 {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: greenyellow;
-}
-.filterbuttons:not([data-scroll="0"]) {
-  background-color: red;
+
 }
 
 .filterbutton {
