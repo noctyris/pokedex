@@ -92,7 +92,7 @@ function DetailedPage(props) {
             <p id="num">{data.size ? data.size + "m" : "?"}</p>
           </div>
           <div className="dataitem">
-            <p>Génération</p>
+            <p>Génération :</p>
             <p>
               {data.gen.match(/^\d+$/) === null ? (
                 // Méga / Gigamax
