@@ -13,6 +13,26 @@
       href="https://fonts.googleapis.com/css?family=Kode+Mono"
       rel="stylesheet"
     />
+    <script type="text/javascript">
+      const debounce = (fn) => {
+        let frame;
+        return (...params) => {
+          if (frame) {
+            cancelAnimationFrame(frame);
+          }
+          frame = requestAnimationFrame(() => {
+            fn(...params);
+          });
+        };
+      };
+      const storeScroll = () => {
+        document.documentElement.dataset.scroll = window.scrollY;
+      };
+      document.addEventListener("scroll", debounce(storeScroll), {
+        passive: true,
+      });
+      storeScroll();
+    </script>
   </head>
   <body>
     <div id="root" class="root"></div>

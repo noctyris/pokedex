@@ -81,14 +81,19 @@ function App(props) {
 
   if (detailedId) {
     return (
-      <DetailedPage setTypeFilter={setTypeFilter} id={detailedId} pkmns={pkmns} setDetailed={setDetailed} />
+      <DetailedPage
+        setTypeFilter={setTypeFilter}
+        id={detailedId}
+        pkmns={pkmns}
+        setDetailed={setDetailed}
+      />
     );
   } else if (aboutView) {
     return <AboutPage quit={setAboutView} />;
   } else {
     return (
       <>
-        <section>
+        <header className="home">
           <h1>
             P<img src="/favicon.svg" id="pokeh1" />
             kedex
@@ -116,9 +121,9 @@ function App(props) {
               setFilter={setGenFilter}
             />
           </div>
-          <div className="carillion">{pkmnList}</div>
-        </section>
-        <footer className="footer">
+        </header>
+        <div className="carillion">{pkmnList}</div>
+        <footer>
           <p>
             &copy; 2024{" "}
             <a

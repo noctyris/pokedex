@@ -16,7 +16,7 @@ function Item(props) {
         <div className="item-in" id="itemTitle">
           {props.name}
         </div>
-        <div id="itemId">{"N°" + props.num}</div>
+        <div id="num">{"N°" + props.num}</div>
         <img
           src={"/imagesp/" + props.location}
           alt={"Image of " + props.name}
