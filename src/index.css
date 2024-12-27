@@ -1,22 +1,22 @@
 :root {
-  --acier: 79, 79, 79;
-  --combat: 255, 129, 0;
-  --dragon: 79, 96, 226;
-  --eau: 36, 129, 239;
-  --électrik: 250, 193, 2;
-  --fée: 239, 113, 239;
-  --feu: 231, 35, 36;
-  --glace: 61, 215, 255;
-  --insecte: 146, 163, 18;
-  --normal: 160, 163, 160;
-  --plante: 61, 163, 36;
-  --poison: 146, 63, 204;
-  --psy: 239, 63, 122;
-  --roche: 177, 171, 130;
-  --sol: 145, 81, 33;
-  --spectre: 112, 65, 112;
-  --ténèbres: 80, 65, 63;
-  --vol: 130, 186, 239;
+  --acier: 86, 149, 163;
+  --combat: 211, 66, 95;
+  --dragon: 12, 105, 200;
+  --eau: 83, 157, 223;
+  --électrik: 242, 217, 78;
+  --fée: 238, 144, 230;
+  --feu: 251, 165, 76;
+  --glace: 117, 208, 193;
+  --insecte: 146, 188, 44;
+  --normal: 160, 162, 159;
+  --plante: 95, 189, 88;
+  --poison: 183, 99, 207;
+  --psy: 250, 133, 129;
+  --roche: 201, 187, 138;
+  --sol: 218, 124, 77;
+  --spectre: 95, 109, 188;
+  --ténèbres: 89, 87, 97;
+  --vol: 161, 187, 236;
 }
 
 html {
@@ -228,6 +228,24 @@ html {
       .type:hover {
         filter: saturate(200%);
         transform: scale(1.1);
+      }
+      .tIcon {
+        border-radius: 100%;
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        transition: 200ms all;
+        img {
+          height: 60%;
+          width: 60%;
+          margin: 20%;
+          margin-top: -2.5%;
+      }
+      }
+      .tIcon:hover {
+        filter: saturate(200%);
+        transform: scale(1.1);
+        cursor: pointer;
       }
       header {
         display: flex;

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { nanoid } from "nanoid";
 
 function DetailedPage(props) {
@@ -11,6 +12,27 @@ function DetailedPage(props) {
   const imagesList = [data.location, ...data.images].map((im) => (
     <img id="main" src={"/imagesp/" + im} key={nanoid()} />
   ));
+
+  // Fonction pour créer les tIcon avec effet hover
+  const TIcon = ({ type }) => {
+    const [isHovered, setIsHovered] = useState(false);
+    const typeColor = `rgb(var(--${type.toLowerCase()}))`;
+
+    return (
+      <div
+        className="tIcon"
+        style={{
+          backgroundColor: typeColor,
+          boxShadow: isHovered ? `0 0 20px ${typeColor}` : "none",
+          transition: "box-shadow 0.3s ease",
+        }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <img id="typeI" src={`/types/${type.toLowerCase()}.svg`} />
+      </div>
+    );
+  };
 
   return (
     <div key={data.id} className="detailed">
@@ -39,15 +61,11 @@ function DetailedPage(props) {
           >
             <p className="type">
               Type {data.types[0] !== "" ? "principal" : ""} :
-              <img
-                id="typeI"
-                src={"/types/" + data.types[0].toLowerCase() + ".svg"}
-              />
             </p>
+            <TIcon type={data.types[0]} />
             <p
               style={{
-                backgroundColor:
-                  "rgba(var(--" + data.types[0].toLowerCase() + "), .8)",
+                backgroundColor: `rgb(var(--${data.types[0].toLowerCase()}))`,
               }}
               id="typeT"
             >
@@ -62,17 +80,11 @@ function DetailedPage(props) {
                 props.setDetailed(false);
               }}
             >
-              <p className="type">
-                Type secondaire :
-                <img
-                  src={"/types/" + data.types[1].toLowerCase() + ".svg"}
-                  id="typeI"
-                />
-              </p>
+              <p className="type">Type secondaire :</p>
+              <TIcon type={data.types[1]} />
               <p
                 style={{
-                  backgroundColor:
-                    "rgba(var(--" + data.types[1].toLowerCase() + "), .8)",
+                  backgroundColor: `rgba(var(--${data.types[1].toLowerCase()}), .8)`,
                 }}
                 id="typeT"
               >
