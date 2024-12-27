@@ -1,7 +1,6 @@
 import { nanoid } from "nanoid";
 
 function DetailedPage(props) {
-  // try {
   let data = {};
   props.pkmns.forEach((pk) => {
     if (props.id === pk.id) {
@@ -14,7 +13,7 @@ function DetailedPage(props) {
   ));
 
   return (
-    <div key={data.id} className="detailed subroot">
+    <div key={data.id} className="detailed">
       <header>
         <h1>{data.name}</h1>
         <p onClick={() => props.setDetailed(false)}>&#x2715;</p>
@@ -44,15 +43,15 @@ function DetailedPage(props) {
                 id="typeI"
                 src={"/types/" + data.types[0].toLowerCase() + ".svg"}
               />
-              <p
-                style={{
-                  backgroundColor:
-                    "rgba(var(--" + data.types[0].toLowerCase() + "), .8)",
-                }}
-                id="typeT"
-              >
-                {data.types[0]}
-              </p>
+            </p>
+            <p
+              style={{
+                backgroundColor:
+                  "rgba(var(--" + data.types[0].toLowerCase() + "), .8)",
+              }}
+              id="typeT"
+            >
+              {data.types[0]}
             </p>
           </div>
           {data.types[1] !== "" ? (
@@ -69,15 +68,15 @@ function DetailedPage(props) {
                   src={"/types/" + data.types[1].toLowerCase() + ".svg"}
                   id="typeI"
                 />
-                <p
-                  style={{
-                    backgroundColor:
-                      "rgba(var(--" + data.types[1].toLowerCase() + "), .8)",
-                  }}
-                  id="typeT"
-                >
-                  {data.types[1]}
-                </p>
+              </p>
+              <p
+                style={{
+                  backgroundColor:
+                    "rgba(var(--" + data.types[1].toLowerCase() + "), .8)",
+                }}
+                id="typeT"
+              >
+                {data.types[1]}
               </p>
             </div>
           ) : (
@@ -93,7 +92,7 @@ function DetailedPage(props) {
           </div>
           <div className="dataitem">
             <p>Génération :</p>
-            <p>
+            <div>
               {data.gen.match(/^\d+$/) === null ? (
                 // Méga / Gigamax
                 <p>{data.gen}</p>
@@ -104,22 +103,12 @@ function DetailedPage(props) {
                   <sup>e</sup> génération
                 </p>
               )}
-            </p>
+            </div>
           </div>
         </div>
       </main>
     </div>
   );
-  // } catch (TypeError) {
-  //   return (
-  //     <div className="detailed subroot">
-  //       <header>
-  //         <h1>Rien ici...</h1>
-  //         <p onClick={() => props.setDetailed(false)}>&#x2715;</p>
-  //       </header>
-  //     </div>
-  //   );
-  // }
 }
 
 export default DetailedPage;

@@ -87,7 +87,7 @@ function App(props) {
     return <AboutPage quit={setAboutView} />;
   } else {
     return (
-      <div className="subroot">
+      <>
         <section>
           <h1>
             P<img src="/favicon.svg" id="pokeh1" />
@@ -137,7 +137,7 @@ function App(props) {
             </ul>
           </nav>
         </footer>
-      </div>
+      </>
     );
   }
 }
