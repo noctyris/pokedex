@@ -226,7 +226,8 @@ html {
         transition: 0.75s cubic-bezier(0.68, 0, 0.265, 1.55);
       }
       .type:hover {
-        filter: drop-shadow(0 0 10px black);
+        filter: saturate(200%);
+        transform: scale(1.1);
       }
       header {
         display: flex;
