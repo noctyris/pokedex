@@ -52,6 +52,7 @@ html {
     text-align: center;
     header {
       padding: 20px;
+      transition: all 0.5s;
       h1 {
         font-weight: bold;
         font-family: "Kode Mono";
@@ -66,60 +67,66 @@ html {
           transform: rotateZ(360deg) scale(2.5);
         }
       }
-      .search {
+      .searchParent {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-      .inputbox {
-        position: relative;
-        width: 196px;
-        input {
+        flex-direction: column;
+        margin-top: -50px;
+        .search {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+        .inputbox {
           position: relative;
-          width: 100%;
-          padding: 20px 10px 10px;
-          background: transparent;
-          outline: none;
-          box-shadow: none;
-          border: none;
-          color: #23242a;
-          font-size: 1em;
-          letter-spacing: 0.05em;
-          transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-          z-index: 10;
-        }
-        span {
-          position: absolute;
-          left: 0;
-          padding: 20px 10px 10px;
-          font-size: 1em;
-          color: #b0b0b0;
-          letter-spacing: 00.05em;
-          transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-          pointer-events: none;
-        }
-        input:valid ~ span,
-        input:focus ~ span {
-          color: #ffffff;
-          transform: translateX(-10px) translateY(-34px);
-          font-size: 0, 75em;
-        }
-        input:valid ~ i,
-        input:focus ~ i {
-          height: 44px;
-        }
-        i {
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          height: 2px;
-          background: #ffffff;
-          border-radius: 4px;
-          transition: 0.5s;
-          pointer-events: none;
-          z-index: 9;
+          margin-top: 20px;
+          width: 196px;
+          input {
+            position: relative;
+            width: 100%;
+            padding: 20px 10px 10px;
+            background: transparent;
+            outline: none;
+            box-shadow: none;
+            border: none;
+            color: #23242a;
+            font-size: 1em;
+            letter-spacing: 0.05em;
+            transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            z-index: 10;
+          }
+          span {
+            position: absolute;
+            left: 0;
+            padding: 20px 10px 10px;
+            font-size: 1em;
+            color: #b0b0b0;
+            letter-spacing: 00.05em;
+            transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            pointer-events: none;
+          }
+          input:valid ~ span,
+          input:focus ~ span {
+            color: #ffffff;
+            transform: translateX(-10px) translateY(-34px);
+            font-size: 0, 75em;
+          }
+          input:valid ~ i,
+          input:focus ~ i {
+            height: 44px;
+          }
+          i {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: #ffffff;
+            border-radius: 4px;
+            transition: 0.5s;
+            pointer-events: none;
+            z-index: 9;
+          }
         }
       }
       .filterbuttons {
@@ -240,7 +247,7 @@ html {
           width: 60%;
           margin: 20%;
           margin-top: -2.5%;
-      }
+        }
       }
       .tIcon:hover {
         filter: saturate(200%);
@@ -422,5 +429,45 @@ html {
           -26px 52px 1px #dfdddc, -27px 54px 1px #e2e0df, -28px 56px 1px #e4e3e2;
       }
     }
+  }
+}
+
+html:not([data-scroll="0"]) {
+  header.home {
+    display: flex;
+    position: sticky;
+    inset: 0 0 auto 0;
+    z-index: 999;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    .filterbuttons {
+      width: 40%;
+      justify-content: space-between;
+      .filterbutton {
+        font-size: xx-small;
+      }
+    }
+    .searchParent {
+      margin-top: 10px;
+      .inputbox {
+        font-size: x-small;
+        width: fit-content;
+        input {
+          padding-top: 20px;
+        }
+        input:valid ~ i,
+        & input:focus ~ i {
+          height: 33px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width:700px) {
+    header.home {
+      visibility: hidden;
+    } 
   }
 }

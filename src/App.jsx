@@ -98,15 +98,17 @@ function App(props) {
             P<img src="/favicon.svg" id="pokeh1" />
             kedex
           </h1>
-          <Search setSearch={setSearch} search={search} />
-          {search ? (
-            <div id="resultscounter">
-              {pkmnList.length ? pkmnList.length : "Aucun"} résultat
-              {pkmnList.length === 2 ? "" : "s"}
-            </div>
-          ) : (
-            ""
-          )}
+          <div className="searchParent">
+            <Search setSearch={setSearch} search={search} />
+            {search ? (
+              <div id="resultscounter">
+                {pkmnList.length ? pkmnList.length : "Aucun"} résultat
+                {pkmnList.length === 2 ? "" : "s"}
+              </div>
+            ) : (
+              ""
+            )}
+          </div>
           <div className="filterbuttons">
             <FilterButton
               options={TYPES_NAMES}
