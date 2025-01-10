@@ -444,6 +444,7 @@ html:not([data-scroll="0"]) {
       flex-direction: row;
       background: rgba(0, 0, 0, 0.4);
       margin: 0;
+      backdrop-filter: blur(100xp);
       .filterbuttons {
         width: 40%;
         justify-content: space-between;
