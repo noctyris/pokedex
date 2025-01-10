@@ -81,27 +81,34 @@ function App(props) {
 
   if (detailedId) {
     return (
-      <DetailedPage setTypeFilter={setTypeFilter} id={detailedId} pkmns={pkmns} setDetailed={setDetailed} />
+      <DetailedPage
+        setTypeFilter={setTypeFilter}
+        id={detailedId}
+        pkmns={pkmns}
+        setDetailed={setDetailed}
+      />
     );
   } else if (aboutView) {
     return <AboutPage quit={setAboutView} />;
   } else {
     return (
-      <div className="subroot">
-        <section>
+      <>
+        <header className="home">
           <h1>
             P<img src="/favicon.svg" id="pokeh1" />
             kedex
           </h1>
-          <Search setSearch={setSearch} search={search} />
-          {search ? (
-            <div id="resultscounter">
-              {pkmnList.length ? pkmnList.length : "Aucun"} résultat
-              {pkmnList.length === 2 ? "" : "s"}
-            </div>
-          ) : (
-            ""
-          )}
+          <div className="searchParent">
+            <Search setSearch={setSearch} search={search} />
+            {search ? (
+              <div id="resultscounter">
+                {pkmnList.length ? pkmnList.length : "Aucun"} résultat
+                {pkmnList.length === 2 ? "" : "s"}
+              </div>
+            ) : (
+              ""
+            )}
+          </div>
           <div className="filterbuttons">
             <FilterButton
               options={TYPES_NAMES}
@@ -116,9 +123,9 @@ function App(props) {
               setFilter={setGenFilter}
             />
           </div>
-          <div className="carillion">{pkmnList}</div>
-        </section>
-        <footer className="footer">
+        </header>
+        <div className="carillion">{pkmnList}</div>
+        <footer>
           <p>
             &copy; 2024{" "}
             <a
@@ -137,7 +144,7 @@ function App(props) {
             </ul>
           </nav>
         </footer>
-      </div>
+      </>
     );
   }
 }

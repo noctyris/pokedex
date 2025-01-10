@@ -3,24 +3,24 @@ function AboutPage(props) {
     <div className="about">
       <h1>About</h1>
       <h2>Contributeurs</h2>
-      <div className="sectionA">
-        <div className="dataA">
+      <section>
+        <div className="data">
           Développement
           <br />
           <br />
           <a href="https://github.com/noctyris">Noctyris</a>
         </div>
-        <div className="dataA">
+        <div className="data">
           Recherche
           <br />
           <br />
           <a href="https://github.com/jf2-0">jf2-0</a>
         </div>
-      </div>
+      </section>
       <h2>Code</h2>
       <h3>Frameworks</h3>
-      <div className="sectionA">
-        <div className="dataA">
+      <section>
+        <div className="data">
           <img width="200px" src="/other/react.svg" />
           <p
             style={{
@@ -34,7 +34,7 @@ function AboutPage(props) {
             React
           </p>
         </div>
-        <div className="dataA">
+        <div className="data">
           <img width="200px" src="/other/vite-js.svg" />
           <p
             style={{
@@ -48,21 +48,21 @@ function AboutPage(props) {
             Vite.js
           </p>
         </div>
-      </div>
+      </section>
       <h2>Sources</h2>
       <h3>Images</h3>
-      <div className="sectionA">
-        <ul className="dataA">
+      <section>
+        <ul className="data">
           <li>À compléter</li>
         </ul>
-      </div>
+      </section>
       <h2>Images</h2>
-      <div className="sectionA">
-        <ul className="dataA">
+      <section>
+        <ul className="data">
           <li>À compléter</li>
         </ul>
-      </div>
-      <a id="quitA" onClick={() => props.quit(false)}>
+      </section>
+      <a id="quit" onClick={() => props.quit(false)}>
         &#x2715;
       </a>
     </div>
