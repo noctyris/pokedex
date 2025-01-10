@@ -1,29 +1,29 @@
 import urllib.request
-
+from urllib.parse import quote
+from colorama import Fore, Back, Style
 
 with open("imager-list.txt", "r") as f:
   for tmp in f.read().split("\n"):
-    name = ""
-    for i in tmp:
-      if i == " " in tmp and not "'" in tmp and not "♀" in tmp and not "♂" in tmp:
-        if "Méga" in tmp:
-          name+="-"
-        else:
-          name+="%20"        
-      elif "'" in tmp and i == " ": name+="_"
-      elif i == "é": name+="%C3%A9"
-      elif i == "♀": name+="%E2%99%80"
-      elif i == "♂": name+="%E2%99%82"
-      else: name+=i
-    print(name)
-    page=urllib.request.urlopen(f"https://www.pokepedia.fr/{name}").read().decode("utf8").split("\n")
-    for i in page:
+    name = tmp
+
+    if "'" in name: name = name.replace(" ", "_")
+    elif "♀" in name or "♂" in name: name = name.replace(" ", "")
+    elif "Méga" in name:
+      divided = name.split(" ")
+      divided[0]+="-"
+      divided[1]+="_"
+      name = "".join(divided)
+    name=quote(name)
+
+    for i in urllib.request.urlopen(f"https://www.pokepedia.fr/{name}").read().decode("utf8").split("\n"):
       if "2x" in i:
         line = i
         break
     
     url = "http://www.pokepedia.fr" + line.split("img src=\"")[1].split("\"")[0]
-    print(url)
-    print(f"public/imagesp/{name.lower()}.png\n\n")
+    destination = f"images/{tmp.lower()}.png"
+    
+    print(f"\n{Fore.BLUE + tmp}{Style.RESET_ALL + " "*(20-len(tmp))}->\t{Fore.GREEN + url + Fore.YELLOW}\n└── ", end="")
+    print(destination)
 
-    urllib.request.urlretrieve(url, f"public/imagesp/{tmp.lower()}.png")
+    urllib.request.urlretrieve(url, destination)
