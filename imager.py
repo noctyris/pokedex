@@ -1,29 +1,40 @@
 import urllib.request
 from urllib.parse import quote
-from colorama import Fore, Back, Style
 
-with open("imager-list.txt", "r") as f:
-  for tmp in f.read().split("\n"):
-    name = tmp
+with open("imager-list.txt", "r", encoding="utf-8") as f:
+    for tmp in f.read().splitlines():
+        name = tmp
 
-    if "'" in name: name = name.replace(" ", "_")
-    elif "♀" in name or "♂" in name: name = name.replace(" ", "")
-    elif "Méga" in name:
-      divided = name.split(" ")
-      divided[0]+="-"
-      divided[1]+="_"
-      name = "".join(divided)
-    name=quote(name)
+        # Appliquer les transformations spécifiques
+        if "'" in name: 
+            name = name.replace(" ", "_")
+        elif "♀" in name or "♂" in name: 
+            name = name.replace(" ", "")
+        elif "Méga" in name:
+            divided = name.split(" ")
+            divided[0] += "-"
+            divided[1] += "_"
+            name = "".join(divided)
 
-    for i in urllib.request.urlopen(f"https://www.pokepedia.fr/{name}").read().decode("utf8").split("\n"):
-      if "2x" in i:
-        line = i
-        break
-    
-    url = "http://www.pokepedia.fr" + line.split("img src=\"")[1].split("\"")[0]
-    destination = f"images/{tmp.lower()}.png"
-    
-    print(f"\n{Fore.BLUE + tmp}{Style.RESET_ALL + " "*(20-len(tmp))}->\t{Fore.GREEN + url + Fore.YELLOW}\n└── ", end="")
-    print(destination)
+        # Assurer un encodage correct avant de quoter
+        name = quote(name.encode("utf-8"))
 
-    urllib.request.urlretrieve(url, destination)
+        try:
+            # Lire la page pour trouver l'image
+            page_content = urllib.request.urlopen(f"https://www.pokepedia.fr/{name}").read().decode("utf8")
+            for i in page_content.split("\n"):
+                if "2x" in i:
+                    line = i
+                    break
+            
+            # Construire l'URL de l'image
+            url = "http://www.pokepedia.fr" + line.split("img src=\"")[1].split("\"")[0]
+            destination = f"images/{tmp.lower()}.png"
+
+            print(f"\n{tmp}{" "*(20-len(tmp))}->\t{url}\n└── ", end="")
+            print(destination)
+
+            # Télécharger l'image
+            urllib.request.urlretrieve(url, destination)
+        except Exception as e:
+            print(f"Erreur pour {tmp}: {e}")
