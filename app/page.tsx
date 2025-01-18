@@ -4,8 +4,31 @@ import { nanoid } from "nanoid";
 import Papa from "papaparse";
 import { useEffect, useState } from "react"
 
+interface Row {
+  name: string;
+  num: string;
+  type1: string;
+  type2: string;
+  category: string;
+  weight: string;
+  size: string;
+  gen: string;
+  images: string;
+}
+interface Pokemon {
+	id: string;
+	name: string;
+	num: string;
+	types: string[];
+	category: string;
+	location: string;
+	weight: string;
+	size: string;
+	gen: string;
+}
+
 export default function Home() {
-	const [data, setData] = useState([]);
+	const [data, setData] = useState<Pokemon[]>([]);
 	
 	useEffect(() => {
 		// Charger et parser le fichier CSV
@@ -18,7 +41,7 @@ export default function Home() {
 				});
 
 				// Mapper chaque ligne en un objet avec la structure souhaitée
-				const formattedData = parsed.data.map((row) => ({
+				const formattedData = (parsed.data as Row[]).map((row) => ({
 					id: `pkmn-${nanoid()}`,
 					name: row.name,
 					num: row.num,
@@ -28,7 +51,6 @@ export default function Home() {
 					weight: row.weight,
 					size: row.size,
 					gen: row.gen,
-					images: row.images ? row.images.split(",") : [],
 				}));
 
 				setData(formattedData);
