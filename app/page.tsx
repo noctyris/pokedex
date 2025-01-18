@@ -64,15 +64,18 @@ export default function Home() {
 		<div key={pk.id} className={`rounded-3xl aspect-square p-2 bg-gradient-to-br from-${pk.types[0].toLowerCase()} to-${(pk.types[1]!=="") ? pk.types[1].toLowerCase() : pk.types[0].toLowerCase()}`}>
 			<div className="flex flex-col items-center justify-around text-black aspect-square bg-[#ffffff80] p-5 rounded-2xl">
 				<Image src={pk.location} width={150} height={150} alt={`Image of ${pk.name}`} className="aspect-square object-contain" />
-				<p>{pk.name}</p>
-				<p>{pk.num}</p>
+				<p className="pb-1">{pk.name}</p>
+				<p className="text-xs">N°{pk.num}</p>
 			</div>
 		</div>
 	))
 
 	return (
-		<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] justify-center">
-			{pkmnsList}
+		<div>
+			<h1 className="text-4xl text-center my-6">Pokedex</h1>
+			<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] justify-center">
+				{pkmnsList}
+			</div>
 		</div>
 	);
 }
