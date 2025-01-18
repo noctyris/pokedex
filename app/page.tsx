@@ -4,8 +4,33 @@ import { nanoid } from "nanoid";
 import Papa from "papaparse";
 import { useEffect, useState } from "react"
 
+import Image from "next/image";
+
+interface Row {
+  name: string;
+  num: string;
+  type1: string;
+  type2: string;
+  category: string;
+  weight: string;
+  size: string;
+  gen: string;
+  images: string;
+}
+interface Pokemon {
+	id: string;
+	name: string;
+	num: string;
+	types: string[];
+	category: string;
+	location: string;
+	weight: string;
+	size: string;
+	gen: string;
+}
+
 export default function Home() {
-	const [data, setData] = useState([]);
+	const [data, setData] = useState<Pokemon[]>([]);
 	
 	useEffect(() => {
 		// Charger et parser le fichier CSV
@@ -18,17 +43,16 @@ export default function Home() {
 				});
 
 				// Mapper chaque ligne en un objet avec la structure souhaitée
-				const formattedData = parsed.data.map((row) => ({
+				const formattedData = (parsed.data as Row[]).map((row) => ({
 					id: `pkmn-${nanoid()}`,
 					name: row.name,
 					num: row.num,
 					types: [row.type1, row.type2],
 					category: row.category,
-					location: "/images/"+row.name.toLowerCase()+".png",
+					location: `/images/${row.name.toLowerCase()}.png`,
 					weight: row.weight,
 					size: row.size,
 					gen: row.gen,
-					images: row.images ? row.images.split(",") : [],
 				}));
 
 				setData(formattedData);
@@ -39,7 +63,7 @@ export default function Home() {
 	const pkmnsList = data.map((pk) => (
 		<div key={pk.id} className={`rounded-3xl aspect-square p-2 bg-gradient-to-br from-${pk.types[0].toLowerCase()} to-${(pk.types[1]!=="") ? pk.types[1].toLowerCase() : pk.types[0].toLowerCase()}`}>
 			<div className="flex flex-col items-center justify-around text-black aspect-square bg-[#ffffff80] p-5 rounded-2xl">
-				<img src={pk.location} alt={`Image of ${pk.name}`} className="max-w-[150px] aspect-square object-contain" />
+				<Image src={pk.location} width={150} height={150} alt={`Image of ${pk.name}`} className="aspect-square object-contain" />
 				<p>{pk.name}</p>
 				<p>{pk.num}</p>
 			</div>
@@ -47,7 +71,7 @@ export default function Home() {
 	))
 
 	return (
-		<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] w-4/5">
+		<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] justify-center">
 			{pkmnsList}
 		</div>
 	);
