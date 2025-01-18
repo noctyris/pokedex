@@ -4,6 +4,8 @@ import { nanoid } from "nanoid";
 import Papa from "papaparse";
 import { useEffect, useState } from "react"
 
+import Image from "next/image";
+
 interface Row {
   name: string;
   num: string;
@@ -47,7 +49,7 @@ export default function Home() {
 					num: row.num,
 					types: [row.type1, row.type2],
 					category: row.category,
-					location: "/images/"+row.name.toLowerCase()+".png",
+					location: `/images/${row.name.toLowerCase()}.png`,
 					weight: row.weight,
 					size: row.size,
 					gen: row.gen,
@@ -61,7 +63,7 @@ export default function Home() {
 	const pkmnsList = data.map((pk) => (
 		<div key={pk.id} className={`rounded-3xl aspect-square p-2 bg-gradient-to-br from-${pk.types[0].toLowerCase()} to-${(pk.types[1]!=="") ? pk.types[1].toLowerCase() : pk.types[0].toLowerCase()}`}>
 			<div className="flex flex-col items-center justify-around text-black aspect-square bg-[#ffffff80] p-5 rounded-2xl">
-				<img src={pk.location} alt={`Image of ${pk.name}`} className="max-w-[150px] aspect-square object-contain" />
+				<Image src={pk.location} width={150} height={150} alt={`Image of ${pk.name}`} className="aspect-square object-contain" />
 				<p>{pk.name}</p>
 				<p>{pk.num}</p>
 			</div>
@@ -69,7 +71,7 @@ export default function Home() {
 	))
 
 	return (
-		<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] w-4/5">
+		<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] justify-center">
 			{pkmnsList}
 		</div>
 	);
