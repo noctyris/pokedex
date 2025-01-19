@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { fetchData } from "./fetchData.ts"
+import { fetchData } from "./fetchData"
 
 export default async function Home() {
 	const DATA = await fetchData();
