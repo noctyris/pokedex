@@ -1,5 +1,7 @@
 import { createHash } from "crypto";
 import Papa from "papaparse";
+import path from "path";
+import fs from "fs";
 
 interface Row {
 	name:		string;
@@ -25,8 +27,8 @@ interface Pokemon {
 }
 
 export async function fetchData(): Promise<Pokemon[]> {
-	const response = await fetch(`${process.env.baseUrl}/data.csv`);
-	const csv = await response.text();
+	const filePath = path.join(process.cwd(), 'public', 'data.csv');
+	const csv = fs.readFileSync(filePath, 'utf-8');
 	const parsed = Papa.parse(csv, {
 		header:			true,
 		skipEmptyLines:	true,
