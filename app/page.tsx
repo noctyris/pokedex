@@ -44,7 +44,7 @@ export default function Home() {
 
 				// Mapper chaque ligne en un objet avec la structure souhaitée
 				const formattedData = (parsed.data as Row[]).map((row) => ({
-					id: `pkmn-${nanoid()}`,
+					id: `${nanoid()}`,
 					name: row.name,
 					num: row.num,
 					types: [row.type1, row.type2],
