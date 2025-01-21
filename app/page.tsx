@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from 'react';
 import Papa from 'papaparse';
-import CryptoJS from 'crypto-js';
 
 interface Row {
 	name:		string;
