@@ -16,8 +16,20 @@ interface Row {
 	gen:		string;
 }
 
+interface Pokemon {
+	id:			string;
+	name:		string;
+	num:		string;
+	types:		string[];
+	category:	string;
+	location:	string;
+	weight:		string;
+	size:		string;
+	gen:		string;
+}
+
 export default function Home() {
-	const [data, setData] = useState<Row[]>([]);
+	const [data, setData] = useState<Pokemon[]>([]);
 	const [isLoading, setLoading] = useState(true)
 
 	useEffect(() => {
