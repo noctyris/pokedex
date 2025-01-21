@@ -1,11 +1,60 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { fetchData } from "./fetchData"
+import { useEffect, useState } from 'react';
+import Papa from 'papaparse';
+import CryptoJS from 'crypto-js';
 
-export default async function Home() {
-	const DATA = await fetchData();
+interface Row {
+	name:		string;
+	num:		string;
+	type1:		string;
+	type2:		string;
+	category:	string;
+	weight:		string;
+	size:		string;
+	gen:		string;
+}
 
-	const pkmnsList = DATA.map((pk) => {
+export default function Home() {
+	const [data, setData] = useState<Row[]>([]);
+	const [isLoading, setLoading] = useState(true)
+
+	useEffect(() => {
+	    fetch('/data.csv')
+	      .then(response => response.text())
+	      .then(text => {
+	        const parsed = Papa.parse(text, {
+	        	header: true,
+	        	skipEmptyLines: true,
+	        });
+
+	        setData((parsed.data as Row[]).map((row) => ({
+       			id:			encodeURIComponent(row.name),
+       			name:		row.name,
+       			num:		row.num,
+       			types:		[row.type1, row.type2],
+       			category:	row.category,
+       			location:	`/images/${row.name.toLowerCase()}.png`,
+       			weight:		row.weight,
+       			size:		row.size,
+       			gen:		row.gen,
+	        })))
+	        setLoading(false);
+	      })
+	      .catch(error => console.error('Error fetching CSV:', error));
+	  }, []);
+
+	if (isLoading) {
+		return (
+			<div>
+				<p>Chargement en cours...</p>
+			</div>
+		)
+	}
+
+	const pkmnsList = data.map((pk) => {
 		if (pk.name!=="") {
 			return (
 				<Link key={pk.id} href={``}>
