@@ -28,7 +28,7 @@ export default function Home() {
 	try {
 		return (
 			<div>
-				<h1 className="text-3xl my-6 flex flex-row justify-center items-center">P<Image width={1} height={1} alt="o" className="h-8" src="/favicon.svg" />kedex</h1>
+				<h1 className="text-3xl my-6 flex flex-row justify-center items-center">P<Image width={100} height={100} alt="o" className="h-8" src="/favicon.svg" />kedex</h1>
 				<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] justify-center">
 					{pkmnsList}
 				</div>
