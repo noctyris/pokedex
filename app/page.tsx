@@ -59,8 +59,8 @@ export default function Home() {
 
 	if (isLoading) {
 		return (
-			<div>
-				<p>Chargement en cours...</p>
+			<div className="text-center">
+				<p className="text-4xl">Chargement en cours...</p>
 			</div>
 		)
 	}
