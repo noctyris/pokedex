@@ -26,7 +26,7 @@ interface Pokemon {
 	gen:		string;
 }
 
-export default function fetchData() {
+export default function useFetchData() {
 	const [data, setData] = useState<Pokemon[]>([]);
 	
 	useEffect(() => {

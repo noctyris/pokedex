@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import fetchData from "@/app/fetchData";
+import useFetchData from "@/app/data";
 
 import UILoadingScreen from "@/app/ui/LoadingScreen"
 
 export default function Home() {
-	const data = fetchData();
+	const data = useFetchData();
 
 	const pkmnsList = data.map((pk) => {
 		if (pk.name!=="") {
@@ -28,13 +28,13 @@ export default function Home() {
 	try {
 		return (
 			<div>
-				<h1 className="text-3xl my-6 flex flex-row justify-center items-center">P<img className="h-8" src="/favicon.svg" />kedex</h1>
+				<h1 className="text-3xl my-6 flex flex-row justify-center items-center">P<Image width={1} height={1} alt="o" className="h-8" src="/favicon.svg" />kedex</h1>
 				<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] justify-center">
 					{pkmnsList}
 				</div>
 			</div>
 		);
-	} catch (e) {
+	} catch {
 		return <UILoadingScreen />
 	}
 }

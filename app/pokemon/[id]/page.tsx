@@ -1,6 +1,6 @@
 "use client";
 
-import fetchData from "@/app/fetchData";
+import useFetchData from "@/app/data";
 import { usePathname } from "next/navigation";
 
 import Link from "next/link";
@@ -9,19 +9,31 @@ import Image from "next/image";
 import Cross from "@/app/ui/Cross"
 import UILoadingScreen from "@/app/ui/LoadingScreen"
 
-function DataCard(props) {
+interface DataCardProps {
+	title:	string,
+	value:	string,
+}
+
+interface LinkedCardProps {
+	id:			string,
+	name:		string,
+	location:	string,
+}
+
+function DataCard(props: DataCardProps) {
+	console.log(typeof props.value)
 	return (
 		<div className="bg-cardbg flex flex-col items-center p-2 rounded-2xl border-foreground border-2">
 			<p className="">{props.title}</p>
-			{props.value}
+			<p>{props.value}</p>
 		</div>
 	)
 }
 
-function LinkedCard(props) {
+function LinkedCard(props: LinkedCardProps) {
 	return (
 		<Link href={`/pokemon/${props.id}`} className="flex flex-col items-center bg-cardbg p-2 py-5 aspect-square object-contain border-foreground border-2 rounded-2xl">
-			<Image src={props.location} width={100} height={100} alt={`Image de props.name`} />
+			<Image src={props.location} width={100} height={100} alt={`Image de ${props.name}`} />
 			<p className="text-xs">{props.name}</p>
 		</Link>
 	)
@@ -29,7 +41,7 @@ function LinkedCard(props) {
 
 export default function PokemonPage() {
 	const targetId = usePathname().split('/')[2]
-	const rawData = fetchData();
+	const rawData = useFetchData();
 	const pkmn = rawData.filter((pk) => pk.id === targetId)[0];
 	const linkedPkmns = rawData.filter((pk) => pk.num === pkmn.num && pk.name !== pkmn.name);
 
@@ -43,7 +55,7 @@ export default function PokemonPage() {
 				<header className="mt-4 flex flex-row justify-around items-center">
 					<p className="text-3xl">{pkmn.name}</p>
 					<Link href="/">
-						<Cross color="#ffffff" size={40}/>
+						<Cross/>
 					</Link>
 				</header>
 				<section className={`flex flex-row justify-around my-5 bg-gradient-to-r from-${pkmn.types[0].toLowerCase()} via-background to-${pkmn.types[1]!=="" ? pkmn.types[1].toLowerCase() : pkmn.types[0].toLowerCase()} py-5`}>
@@ -54,7 +66,7 @@ export default function PokemonPage() {
 				<section className="px-3 grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(50px,150px))] justify-center">
 					<DataCard title="Numéro" value={pkmn.num} />
 					<DataCard title="Catégorie" value={pkmn.category} />
-					<DataCard title="Génération" value={pkmn.gen.match(/^\d+$/)===null ? (<p>{pkmn.gen}</p>) : (<p>{pkmn.gen}<sup>e</sup></p>)} />
+					<DataCard title="Génération" value={pkmn.gen.match(/^\d+$/)===null ? pkmn.gen : pkmn.gen + "ᵉ"} />
 					<DataCard title="Poids" value={pkmn.weight ? pkmn.weight + " kg" : "?"} />
 					<DataCard title="Taille" value={pkmn.size ? pkmn.size + " m" : "?" } />
 				</section>
@@ -66,7 +78,7 @@ export default function PokemonPage() {
 				: "" }
 			</>
 		)
-	} catch (e) {
+	} catch {
 		return <UILoadingScreen />;
 	}
 }
