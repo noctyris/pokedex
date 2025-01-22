@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "crypto-js": "^4.2.0",
     "nanoid": "^5.0.9",
     "next": "15.1.5",
     "papaparse": "^5.5.1",
