@@ -2,68 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from 'react';
-import Papa from 'papaparse';
+import fetchData from "@/app/fetchData";
 
-interface Row {
-	name:		string;
-	num:		string;
-	type1:		string;
-	type2:		string;
-	category:	string;
-	weight:		string;
-	size:		string;
-	gen:		string;
-}
-
-interface Pokemon {
-	id:			string;
-	name:		string;
-	num:		string;
-	types:		string[];
-	category:	string;
-	location:	string;
-	weight:		string;
-	size:		string;
-	gen:		string;
-}
+import UILoadingScreen from "@/app/ui/LoadingScreen"
 
 export default function Home() {
-	const [data, setData] = useState<Pokemon[]>([]);
-	const [isLoading, setLoading] = useState(true)
-
-	useEffect(() => {
-	    fetch('/data.csv')
-	      .then(response => response.text())
-	      .then(text => {
-	        const parsed = Papa.parse(text, {
-	        	header: true,
-	        	skipEmptyLines: true,
-	        });
-
-	        setData((parsed.data as Row[]).map((row) => ({
-       			id:			encodeURIComponent(row.name),
-       			name:		row.name,
-       			num:		row.num,
-       			types:		[row.type1, row.type2],
-       			category:	row.category,
-       			location:	`/images/${row.name.toLowerCase()}.png`,
-       			weight:		row.weight,
-       			size:		row.size,
-       			gen:		row.gen,
-	        })))
-	        setLoading(false);
-	      })
-	      .catch(error => console.error('Error fetching CSV:', error));
-	  }, []);
-
-	if (isLoading) {
-		return (
-			<div className="text-center">
-				<p className="text-4xl">Chargement en cours...</p>
-			</div>
-		)
-	}
+	const data = fetchData();
 
 	const pkmnsList = data.map((pk) => {
 		if (pk.name!=="") {
@@ -81,12 +25,16 @@ export default function Home() {
 		}
 	});
 
-	return (
-		<div>
-			<h1 className="text-4xl text-center my-6">Pokedex</h1>
-			<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] justify-center">
-				{pkmnsList}
+	try {
+		return (
+			<div>
+				<h1 className="text-3xl my-6 flex flex-row justify-center items-center">P<img className="h-8" src="/favicon.svg" />kedex</h1>
+				<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] justify-center">
+					{pkmnsList}
+				</div>
 			</div>
-		</div>
-	);
+		);
+	} catch (e) {
+		return <UILoadingScreen />
+	}
 }
