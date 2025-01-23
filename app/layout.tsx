@@ -21,6 +21,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 				className={`${montserrat.className} antialiased`}
 			>
 				{children}
+				<SpeedInsights />
 			</body>
 		</html>
 	);
