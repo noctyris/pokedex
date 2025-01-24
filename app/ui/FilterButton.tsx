@@ -22,7 +22,7 @@ export default function FilterButton(props: FilterButtonProps) {
 		[searchParams]
 	)
 
-	function handleChange (e) {
+	function handleChange (e: React.ChangeEvent<HTMLSelectElement>) {
 		router.push(pathname + '?' + createQueryString(props.query, (e.target.value.toLowerCase() !== "tous") ? e.target.value.toLowerCase() : ""));
 	}
 

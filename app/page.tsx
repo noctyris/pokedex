@@ -4,8 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import useFetchData from "@/app/data";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 import FilterButton from "@/app/ui/FilterButton"
+import FilterButtonFallback from "@/app/ui/FilterButtonFallback"
+
+interface Pk {
+	gen: string,
+	types: string[],
+}
 
 export default function Home() {
 	const data = useFetchData();
@@ -18,7 +25,7 @@ export default function Home() {
 		Tous: () => true,
 		...Object.fromEntries(["acier", "combat", "dragon", "eau", "électrik", "fée", "feu", "glace", "insecte", "normal", "plante", "poison", "psy", "roche", "sol", "spectre", "ténèbres", "vol"]
 			.map((type) => [
-				type, (pk) => pk.types.some((t) => t.toLowerCase() === type),
+				type, (pk: Pk) => pk.types.some((t) => t.toLowerCase() === type),
 			])
 		),
 	};
@@ -26,23 +33,26 @@ export default function Home() {
 
 	const GEN_MAP = {
 		Tous: () => true,
-		1: (pk) => pk.gen === "1",
-		2: (pk) => pk.gen === "2",
-		3: (pk) => pk.gen === "3",
-		4: (pk) => pk.gen === "4",
-		5: (pk) => pk.gen === "5",
-		6: (pk) => pk.gen === "6",
-		7: (pk) => pk.gen === "7",
-		8: (pk) => pk.gen === "8",
-		9: (pk) => pk.gen === "9",
-		Méga: (pk) => pk.gen.toLowerCase() === "méga",
-		Gigamax: (pk) => pk.gen.toLowerCase() === "gigamax",
+		1:		(pk: Pk) => pk.gen === "1",
+		2:		(pk: Pk) => pk.gen === "2",
+		3:		(pk: Pk) => pk.gen === "3",
+		4:		(pk: Pk) => pk.gen === "4",
+		5:		(pk: Pk) => pk.gen === "5",
+		6:		(pk: Pk) => pk.gen === "6",
+		7:		(pk: Pk) => pk.gen === "7",
+		8:		(pk: Pk) => pk.gen === "8",
+		9:		(pk: Pk) => pk.gen === "9",
+		Méga:	(pk: Pk) => pk.gen.toLowerCase() === "méga",
+		Gigamax:(pk: Pk) => pk.gen.toLowerCase() === "gigamax",
 	};
 	const GEN_NAMES = Object.keys(GEN_MAP);
+
+	type TypeKeys = keyof typeof TYPES_MAP;
+	type GenKeys = keyof typeof GEN_MAP;
 	
 	const pkmnsList = data
-		.filter(TYPES_MAP[filteredType])
-		.filter(GEN_MAP[filteredGen])
+		.filter(TYPES_MAP[filteredType as TypeKeys])
+		.filter(GEN_MAP[filteredGen as GenKeys])
 		.map((pk) => {
 			if (pk.name!=="") {
 				return (
@@ -64,17 +74,20 @@ export default function Home() {
 			<header className="flex flex-col items-center">
 				<h1 className="text-3xl my-6 flex flex-row justify-center items-center">P<Image width={30} height={30} alt="o" className="h-8" src="/favicon.svg" />kedex</h1>
 				<div className="flex flex-row justify-around w-full mb-6">
-					<FilterButton
-						options={TYPES_NAMES}
-						name="Type"
-						query="type"
-					/>
-					<FilterButton
-						options={GEN_NAMES}
-						name="Génération"
-						value={filteredGen}
-						query="gen"
-					/>
+					<Suspense fallback={<FilterButtonFallback />}>
+						<FilterButton
+							options={TYPES_NAMES}
+							name="Type"
+							query="type"
+						/>
+					</Suspense>
+					<Suspense fallback={<FilterButtonFallback />}>
+						<FilterButton
+							options={GEN_NAMES}
+							name="Génération"
+							query="gen"
+						/>
+					</Suspense>
 				</div>
 			</header>
 			<main className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] justify-center">
