@@ -12,6 +12,10 @@ interface Row {
 	weight:		string;
 	size:		string;
 	gen:		string;
+	CHE:		string;
+	COE:		string;
+	faiblesse:	string;
+	résistance:	string;
 }
 
 interface Pokemon {
@@ -24,6 +28,10 @@ interface Pokemon {
 	weight:		string;
 	size:		string;
 	gen:		string;
+	che:		string;
+	coe:		string;
+	weak:	string;
+	resist:	string;
 }
 
 export default function useFetchData() {
@@ -48,6 +56,10 @@ export default function useFetchData() {
 					weight:		row.weight,
 					size:		row.size,
 					gen:		row.gen,
+					che:		row.CHE,
+					coe:		row.COE,
+					weak:		row.faiblesse,
+					resist:		row.résistance,
 				})))
 			})
 			.catch(error => console.error('Error fetching CSV:', error));
