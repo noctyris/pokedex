@@ -18,6 +18,7 @@ interface LinkedCardProps {
 	id:			string,
 	name:		string,
 	location:	string,
+	coe:		string,
 }
 
 function DataCard(props: DataCardProps) {
@@ -29,11 +30,12 @@ function DataCard(props: DataCardProps) {
 	)
 }
 
-function LinkedCard(props: LinkedCardProps) {
+function EvoCard(props: LinkedCardProps) {
 	return (
-		<Link href={`/pokemon/${props.id}`} className="flex flex-col items-center bg-cardbg p-2 py-5 aspect-square object-contain border-foreground border-2 rounded-2xl">
-			<Image src={props.location} width={100} height={100} alt={`Image de ${props.name}`} />
-			<p className="text-xs">{props.name}</p>
+		<Link href={`/pokemon/${props.id}`} className="flex flex-col items-center bg-cardbg px-2 py-5 border-foreground border-2 rounded-2xl">
+			<Image className="aspect-square object-contain" src={props.location} width={100} height={100} alt={`Image de ${props.name}`} />
+			<p className="text-sm">{props.name}</p>
+			<p className="text-xs">{props.coe ? `Condition: ${props.coe}` : ""}</p>
 		</Link>
 	)
 }
@@ -42,10 +44,10 @@ export default function PokemonPage() {
 	const targetId = usePathname().split('/')[2]
 	const rawData = useFetchData();
 	const pkmn = rawData.filter((pk) => pk.id === targetId)[0];
-	const linkedPkmns = rawData.filter((pk) => pk.num === pkmn.num && pk.name !== pkmn.name);
+	const linkedPkmns = rawData.filter((pk) => pk.che.split('_')[0] === pkmn.che.split('_')[0] && pk.name !== pkmn.name);
 
-	const linkedPkmnsList = linkedPkmns.map((pk) => (
-		<LinkedCard key={pk.id} location={pk.location} id={pk.id} name={pk.name}  />
+	const evoPkmnsList = linkedPkmns.map((pk) => (
+		<EvoCard key={pk.id} location={pk.location} id={pk.id} name={pk.name} coe={pk.coe} />
 	))
 
 	try {
@@ -54,7 +56,7 @@ export default function PokemonPage() {
 				<header className="mt-4 flex flex-row justify-around items-center">
 					<p className="text-3xl">{pkmn.name}</p>
 					<Link href="/">
-						<Cross/>
+						<Cross />
 					</Link>
 				</header>
 				<section className={`flex flex-row justify-around my-5 bg-gradient-to-r from-${pkmn.types[0].toLowerCase()} via-background to-${pkmn.types[1]!=="" ? pkmn.types[1].toLowerCase() : pkmn.types[0].toLowerCase()} py-5`}>
@@ -68,13 +70,10 @@ export default function PokemonPage() {
 					<DataCard title="Génération" value={pkmn.gen.match(/^\d+$/)===null ? pkmn.gen : pkmn.gen + "ᵉ"} />
 					<DataCard title="Poids" value={pkmn.weight ? pkmn.weight + " kg" : "?"} />
 					<DataCard title="Taille" value={pkmn.size ? pkmn.size + " m" : "?" } />
+				</section><section className="py-6">
+					<p className="text-center pb-3">{"Chaîne d'évolution"}</p>
+					<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(75px,200px))] justify-center">{evoPkmnsList}</div>
 				</section>
-				{ linkedPkmns.length ? 
-				<section className="py-6">
-					<p className="text-center pb-3">En lien</p>
-					<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(50px,150px))] justify-center">{linkedPkmnsList}</div>
-				</section>
-				: "" }
 			</>
 		)
 	} catch {
