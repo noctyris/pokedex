@@ -14,10 +14,10 @@ interface Pk {
 	types: string[],
 }
 
-export default function Home() {
+function HomeView() {
 	const data = useFetchData();
 	const searchParams = useSearchParams();
-
+	
 	const filteredType = searchParams.get("type") ? searchParams.get("type") : "Tous"
 	const filteredGen = searchParams.get("gen") ? searchParams.get("gen") : "Tous"
 
@@ -95,4 +95,12 @@ export default function Home() {
 			</main>
 		</div>
 	);
+}
+
+export default function Home() {
+	return (
+		<Suspense>
+			<HomeView />
+		</Suspense>
+	)
 }
