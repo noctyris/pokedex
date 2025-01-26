@@ -21,7 +21,6 @@ interface LinkedCardProps {
 }
 
 function DataCard(props: DataCardProps) {
-	console.log(typeof props.value)
 	return (
 		<div className="bg-cardbg flex flex-col items-center p-2 rounded-2xl border-foreground border-2">
 			<p className="">{props.title}</p>

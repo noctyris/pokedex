@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.1.0",
     "crypto-js": "^4.2.0",
     "nanoid": "^5.0.9",
     "next": "15.1.5",
