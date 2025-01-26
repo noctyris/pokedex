@@ -44,7 +44,7 @@ export default function PokemonPage() {
 	const targetId = usePathname().split('/')[2]
 	const rawData = useFetchData();
 	const pkmn = rawData.filter((pk) => pk.id === targetId)[0];
-	const linkedPkmns = rawData.filter((pk) => pk.che.split('_')[0] === pkmn.che.split('_')[0] && pk.name !== pkmn.name);
+	const linkedPkmns = rawData.filter((pk) => pk.che.split('_')[0] === pkmn.che.split('_')[0]);
 
 	const evoPkmnsList = linkedPkmns.map((pk) => (
 		<EvoCard key={pk.id} location={pk.location} id={pk.id} name={pk.name} coe={pk.coe} />
@@ -70,6 +70,7 @@ export default function PokemonPage() {
 					<DataCard title="Génération" value={pkmn.gen.match(/^\d+$/)===null ? pkmn.gen : pkmn.gen + "ᵉ"} />
 					<DataCard title="Poids" value={pkmn.weight ? pkmn.weight + " kg" : "?"} />
 					<DataCard title="Taille" value={pkmn.size ? pkmn.size + " m" : "?" } />
+					{pkmn.coe ? <DataCard title="Condition d'évolution" value=pkmn.coe /> : ""}
 				</section><section className="py-6">
 					<p className="text-center pb-3">{"Chaîne d'évolution"}</p>
 					<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(75px,200px))] justify-center">{evoPkmnsList}</div>
