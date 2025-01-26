@@ -68,7 +68,7 @@ function HomeView() {
 				)
 			}
 	});
-
+  
 	return (
 		<div>
 			<header className="flex flex-col items-center">
