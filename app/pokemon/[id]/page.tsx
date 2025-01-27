@@ -14,7 +14,7 @@ interface DataCardProps {
 	value:	string,
 }
 
-interface LinkedCardProps {
+interface EvoCardProps {
 	id:			string,
 	name:		string,
 	location:	string,
@@ -30,12 +30,12 @@ function DataCard(props: DataCardProps) {
 	)
 }
 
-function EvoCard(props: LinkedCardProps) {
+function EvoCard(props: EvoCardProps) {
 	return (
 		<Link href={`/pokemon/${props.id}`} className="flex flex-col items-center bg-cardbg px-2 py-5 border-foreground border-2 rounded-2xl">
+			<p className="text-xs">{props.coe ? `${props.coe}` : "Base"}</p>
 			<Image className="aspect-square object-contain" src={props.location} width={100} height={100} alt={`Image de ${props.name}`} />
 			<p className="text-sm">{props.name}</p>
-			<p className="text-xs">{props.coe ? `Condition: ${props.coe}` : ""}</p>
 		</Link>
 	)
 }
@@ -43,10 +43,13 @@ function EvoCard(props: LinkedCardProps) {
 export default function PokemonPage() {
 	const targetId = usePathname().split('/')[2]
 	const rawData = useFetchData();
-	const pkmn = rawData.filter((pk) => pk.id === targetId)[0];
-	const linkedPkmns = rawData.filter((pk) => pk.che!=="" && pk.che.split('_')[0] === pkmn.che.split('_')[0]);
+	const pkmn = rawData.filter((pk) => pk.id === targetId)[0]);
+	const evoPkmns = rawData.filter((pk) => pk.che!=="" && pk.che.split('_').slice(0,2).toString() === pkmn.che.split('_').slice(0,2).toString());
 
-	const evoPkmnsList = linkedPkmns.map((pk) => (
+	const sortedEvo = evoPkmns.sort((x, y) => x.che.split('_').length - y.che.split('_').length)
+	console.log(rawData)
+
+	const evoPkmnsList = evoPkmns.map((pk) => (
 		<EvoCard key={pk.id} location={pk.location} id={pk.id} name={pk.name} coe={pk.coe} />
 	))
 
