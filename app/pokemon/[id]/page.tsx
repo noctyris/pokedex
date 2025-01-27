@@ -44,7 +44,7 @@ export default function PokemonPage() {
 	const targetId = usePathname().split('/')[2]
 	const rawData = useFetchData();
 	const pkmn = rawData.filter((pk) => pk.id === targetId)[0];
-	const linkedPkmns = rawData.filter((pk) => pk.che.split('_')[0] === pkmn.che.split('_')[0]);
+	const linkedPkmns = rawData.filter((pk) => pk.che!=="" && pk.che.split('_')[0] === pkmn.che.split('_')[0]);
 
 	const evoPkmnsList = linkedPkmns.map((pk) => (
 		<EvoCard key={pk.id} location={pk.location} id={pk.id} name={pk.name} coe={pk.coe} />
