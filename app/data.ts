@@ -30,11 +30,11 @@ interface Pokemon {
 	gen:		string;
 	che:		string;
 	coe:		string;
-	weak:	string;
-	resist:	string;
+	weak:		string;
+	resist:		string;
 }
 
-export default function useFetchData() {
+export function useFetchData() {
 	const [data, setData] = useState<Pokemon[]>([]);
 	
 	useEffect(() => {
@@ -66,4 +66,8 @@ export default function useFetchData() {
 	}, []);
 
 	return data;
+}
+
+export function getTypesList() {
+	return ["acier", "combat", "dragon", "eau", "électrik", "fée", "feu", "glace", "insecte", "normal", "plante", "poison", "psy", "roche", "sol", "spectre", "ténèbres", "vol"]
 }

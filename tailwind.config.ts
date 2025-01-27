@@ -9,8 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "rgb(var(--background))",
+        foreground: "rgb(var(--foreground))",
         "acier":	"rgb(86, 149, 163)",
         "combat":	"rgb(211, 66, 95)",
         "dragon":	"rgb(12, 105, 200)",
@@ -29,7 +29,7 @@ export default {
         "spectre":	"rgb(95, 109, 188)",
         "ténèbres":	"rgb(89, 87, 97)",
         "vol":		"rgb(161, 187, 236)",
-        "cardbg":	"#333",
+        "cardbg":	"rgba(var(--foreground), 0.15)",
       },
     },
   },

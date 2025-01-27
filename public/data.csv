@@ -1,9 +1,9 @@
 ﻿name,num,type1,type2,category,size,weight,gen,CHE,COE,faiblesse,résistance
 Bulbizarre,1,Plante,Poison,Graine,0.7,6.9,1,1_1,,Feu X2 Vol X2 Glace X2 Psy X2,Eau X0.5 Électrik X0.5 Fée X0.5 Combat X0.5 Plante X0.25
-Herbizarre,2,Plante,Poison,Graine,1,13,1,1_1_1,Niveau 16,Feu X2 Vol X2 Glace X2 Psy X2,Eau X0.5 Électrik X0.5 Fée X0.5 Combat X0.5 Plante X0.26
-Florizarre,3,Plante,Poison,Graine,2,100,1,1_1_1_1,Niveau 32,Feu X2 Vol X2 Glace X2 Psy X2,Eau X0.5 Électrik X0.5 Fée X0.5 Combat X0.5 Plante X0.27
-Méga-Florizarre,3,Plante,Poison,Graine,2.4,155.5,Méga,1_1_1_1_1,Florazarrite,Feu X2 Vol X2 Glace X2 Psy X2,Eau X0.5 Électrik X0.5 Fée X0.5 Combat X0.5 Plante X0.28
-Florizarre Gigamax,3,Plante,Poison,Graine,24,,Gigamax,1_1_1_1_2,,Feu X2 Vol X2 Glace X2 Psy X2,Eau X0.5 Électrik X0.5 Fée X0.5 Combat X0.5 Plante X0.29
+Herbizarre,2,Plante,Poison,Graine,1,13,1,1_2,Niveau 16,Feu X2 Vol X2 Glace X2 Psy X2,Eau X0.5 Électrik X0.5 Fée X0.5 Combat X0.5 Plante X0.25
+Florizarre,3,Plante,Poison,Graine,2,100,1,1_3,Niveau 32,Feu X2 Vol X2 Glace X2 Psy X2,Eau X0.5 Électrik X0.5 Fée X0.5 Combat X0.5 Plante X0.25
+Méga-Florizarre,3,Plante,Poison,Graine,2.4,155.5,Méga,1_4-1,Florazarrite,Feu X2 Vol X2 Glace X2 Psy X2,Eau X0.5 Électrik X0.5 Fée X0.5 Combat X0.5 Plante X0.25
+Florizarre Gigamax,3,Plante,Poison,Graine,24,,Gigamax,1_4-2,Poignet Dynamax,Feu X2 Vol X2 Glace X2 Psy X2,Eau X0.5 Électrik X0.5 Fée X0.5 Combat X0.5 Plante X0.25
 Salamèche,4,Feu,,Lézard,0.6,8.5,1,4_1,,,
 Reptincel,5,Feu,,Flamme,1.1,19,1,4_1_1,,,
 Dracaufeu,6,Feu,Vol,Flamme,1.7,90.5,1,4_1_1_1,,,

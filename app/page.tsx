@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import useFetchData from "@/app/data";
+import { useFetchData, getTypesList } from "@/app/data";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
 import FilterButton from "@/app/ui/FilterButton"
 import FilterButtonFallback from "@/app/ui/FilterButtonFallback"
+import UILoadingScreen from "@/app/ui/LoadingScreen"
 
 interface Pk {
 	gen: string,
@@ -18,12 +19,14 @@ function HomeView() {
 	const data = useFetchData();
 	const searchParams = useSearchParams();
 	
+	if (!data.length) return <UILoadingScreen />
+	
 	const filteredType = searchParams.get("type") ? searchParams.get("type") : "Tous"
 	const filteredGen = searchParams.get("gen") ? searchParams.get("gen") : "Tous"
 
 	const TYPES_MAP = {
 		Tous: () => true,
-		...Object.fromEntries(["acier", "combat", "dragon", "eau", "électrik", "fée", "feu", "glace", "insecte", "normal", "plante", "poison", "psy", "roche", "sol", "spectre", "ténèbres", "vol"]
+		...Object.fromEntries(getTypesList()//["acier", "combat", "dragon", "eau", "électrik", "fée", "feu", "glace", "insecte", "normal", "plante", "poison", "psy", "roche", "sol", "spectre", "ténèbres", "vol"]
 			.map((type) => [
 				type, (pk: Pk) => pk.types.some((t) => t.toLowerCase() === type),
 			])
