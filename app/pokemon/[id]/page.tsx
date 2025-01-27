@@ -71,10 +71,13 @@ export default function PokemonPage() {
 					<DataCard title="Poids" value={pkmn.weight ? pkmn.weight + " kg" : "?"} />
 					<DataCard title="Taille" value={pkmn.size ? pkmn.size + " m" : "?" } />
 					{pkmn.coe ? <DataCard title="Condition d'évolution" value={pkmn.coe} /> : ""}
-				</section><section className="py-6">
+			 </section>
+				{pkmn.che ?
+				<section className="py-6">
 					<p className="text-center pb-3">{"Chaîne d'évolution"}</p>
 					<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(75px,200px))] justify-center">{evoPkmnsList}</div>
 				</section>
+				: ""}
 			</>
 		)
 	} catch {
