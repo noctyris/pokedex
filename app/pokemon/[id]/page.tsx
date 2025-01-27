@@ -1,10 +1,12 @@
 "use client";
 
-import useFetchData from "@/app/data";
+import { useFetchData, getTypesList } from "@/app/data";
 import { usePathname } from "next/navigation";
 
 import Link from "next/link";
 import Image from "next/image";
+
+import { nanoid } from "nanoid"
 
 import Cross from "@/app/ui/Cross"
 import UILoadingScreen from "@/app/ui/LoadingScreen"
@@ -40,6 +42,26 @@ function EvoCard(props: EvoCardProps) {
 	)
 }
 
+function ShowStats(tList: string) {
+	function StatsCard(props: {type: string, value: string}) {
+		return (
+			<div className="flex">
+				<Image src={`/types/${props.type.toLowerCase()}-color.svg`} width={20} height={20} alt={`Type ${props.type.toLowerCase()}`} />
+				<p className="pl-10 py-1">{`${(parseFloat(props.value.slice(1))-1)*100>0 ? "+" : ""}${(parseFloat(props.value.slice(1))-1)*100}% dégats`}</p>
+			</div>
+		)
+	}
+
+	return getTypesList().map((type) => {
+		if (!tList.toLowerCase().includes(type)) {
+			return 
+		}
+		const tmp = tList.slice(tList.toLowerCase().indexOf(type)).toLowerCase().split(' ').slice(0,2)
+		return <StatsCard key={nanoid()} type={tmp[0]} value={tmp[1]} />
+	})
+	
+}
+
 export default function PokemonPage() {
 	const targetId = usePathname().split('/')[2]
 	const rawData = useFetchData();
@@ -55,12 +77,10 @@ export default function PokemonPage() {
 		pk.che.split('_')[0] === pkmn.che.split('_')[0]
 	);
 
-
 	const evoPkmnsList = evoPkmns.map((pk) => (
 		<EvoCard key={pk.id} location={pk.location} id={pk.id} name={pk.name} coe={pk.coe} />
 	))
-
-	
+		
 	return (
 		<>
 			<header className="mt-4 flex flex-row justify-around items-center">
@@ -82,12 +102,27 @@ export default function PokemonPage() {
 				<DataCard title="Taille" value={pkmn.size ? pkmn.size + " m" : "?" } />
 				{pkmn.coe && <DataCard title="Condition d'évolution" value={pkmn.coe} />}
 		 </section>
-			{pkmn.che ?
-			<section className="py-6">
-				<p className="text-center pb-3">{"Chaîne d'évolution"}</p>
+		 <section className="py-6 px-5">
+		 	<p className="text-center text-lg pb-2">Statistiques</p>
+		 	<div className="flex flex-col items-center bg-cardbg border-2 w-2/3 pt-2 p-5 mx-auto rounded-3xl">
+		 		<p className="pb-3">Défense</p>
+			 	<div className="flex justify-between w-full">
+ 			 		<div className="flex flex-col items-center">
+ 			 			<p>Résistance</p>
+ 	 				 	{ShowStats(pkmn.resist)}
+ 			 		</div>
+ 			 		<div className="flex flex-col items-center">
+ 			 			<p>Faiblesse</p>
+ 					 	{ShowStats(pkmn.weak)}
+ 			 		</div>
+ 			 	</div>
+		 	</div>
+		 </section>
+			{pkmn.che &&
+			<section>
+				<p className="text-center text-lg pb-3">{"Chaîne d'évolution"}</p>
 				<div className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(75px,200px))] justify-center">{evoPkmnsList}</div>
-			</section>
-			: ""}
+			</section>}
 		</>
 	)
 }
