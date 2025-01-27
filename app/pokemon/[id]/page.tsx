@@ -55,7 +55,6 @@ export default function PokemonPage() {
 		pk.che.split('_')[0] === pkmn.che.split('_')[0]
 	);
 
-	const sortedEvo = evoPkmns.sort((x, y) => x.che.split('_').length - y.che.split('_').length)
 
 	const evoPkmnsList = evoPkmns.map((pk) => (
 		<EvoCard key={pk.id} location={pk.location} id={pk.id} name={pk.name} coe={pk.coe} />
