@@ -30,8 +30,8 @@ interface Pokemon {
 	gen:		string;
 	che:		string;
 	coe:		string;
-	weak:	string;
-	resist:	string;
+	weak:		string;
+	resist:		string;
 }
 
 export default function useFetchData() {
