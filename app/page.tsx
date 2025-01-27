@@ -8,6 +8,7 @@ import { Suspense } from "react";
 
 import FilterButton from "@/app/ui/FilterButton"
 import FilterButtonFallback from "@/app/ui/FilterButtonFallback"
+import UILoadingScreen from "@/app/ui/LoadingScreen"
 
 interface Pk {
 	gen: string,
@@ -17,6 +18,8 @@ interface Pk {
 function HomeView() {
 	const data = useFetchData();
 	const searchParams = useSearchParams();
+	
+	if (!data.length) return <UILoadingScreen />
 	
 	const filteredType = searchParams.get("type") ? searchParams.get("type") : "Tous"
 	const filteredGen = searchParams.get("gen") ? searchParams.get("gen") : "Tous"
