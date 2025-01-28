@@ -53,16 +53,16 @@ function ShowStats(tList: string) {
 	
 }
 
-function groupPokemons(pkmns: Pokemon) {
+function groupPokemons(pkmns: Pokemon[]) {
 	const result: (Pokemon[] | [])[] = []
 	pkmns.forEach((pk) => {
 		const key = parseInt(pk.che.split('_')[1].split('-')[0])-1
 		if (result[key] === undefined) {
 			result.splice(key, 0, [])
 		}
-		result[key].push(pk);
-		result[key].sort((x) => x.che)
-	})
+		(result[key] as Pokemon[]).push(pk);
+		(result[key] as Pokemon[]).sort((a, b) => a.che.localeCompare(b.che))
+	});
 	return result
 }
 
