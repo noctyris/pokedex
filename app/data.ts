@@ -18,7 +18,7 @@ interface Row {
 	résistance:	string;
 }
 
-interface Pokemon {
+export interface Pokemon {
 	id:			string;
 	name:		string;
 	num:		string;
