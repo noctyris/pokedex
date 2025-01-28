@@ -100,7 +100,6 @@ export default function PokemonPage() {
 				<DataCard title="Génération" value={pkmn.gen.match(/^\d+$/)===null ? pkmn.gen : pkmn.gen + "ᵉ"} />
 				<DataCard title="Poids" value={pkmn.weight ? pkmn.weight + " kg" : "?"} />
 				<DataCard title="Taille" value={pkmn.size ? pkmn.size + " m" : "?" } />
-				{pkmn.coe && <DataCard title="Condition d'évolution" value={pkmn.coe} />}
 		 </section>
 		 <section className="py-6 px-5">
 		 	<p className="text-center text-lg pb-2">Statistiques</p>
