@@ -22,7 +22,8 @@ function HomeView() {
 	if (!data.length) return <UILoadingScreen />
 	
 	const filteredType = searchParams.get("type") ? searchParams.get("type") : "Tous"
-	const filteredGen = searchParams.get('gen') ? searchParams.get('gen').charAt(0).toUpperCase() + searchParams.get('gen').slice(1) : "Tous"
+	const filteredGen = (searchParams.get('gen') || 'Tous').replace(/^./, m => m.toUpperCase())
+	
 
 	const TYPES_MAP = {
 		Tous: () => true,
