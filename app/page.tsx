@@ -22,11 +22,12 @@ function HomeView() {
 	if (!data.length) return <UILoadingScreen />
 	
 	const filteredType = searchParams.get("type") ? searchParams.get("type") : "Tous"
-	const filteredGen = searchParams.get("gen") ? searchParams.get("gen") : "Tous"
+	const filteredGen = (searchParams.get('gen') || 'Tous').replace(/^./, m => m.toUpperCase())
+	
 
 	const TYPES_MAP = {
 		Tous: () => true,
-		...Object.fromEntries(getTypesList()//["acier", "combat", "dragon", "eau", "électrik", "fée", "feu", "glace", "insecte", "normal", "plante", "poison", "psy", "roche", "sol", "spectre", "ténèbres", "vol"]
+		...Object.fromEntries(getTypesList()
 			.map((type) => [
 				type, (pk: Pk) => pk.types.some((t) => t.toLowerCase() === type),
 			])
@@ -49,6 +50,9 @@ function HomeView() {
 		Gigamax:(pk: Pk) => pk.gen.toLowerCase().includes("gigamax"),
 	};
 	const GEN_NAMES = Object.keys(GEN_MAP);
+
+	console.log(filteredGen)
+	console.log(GEN_MAP)
 
 	type TypeKeys = keyof typeof TYPES_MAP;
 	type GenKeys = keyof typeof GEN_MAP;
