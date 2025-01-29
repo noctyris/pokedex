@@ -68,7 +68,7 @@ function groupPokemons(pkmns: Pokemon[]) {
 
 function EvoCard(props: EvoCardProps) {
 	return (
-		<Link href={`/pokemon/${props.id}`} className="text-center bg-cardbg border-foreground border-2 rounded-2xl p-4 aspect-square">
+		<Link href={`/pokemon/${props.id}`} className="text-center bg-cardbg border-foreground border-2 rounded-2xl p-4 aspect-square md:my-1 my-5">
 			<p className="text-xs">{props.coe ? props.coe : "Base"}</p>
 			<Image className="mx-auto aspect-square object-contain" src={props.location} width={100} height={100} alt={`Image de ${props.name}`} />
 			<p className="text-sm">{props.name}</p>
@@ -92,7 +92,7 @@ export default function PokemonPage() {
 	));
 
 	const evoPkmnsList = evoPkmns.map((pkList) => (
-		<div key={nanoid()} className="flex flex-col items-center space-y-4">
+		<div key={nanoid()} className="flex md:flex-col items-center md:space-y-4 space-y-0">
 			{pkList.map((pk) => (
 				<EvoCard key={pk.id} location={pk.location} id={pk.id} name={pk.name} coe={pk.coe} />
 			))}
