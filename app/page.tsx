@@ -51,9 +51,6 @@ function HomeView() {
 	};
 	const GEN_NAMES = Object.keys(GEN_MAP);
 
-	console.log(filteredGen)
-	console.log(GEN_MAP)
-
 	type TypeKeys = keyof typeof TYPES_MAP;
 	type GenKeys = keyof typeof GEN_MAP;
 	
