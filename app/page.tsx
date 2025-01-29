@@ -36,17 +36,17 @@ function HomeView() {
 
 	const GEN_MAP = {
 		Tous: () => true,
-		1:		(pk: Pk) => pk.gen === "1",
-		2:		(pk: Pk) => pk.gen === "2",
-		3:		(pk: Pk) => pk.gen === "3",
-		4:		(pk: Pk) => pk.gen === "4",
-		5:		(pk: Pk) => pk.gen === "5",
-		6:		(pk: Pk) => pk.gen === "6",
-		7:		(pk: Pk) => pk.gen === "7",
-		8:		(pk: Pk) => pk.gen === "8",
-		9:		(pk: Pk) => pk.gen === "9",
-		Méga:	(pk: Pk) => pk.gen.toLowerCase() === "méga",
-		Gigamax:(pk: Pk) => pk.gen.toLowerCase() === "gigamax",
+		1:		(pk: Pk) => pk.gen.includes("1"),
+		2:		(pk: Pk) => pk.gen.includes("2"),
+		3:		(pk: Pk) => pk.gen.includes("3"),
+		4:		(pk: Pk) => pk.gen.includes("4"),
+		5:		(pk: Pk) => pk.gen.includes("5"),
+		6:		(pk: Pk) => pk.gen.includes("6"),
+		7:		(pk: Pk) => pk.gen.includes("7"),
+		8:		(pk: Pk) => pk.gen.includes("8"),
+		9:		(pk: Pk) => pk.gen.includes("9"),
+		Méga:	(pk: Pk) => pk.gen.toLowerCase().includes("méga"),
+		Gigamax:(pk: Pk) => pk.gen.toLowerCase().includes("gigamax"),
 	};
 	const GEN_NAMES = Object.keys(GEN_MAP);
 
