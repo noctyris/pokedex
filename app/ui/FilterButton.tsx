@@ -27,8 +27,8 @@ export default function FilterButton(props: FilterButtonProps) {
 	}
 
 	return (
-		<select onChange={handleChange} className="bg-transparent border-2 border-foreground p-4 rounded-full">
-			<option disabled>{props.name.toUpperCase()}</option>
+		<select value={props.name} onChange={handleChange} className="bg-transparent border-2 border-foreground p-4 rounded-full">
+			<option disabled>{props.name}</option>
 			{props.options.map((op) => (
 				<option key={op}>{op}</option>
 			))}
