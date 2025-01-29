@@ -22,7 +22,7 @@ function HomeView() {
 	if (!data.length) return <UILoadingScreen />
 	
 	const filteredType = searchParams.get("type") ? searchParams.get("type") : "Tous"
-	const filteredGen = searchParams.get("gen") ? searchParams.get("gen") : "Tous"
+	const filteredGen = searchParams.get("gen") ? searchParams.get("gen").trim().toLowerCase() : "tous"
 
 	const TYPES_MAP = {
 		Tous: () => true,
@@ -35,7 +35,7 @@ function HomeView() {
 	const TYPES_NAMES = Object.keys(TYPES_MAP).map((name) => name.charAt(0).toUpperCase() + name.slice(1));
 
 	const GEN_MAP = {
-		Tous: () => true,
+		tous: () => true,
 		1:		(pk: Pk) => pk.gen.includes("1"),
 		2:		(pk: Pk) => pk.gen.includes("2"),
 		3:		(pk: Pk) => pk.gen.includes("3"),
@@ -45,8 +45,8 @@ function HomeView() {
 		7:		(pk: Pk) => pk.gen.includes("7"),
 		8:		(pk: Pk) => pk.gen.includes("8"),
 		9:		(pk: Pk) => pk.gen.includes("9"),
-		Méga:	(pk: Pk) => pk.gen.toLowerCase().includes("méga"),
-		Gigamax:(pk: Pk) => pk.gen.toLowerCase().includes("gigamax"),
+		méga:	(pk: Pk) => pk.gen.toLowerCase().includes("méga"),
+		gigamax:(pk: Pk) => pk.gen.toLowerCase().includes("gigamax"),
 	};
 	const GEN_NAMES = Object.keys(GEN_MAP);
 
