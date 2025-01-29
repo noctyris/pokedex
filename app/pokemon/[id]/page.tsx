@@ -58,7 +58,7 @@ function groupPokemons(pkmns: Pokemon[]) {
 	pkmns.forEach((pk) => {
 		const key = parseInt(pk.che.split('_')[1].split('-')[0])-1
 		if (result[key] === undefined) {
-			result.splice(key, 0, [])
+			result[key]=[]
 		}
 		(result[key] as Pokemon[]).push(pk);
 		(result[key] as Pokemon[]).sort((a, b) => a.che.localeCompare(b.che))
