@@ -22,11 +22,11 @@ function HomeView() {
 	if (!data.length) return <UILoadingScreen />
 	
 	const filteredType = searchParams.get("type") ? searchParams.get("type") : "Tous"
-	const filteredGen = searchParams.get("gen") ? searchParams.?get("gen").trim().toLowerCase() : "tous"
+	const filteredGen = searchParams.get('gen') ? searchParams.get('gen').charAt(0).toUpperCase() + searchParams.get('gen').slice(1) : "Tous"
 
 	const TYPES_MAP = {
 		Tous: () => true,
-		...Object.fromEntries(getTypesList()//["acier", "combat", "dragon", "eau", "électrik", "fée", "feu", "glace", "insecte", "normal", "plante", "poison", "psy", "roche", "sol", "spectre", "ténèbres", "vol"]
+		...Object.fromEntries(getTypesList()
 			.map((type) => [
 				type, (pk: Pk) => pk.types.some((t) => t.toLowerCase() === type),
 			])
@@ -35,7 +35,7 @@ function HomeView() {
 	const TYPES_NAMES = Object.keys(TYPES_MAP).map((name) => name.charAt(0).toUpperCase() + name.slice(1));
 
 	const GEN_MAP = {
-		tous: () => true,
+		Tous: () => true,
 		1:		(pk: Pk) => pk.gen.includes("1"),
 		2:		(pk: Pk) => pk.gen.includes("2"),
 		3:		(pk: Pk) => pk.gen.includes("3"),
@@ -45,10 +45,13 @@ function HomeView() {
 		7:		(pk: Pk) => pk.gen.includes("7"),
 		8:		(pk: Pk) => pk.gen.includes("8"),
 		9:		(pk: Pk) => pk.gen.includes("9"),
-		méga:	(pk: Pk) => pk.gen.toLowerCase().includes("méga"),
-		gigamax:(pk: Pk) => pk.gen.toLowerCase().includes("gigamax"),
+		Méga:	(pk: Pk) => pk.gen.toLowerCase().includes("méga"),
+		Gigamax:(pk: Pk) => pk.gen.toLowerCase().includes("gigamax"),
 	};
 	const GEN_NAMES = Object.keys(GEN_MAP);
+
+	console.log(filteredGen)
+	console.log(GEN_MAP)
 
 	type TypeKeys = keyof typeof TYPES_MAP;
 	type GenKeys = keyof typeof GEN_MAP;
