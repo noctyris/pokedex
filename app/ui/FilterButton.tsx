@@ -7,7 +7,12 @@ interface FilterButtonProps {
 	query:		string,
 }
 
-export default function FilterButton(props: FilterButtonProps) {
+export function FilterButtonFallback() {
+	return ""
+}
+
+
+export function FilterButton(props: FilterButtonProps) {
 	const router = useRouter();
 	const pathname = usePathname();
 	const searchParams = useSearchParams();
@@ -27,8 +32,8 @@ export default function FilterButton(props: FilterButtonProps) {
 	}
 
 	return (
-		<select onChange={handleChange} className="bg-transparent border-2 border-foreground p-4 rounded-full">
-			<option disabled>{props.name.toUpperCase()}</option>
+		<select defaultValue={props.name} onChange={handleChange} className="bg-transparent border-2 border-foreground p-4 rounded-full">
+			<option disabled>{props.name}</option>
 			{props.options.map((op) => (
 				<option key={op}>{op}</option>
 			))}
