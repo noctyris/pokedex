@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@vercel/speed-insights": "^1.1.0",
     "crypto-js": "^4.2.0",
     "nanoid": "^5.0.9",
@@ -16,7 +17,8 @@
     "papaparse": "^5.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "styled-components": "^6.1.14"
+    "styled-components": "^6.1.14",
+    "use-debounce": "^10.0.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

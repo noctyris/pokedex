@@ -6,18 +6,21 @@ import { useFetchData, getTypesList } from "@/app/data";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
-import FilterButton from "@/app/ui/FilterButton"
-import FilterButtonFallback from "@/app/ui/FilterButtonFallback"
+import { FilterButton, FilterButtonFallback } from "@/app/ui/FilterButton"
 import UILoadingScreen from "@/app/ui/LoadingScreen"
+import { Search, SearchFallback } from "@/app/ui/Search"
 
 interface Pk {
-	gen: string,
-	types: string[],
+	gen:	string,
+	types:	string[],
+	name:	string,
 }
 
 function HomeView() {
 	const data = useFetchData();
 	const searchParams = useSearchParams();
+
+	const request:string = searchParams.get('req') || '';
 	
 	if (!data.length) return <UILoadingScreen />
 	
@@ -57,6 +60,7 @@ function HomeView() {
 	const pkmnsList = data
 		.filter(TYPES_MAP[filteredType as TypeKeys])
 		.filter(GEN_MAP[filteredGen as GenKeys])
+		.filter((pk: Pk) => pk.name.toLowerCase().includes(request.toLowerCase()))
 		.map((pk) => {
 			if (pk.name!=="") {
 				return (
@@ -77,13 +81,16 @@ function HomeView() {
 		<div>
 			<header className="flex flex-col items-center">
 				<h1 className="text-3xl my-6 flex flex-row justify-center items-center">P<Image width={30} height={30} alt="o" className="h-8" src="/favicon.svg" />kedex</h1>
-				<div className="flex flex-row justify-around w-full mb-6">
+				<div className="flex flex-col md:flex-col justify-around items-center md:w-full w-4/5 mb-6 space-x-0 md:space-x-10 md:px-10">
 					<Suspense fallback={<FilterButtonFallback />}>
 						<FilterButton
 							options={TYPES_NAMES}
 							name="Type"
 							query="type"
 						/>
+					</Suspense>
+					<Suspense fallback={<SearchFallback />}>
+						<Search />
 					</Suspense>
 					<Suspense fallback={<FilterButtonFallback />}>
 						<FilterButton
