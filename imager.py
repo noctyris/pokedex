@@ -10,7 +10,7 @@ with open("imager-list.txt", "r", encoding="utf-8") as f:
             name = name.replace(" ", "_")
         elif "♀" in name or "♂" in name: 
             name = name.replace(" ", "")
-        elif "Méga" in name:
+        elif "Méga " in name:
             divided = name.split(" ")
             divided[0] += "-"
             divided[1] += "_"
@@ -31,10 +31,11 @@ with open("imager-list.txt", "r", encoding="utf-8") as f:
             url = "http://www.pokepedia.fr" + line.split("img src=\"")[1].split("\"")[0]
             destination = f"images/{tmp.lower()}.png"
 
-            print(f"\n{tmp}{" "*(20-len(tmp))}->\t{url}\n└── ", end="")
+            print(f"\n{tmp}{" "*(20-len(tmp))}->\t{url}\n└── , end="")
             print(destination)
 
             # Télécharger l'image
             urllib.request.urlretrieve(url, destination)
         except Exception as e:
             print(f"Erreur pour {tmp}: {e}")
+print(Style.RESET_ALL)
