@@ -1,0 +1,11 @@
+﻿type,faiblesses,resistance
+feu,Eau X2 Roche X2 Sol X2,Plante X0.5 Feu X0.5 Insecte X0.5 Acier X0.5 Fée X0.5
+feu/vol,Eau X2 Roche X4 Électrik X2,Plante X0.25 Feu X0.5 Insecte X0.25 Acier X0.5 Fée X0.5 Combat X0.5 Sol X0
+vol/feu,Eau X2 Roche X4 Électrik X2,Plante X0.25 Feu X0.5 Insecte X0.25 Acier X0.5 Fée X0.5 Combat X0.5 Sol X0
+feu/dragon,Dragon X2 Roche X2 Sol X2,Acier X0.5 Électrik X0.5 Insecte X0.5 Feu X0.25 Plante X0.25
+dragon/feu,Dragon X2 Roche X2 Sol X2,Acier X0.5 Électrik X0.5 Insecte X0.5 Feu X0.25 Plante X0.25
+plante/poison,Feu X2 Vol X2 Glace X2 Psy X2,Eau X0.5 Électrik X0.5 Fée X0.5 Combat X0.5 Plante X0.25
+poison/plante,Feu X2 Vol X2 Glace X2 Psy X2,Eau X0.5 Électrik X0.5 Fée X0.5 Combat X0.5 Plante X0.25
+eau,Plante X2 Électrik X2,Feu X0.5 Eau X0.5 Glace X0.5 Acier X0.5
+insecte,Feu X2 Vol X2 Roche X2,Plante X0.5 Combat X0.5 Sol X0.5
+insecte/vol,Feu X2 Vol X2 Électrik X2 Glace X2 Roche X4,Insecte X0.5 Plante X0.25 Combat X0.25 Sol X0

@@ -121,8 +121,8 @@ export default function PokemonPage() {
 					<DataCard title="Numéro" value={pkmn.num} />
 					<DataCard title="Catégorie" value={pkmn.category} />
 					<DataCard title="Génération" value={pkmn.gen.match(/^\d+$/)===null ? pkmn.gen : pkmn.gen + "ᵉ"} />
-					<DataCard title="Poids" value={pkmn.weight ? pkmn.weight + " kg" : "?"} />
-					<DataCard title="Taille" value={pkmn.size ? pkmn.size + " m" : "?" } />
+					<DataCard title="Poids" value={pkmn.weight ? pkmn.weight + " kg" : "Inconnu"} />
+					<DataCard title="Taille" value={pkmn.size ? pkmn.size + " m" : "Inconnu" } />
 				</section>
 				{pkmn.che &&
 				<section>
