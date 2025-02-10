@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useFetchData, getTypesList } from "@/app/data";
+import { useFetchPokemonData, getTypesList } from "@/app/data";
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 
@@ -17,7 +17,7 @@ interface Pk {
 }
 
 function HomeView() {
-	const data = useFetchData();
+	const data = useFetchPokemonData();
 	const searchParams = useSearchParams();
 
 	const request:string = searchParams.get('req') || '';

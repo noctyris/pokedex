@@ -1,6 +1,6 @@
 "use client";
 
-import { useFetchData, getTypesList, Pokemon } from "@/app/data";
+import { useFetchPokemonData, useFetchWSData, getTypesList, Pokemon } from "@/app/data";
 import { usePathname } from "next/navigation";
 
 import Link from "next/link";
@@ -78,15 +78,18 @@ function EvoCard(props: EvoCardProps) {
 
 export default function PokemonPage() {
 	const targetId = usePathname().split('/')[2]
-	const rawData = useFetchData();
+	const rawPokemon = useFetchPokemonData();
+	const rawWS = useFetchWSData();
 
-	if (rawData.length === 0) {
+	if (rawPokemon.length === 0) {
 		return <UILoadingScreen />;
 	}
 
-	const pkmn = rawData.filter((pk) => pk.id === targetId)[0];
+	const pkmn = rawPokemon.filter((pk) => pk.id === targetId)[0];
+	const idWS = !pkmn.types.includes("") ? [pkmn.types.join('/').toLowerCase(), pkmn.types.reverse().join('/').toLowerCase()] : [pkmn.types.filter((k) => k)[0].toLowerCase()]
+	const filteredWS = rawWS.filter((ws: { type: string }) => idWS.includes(ws.type.toLowerCase()))[0];
 	
-	const evoPkmns = groupPokemons(rawData.filter((pk) => 
+	const evoPkmns = groupPokemons(rawPokemon.filter((pk) => 
 		pk.che !== "" && 
 		pk.che.split('_')[0] === pkmn.che.split('_')[0]
 	));
@@ -131,21 +134,22 @@ export default function PokemonPage() {
 						{evoPkmnsList}
 					</div>
 				</section>}
+				{ filteredWS ? 
 				<section>
 					<div className="flex flex-col items-center bg-cardbg border-2 border-foreground w-2/3 p-5 mx-auto rounded-3xl">
 						<div className="flex justify-around w-full md:flex-row flex-col">
 							<div className="flex flex-col items-center space-y-1">
 								<p>Résistance</p>
-								{ShowStats(pkmn.resist)}
+								{ShowStats(filteredWS.strong)}
 							</div>
 							<hr className="md:invisible visible m-8" />
 							<div className="flex flex-col items-center space-y-1">
 								<p>Faiblesse</p>
-								{ShowStats(pkmn.weak)}
+								{ShowStats(filteredWS.weak)}
 							</div>
 						</div>
 					</div>
-				</section>
+				</section> : ""}
 			</main>
 		</>
 	)
