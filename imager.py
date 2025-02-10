@@ -10,7 +10,7 @@ with open("imager-list.txt", "r", encoding="utf-8") as f:
             name = name.replace(" ", "_")
         elif "♀" in name or "♂" in name: 
             name = name.replace(" ", "")
-        elif "Méga" in name:
+        elif "Méga " in name:
             divided = name.split(" ")
             divided[0] += "-"
             divided[1] += "_"
@@ -38,3 +38,4 @@ with open("imager-list.txt", "r", encoding="utf-8") as f:
             urllib.request.urlretrieve(url, destination)
         except Exception as e:
             print(f"Erreur pour {tmp}: {e}")
+print(Style.RESET_ALL)
