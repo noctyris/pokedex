@@ -20,15 +20,19 @@ export function FilterButton(props: FilterButtonProps) {
 	const createQueryString = useCallback(
 		(name: string, value: string) => {
 			const params = new URLSearchParams(searchParams.toString())
-			params.set(name, value)
+			params.set(name, value);
 
-			return params.toString()
+			return params.toString();
 		},
 		[searchParams]
 	)
 
 	function handleChange (e: React.ChangeEvent<HTMLSelectElement>) {
-		router.push(pathname + '?' + createQueryString(props.query, (e.target.value.toLowerCase() !== "tous") ? e.target.value.toLowerCase() : ""));
+		if (e.target.value.toLowerCase() !== "tous") {
+			router.push(pathname + '?' + createQueryString(props.query, e.target.value.toLowerCase()));
+		} else {
+			router.push(pathname + '?' + createQueryString(props.query, ""))
+		}
 	}
 
 	return (

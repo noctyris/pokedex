@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 
-interface Row {
+interface PkRow {
 	name:		string;
 	num:		string;
 	type1:		string;
@@ -14,8 +14,6 @@ interface Row {
 	gen:		string;
 	CHE:		string;
 	COE:		string;
-	faiblesse:	string;
-	résistance:	string;
 }
 
 export interface Pokemon {
@@ -24,17 +22,27 @@ export interface Pokemon {
 	num:		string;
 	types:		string[];
 	category:	string;
-	location:	string;
+	image:		string;
 	weight:		string;
 	size:		string;
 	gen:		string;
 	che:		string;
 	coe:		string;
-	weak:		string;
-	resist:		string;
 }
 
-export function useFetchData() {
+export interface WSRow {
+	type:		string;
+	faiblesses:	string;
+	resistance:	string;
+}
+
+export interface WSData {
+	type:	string;
+	weak:	string;
+	strong:	string;
+}
+
+export function useFetchPokemonData() {
 	const [data, setData] = useState<Pokemon[]>([]);
 	
 	useEffect(() => {
@@ -46,20 +54,42 @@ export function useFetchData() {
 					skipEmptyLines: true,
 				});
 				
-				setData((parsed.data as Row[]).map((row) => ({
+				setData((parsed.data as PkRow[]).map((row) => ({
 					id:			encodeURIComponent(row.name),
 					name:		row.name,
 					num:		row.num,
 					types:		[row.type1, row.type2],
 					category:	row.category,
-					location:	`/images/${row.name.toLowerCase()}.png`,
+					image:		`/images/${row.name.toLowerCase()}.png`,
 					weight:		row.weight,
 					size:		row.size,
 					gen:		row.gen,
 					che:		row.CHE,
 					coe:		row.COE,
-					weak:		row.faiblesse,
-					resist:		row.résistance,
+				})))
+			})
+			.catch(error => console.error('Error fetching CSV:', error));
+	}, []);
+
+	return data;
+}
+
+export function useFetchWSData() {
+	const [data, setData] = useState<WSData[]>([]);
+	
+	useEffect(() => {
+	    fetch('/weak-strong.csv')
+			.then(response => response.text())
+			.then(text => {
+				const parsed = Papa.parse(text, {
+					header: true,
+					skipEmptyLines: true,
+				});
+				
+				setData((parsed.data as WSRow[]).map((row) => ({
+					type:	row.type,
+					weak:	row.faiblesses,
+					strong:	row.resistance,
 				})))
 			})
 			.catch(error => console.error('Error fetching CSV:', error));
