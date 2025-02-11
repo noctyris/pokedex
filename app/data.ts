@@ -22,7 +22,7 @@ export interface Pokemon {
 	num:		string;
 	types:		string[];
 	category:	string;
-	location:	string;
+	image:		string;
 	weight:		string;
 	size:		string;
 	gen:		string;
@@ -60,7 +60,7 @@ export function useFetchPokemonData() {
 					num:		row.num,
 					types:		[row.type1, row.type2],
 					category:	row.category,
-					location:	`/images/${row.name.toLowerCase()}.png`,
+					image:		`/images/${row.name.toLowerCase()}.png`,
 					weight:		row.weight,
 					size:		row.size,
 					gen:		row.gen,
