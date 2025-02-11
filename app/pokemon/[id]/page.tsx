@@ -10,28 +10,14 @@ import { nanoid } from "nanoid"
 
 import Cross from "@/app/ui/Cross"
 import UILoadingScreen from "@/app/ui/LoadingScreen"
-
-interface DataCardProps {
-	title:	string,
-	value:	string,
-}
+import DataCard from "@/app/ui/pkpage/DataCard"
 
 interface EvoCardProps {
 	id:			string,
 	name:		string,
-	location:	string,
+	image:		string,
 	coe:		string,
 }
-
-function DataCard(props: DataCardProps) {
-	return (
-		<div className="bg-cardbg flex flex-col items-center p-2 rounded-2xl border-foreground border-2">
-			<p>{props.title}</p>
-			<p className="text-sm">{props.value}</p>
-		</div>
-	)
-}
-
 
 function ShowStats(tList: string) {
 	function StatsCard(props: {type: string, value: string}) {
@@ -70,7 +56,7 @@ function EvoCard(props: EvoCardProps) {
 	return (
 		<Link href={`/pokemon/${props.id}`} className="text-center bg-cardbg border-foreground border-2 rounded-2xl p-4 aspect-square md:my-1 my-5">
 			<p className="text-xs">{props.coe ? props.coe : "Base"}</p>
-			<Image className="mx-auto aspect-square object-contain" src={props.location} width={100} height={100} alt={`Image de ${props.name}`} />
+			<Image className="mx-auto aspect-square object-contain" src={props.image} width={100} height={100} alt={`Image de ${props.name}`} />
 			<p className="text-sm">{props.name}</p>
 		</Link>
 	)
@@ -97,7 +83,7 @@ export default function PokemonPage() {
 	const evoPkmnsList = evoPkmns.map((pkList) => (
 		<div key={nanoid()} className="flex md:flex-col items-center md:space-y-4 space-y-0">
 			{pkList.map((pk) => (
-				<EvoCard key={pk.id} location={pk.location} id={pk.id} name={pk.name} coe={pk.coe} />
+				<EvoCard key={pk.id} image={pk.image} id={pk.id} name={pk.name} coe={pk.coe} />
 			))}
 		</div>
 	))
@@ -115,7 +101,7 @@ export default function PokemonPage() {
 					<div className={`bg-${pkmn.types[0].toLowerCase()} aspect-square h-fit my-auto p-4 rounded-full md:scale-100 scale-75`}>
 						<Image src={`/types/${pkmn.types[0].toLowerCase()}.svg`} height={70} width={70} alt={`Image du type ${pkmn.types[0]}`} />
 					</div>
-					<Image src={pkmn.location} width={250} height={250} priority alt={`Image fr ${pkmn.name}`} />
+					<Image src={pkmn.image} width={250} height={250} priority alt={`Image fr ${pkmn.name}`} />
 					<div className={`bg-${pkmn.types[1]!=="" ? pkmn.types[1].toLowerCase() : pkmn.types[0].toLowerCase()} aspect-square h-fit my-auto p-4 rounded-full md:scale-100 scale-75`}>
 						<Image src={`/types/${pkmn.types[1]!=="" ? pkmn.types[1].toLowerCase() : pkmn.types[0].toLowerCase()}.svg`} height={70} width={70} alt={`Image du type ${pkmn.types[1] !== "" ? pkmn.types[1] : pkmn.types[0]}`} />
 					</div>
