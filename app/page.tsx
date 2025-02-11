@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useFetchPokemonData, getTypesList } from "@/app/data";
+import { useFetchPokemonData, getTypesList } from "@/app/hooks/data";
 import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 
 import { FilterButton, FilterButtonFallback } from "@/app/ui/FilterButton"
 import UILoadingScreen from "@/app/ui/LoadingScreen"
@@ -16,12 +16,28 @@ interface Pk {
 	name:	string,
 }
 
-function HomeView() {
+interface HomeViewProps {
+	isLoading: boolean,
+	setIsLoading: (loading: boolean) => void;
+}
+
+function HomeView(props: HomeViewProps) {
 	const data = useFetchPokemonData();
 	const searchParams = useSearchParams();
 	const request:string = searchParams.get('req') || '';
-	
-	if (!data.length) return <UILoadingScreen />;
+
+	const { isLoading, setIsLoading } = props;
+
+	useEffect(() => {
+		if (data.length > 0) {
+			setIsLoading(false);
+		}
+	}, [data, setIsLoading])
+
+	const handleLinkClick = () => {
+		sessionStorage.setItem('scrollY', window.scrollY.toString());
+	};
+
 	
 	const filteredType = searchParams.get("type") || "Tous";
 	const filteredGen = (searchParams.get('gen') || 'Tous').replace(/^./, m => m.toUpperCase());
@@ -64,7 +80,7 @@ function HomeView() {
 		.map((pk) => {
 			if (pk.name!=="") {
 				return (
-					<Link key={pk.id} href={`/pokemon/${pk.id}`}>
+					<Link key={pk.id} href={`/pokemon/${pk.id}`} onClick={handleLinkClick}>
 						<div className={`rounded-3xl aspect-square p-2 bg-gradient-to-br from-${pk.types[0].toLowerCase()} to-${(pk.types[1]!=="") ? pk.types[1].toLowerCase() : pk.types[0].toLowerCase()}`}>
 							<div className="flex flex-col items-center justify-around text-black aspect-square bg-[#ffffff80] p-5 rounded-2xl hover:shadow-2xl transition-all duration-400">
 								<Image src={pk.image} width={150} height={150} alt={`Image of ${pk.name}`} className="aspect-square object-contain" />
@@ -102,16 +118,37 @@ function HomeView() {
 				</div>
 			</header>
 			<main className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] justify-center">
-				{pkmnsList}
+				{isLoading ? <UILoadingScreen /> : pkmnsList}
 			</main>
 		</>
 	);
 }
 
-export default function Home() {
+const Home: React.FC = () => {
+	const [isLoading, setIsLoading] = useState(true);
+	const [savedScrollY, setSavedScrollY] = useState<number | null>(null);
+
+	useEffect(() => {
+		if (typeof window !== 'undefined') {
+			const scrollY = sessionStorage.getItem('scrollY');
+			if (scrollY) {
+				setSavedScrollY(parseInt(scrollY, 10));
+				sessionStorage.removeItem('scrollY');
+			}
+		}
+	}, []);
+
+	useEffect(() => {
+		if (savedScrollY !== null && !isLoading) {
+			window.scrollTo(0, savedScrollY);
+		}
+	}, [isLoading, savedScrollY]);
+
 	return (
 		<Suspense>
-			<HomeView />
+			<HomeView isLoading={isLoading} setIsLoading={setIsLoading} />
 		</Suspense>
-	)
+	);
 }
+
+export default Home;
