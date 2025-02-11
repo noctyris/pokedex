@@ -93,7 +93,7 @@ function HomeView(props: HomeViewProps) {
 			}
 	});
   
-	return (
+	return (isLoading ? <UILoadingScreen /> :
 		<>
 			<header className="flex flex-col items-center">
 				<h1 className="text-3xl my-6 flex flex-row justify-center items-center">P<Image width={30} height={30} alt="o" className="h-8" src="/favicon.svg" />kedex</h1>
@@ -118,7 +118,7 @@ function HomeView(props: HomeViewProps) {
 				</div>
 			</header>
 			<main className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] justify-center">
-				{isLoading ? <UILoadingScreen /> : pkmnsList}
+				{pkmnsList}
 			</main>
 		</>
 	);
