@@ -9,6 +9,7 @@ import React, { Suspense, useEffect, useState } from "react";
 import { FilterButton, FilterButtonFallback } from "@/app/ui/FilterButton"
 import UILoadingScreen from "@/app/ui/LoadingScreen"
 import { Search, SearchFallback } from "@/app/ui/Search"
+import ScrollUp from "@/app/ui/ScrollUp"
 
 interface Pk {
 	gen:	string,
@@ -17,8 +18,9 @@ interface Pk {
 }
 
 interface HomeViewProps {
-	isLoading: boolean,
-	setIsLoading: (loading: boolean) => void;
+	isLoading:		boolean,
+	setIsLoading:	(loading: boolean) => void;
+	scrollY:		number;
 }
 
 function HomeView(props: HomeViewProps) {
@@ -120,6 +122,7 @@ function HomeView(props: HomeViewProps) {
 			<main className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] justify-center">
 				{pkmnsList}
 			</main>
+			{props.scrollY>0 && <ScrollUp />}
 		</>
 	);
 }
@@ -127,6 +130,7 @@ function HomeView(props: HomeViewProps) {
 const Home: React.FC = () => {
 	const [isLoading, setIsLoading] = useState(true);
 	const [savedScrollY, setSavedScrollY] = useState<number | null>(null);
+	const [scrollY, setScrollY] = useState(0);
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
@@ -144,9 +148,20 @@ const Home: React.FC = () => {
 		}
 	}, [isLoading, savedScrollY]);
 
+	useEffect(() => {
+		const handleScroll = () => {
+			setScrollY(window.scrollY);
+		};
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+
+
 	return (
 		<Suspense>
-			<HomeView isLoading={isLoading} setIsLoading={setIsLoading} />
+			<HomeView scrollY={scrollY} isLoading={isLoading} setIsLoading={setIsLoading} />
 		</Suspense>
 	);
 }
