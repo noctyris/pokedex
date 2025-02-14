@@ -16,9 +16,9 @@ export function Search({ placeholder }: {placeholder?: string}) {
 	const handleSearch = useDebouncedCallback((term) => {
 		const params = new URLSearchParams(searchParams);
 		if (term) {
-			params.set('req', term);
+			params.set('query', term);
 		} else {
-			params.delete('req')
+			params.delete('query')
 		}
 		replace(`${pathname}?${params.toString()}`)
 	}, 300)

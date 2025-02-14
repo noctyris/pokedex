@@ -24,10 +24,10 @@ function WS(tList: string) {
 }
 
 export default function ShowWS(pkmn: Pokemon, rawWS: WSData[]) {
-    const idWS = !pkmn.types.includes("") ? [pkmn.types.join('/').toLowerCase(), pkmn.types.reverse().join('/').toLowerCase()] : [pkmn.types.filter((k) => k)[0].toLowerCase()]
+    const idWS = (pkmn.types[0] === pkmn.types[1]) ? [pkmn.types[0].toLowerCase()] : [pkmn.types.join('/').toLowerCase(), pkmn.types.reverse().join('/').toLowerCase()]
 	const filteredWS = rawWS.filter((ws: { type: string }) => idWS.includes(ws.type.toLowerCase()))[0];
 
-    return filteredWS ?
+    return filteredWS &&
         <section>
             <div className="flex flex-col items-center bg-cardbg border-2 border-foreground w-2/3 p-5 mx-auto rounded-3xl">
                 <div className="flex justify-around w-full md:flex-row flex-col">
@@ -42,6 +42,6 @@ export default function ShowWS(pkmn: Pokemon, rawWS: WSData[]) {
                     </div>
                 </div>
             </div>
-        </section> : ""
+        </section>
 
 }
