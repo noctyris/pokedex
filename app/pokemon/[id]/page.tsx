@@ -39,7 +39,7 @@ export default function PokemonPage() {
 					<Link href={`/?type=${pkmn.types[0].toLowerCase()}`} className={`bg-${pkmn.types[0].toLowerCase()} aspect-square h-fit my-auto p-4 rounded-full md:scale-100 scale-75`}>
 						<Image src={`/types/${pkmn.types[0].toLowerCase()}.svg`} height={70} width={70} alt={`Logo du type ${pkmn.types[0]}`} />
 					</Link>
-					<Image href={`/?type=${pkmn.types[1].toLowerCase()}`} src={pkmn.image} width={250} height={250} priority alt={`Image de ${pkmn.name}`} />
+					<Image src={pkmn.image} width={250} height={250} priority alt={`Image de ${pkmn.name}`} />
 					<Link href={`/?type=${pkmn.types[1].toLowerCase()}`} className={`bg-${pkmn.types[1].toLowerCase()} aspect-square h-fit my-auto p-4 rounded-full md:scale-100 scale-75`}>
 						<Image src={`/types/${pkmn.types[1].toLowerCase()}.svg`} height={70} width={70} alt={`Logo du type ${pkmn.types[1]}`} />
 					</Link>
