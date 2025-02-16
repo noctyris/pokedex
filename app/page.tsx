@@ -26,7 +26,7 @@ interface HomeViewProps {
 function HomeView(props: HomeViewProps) {
 	const data = useFetchPokemonData();
 	const searchParams = useSearchParams();
-	const request:string = searchParams.get('query') || '';
+	const query:string = searchParams.get('query') || '';
 
 	const { isLoading, setIsLoading } = props;
 
@@ -78,7 +78,7 @@ function HomeView(props: HomeViewProps) {
 	const pkmnsList = data
 		.filter(TYPES_MAP[filteredType as TypeKeys])
 		.filter(GEN_MAP[filteredGen as GenKeys])
-		.filter((pk: Pk) => pk.name.toLowerCase().includes(request.toLowerCase()))
+		.filter((pk: Pk) => pk.name.toLowerCase().includes(query.toLowerCase()))
 		.map((pk) => {
 			if (pk.name!=="") {
 				return (
@@ -118,6 +118,7 @@ function HomeView(props: HomeViewProps) {
 						/>
 					</Suspense>
 				</div>
+				{query && <p className="-mt-3 mb-3">{pkmnsList.length ? pkmnsList.length : "Aucun"} résultat{pkmnsList.length>1 && "s"}</p>}
 			</header>
 			<main className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] justify-center">
 				{pkmnsList}
