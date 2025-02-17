@@ -26,7 +26,7 @@ interface HomeViewProps {
 function HomeView(props: HomeViewProps) {
 	const data = useFetchPokemonData();
 	const searchParams = useSearchParams();
-	const request:string = searchParams.get('req') || '';
+	const query:string = searchParams.get('query') || '';
 
 	const { isLoading, setIsLoading } = props;
 
@@ -78,12 +78,12 @@ function HomeView(props: HomeViewProps) {
 	const pkmnsList = data
 		.filter(TYPES_MAP[filteredType as TypeKeys])
 		.filter(GEN_MAP[filteredGen as GenKeys])
-		.filter((pk: Pk) => pk.name.toLowerCase().includes(request.toLowerCase()))
+		.filter((pk: Pk) => pk.name.toLowerCase().includes(query.toLowerCase()))
 		.map((pk) => {
 			if (pk.name!=="") {
 				return (
 					<Link key={pk.id} href={`/pokemon/${pk.id}`} onClick={handleLinkClick}>
-						<div className={`rounded-3xl aspect-square p-2 bg-gradient-to-br from-${pk.types[0].toLowerCase()} to-${(pk.types[1]!=="") ? pk.types[1].toLowerCase() : pk.types[0].toLowerCase()}`}>
+						<div className={`rounded-3xl aspect-square p-2 bg-gradient-to-br from-${pk.types[0].toLowerCase()} to-${pk.types[1].toLowerCase()}`}>
 							<div className="flex flex-col items-center justify-around text-black aspect-square bg-[#ffffff80] p-5 rounded-2xl hover:shadow-2xl transition-all duration-400">
 								<Image src={pk.image} width={150} height={150} alt={`Image of ${pk.name}`} className="aspect-square object-contain" />
 								<p className="pb-1">{pk.name}</p>
@@ -118,6 +118,7 @@ function HomeView(props: HomeViewProps) {
 						/>
 					</Suspense>
 				</div>
+				{query && <p className="-mt-3 mb-3">{pkmnsList.length ? pkmnsList.length : "Aucun"} résultat{pkmnsList.length>1 && "s"}</p>}
 			</header>
 			<main className="grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(150px,250px))] justify-center">
 				{pkmnsList}

@@ -23,8 +23,10 @@ export default function PokemonPage() {
 	}
 
 	const pkmn = rawPokemon.filter((pk) => pk.id === targetId)[0];
-		
-	return (
+
+	console.log(`/?type=${pkmn.types[0].toLowerCase()}`)
+
+	return pkmn.types && pkmn.types.length>0 ? (
 		<>
 			<header className="mt-4 flex flex-row justify-around items-center">
 				<p className="text-3xl">{pkmn.name}</p>
@@ -33,14 +35,14 @@ export default function PokemonPage() {
 				</Link>
 			</header>
 			<main className="flex flex-col space-y-5 my-5">
-				<section className={`flex flex-row justify-around bg-gradient-to-r from-${pkmn.types[0].toLowerCase()} via-background to-${pkmn.types[1]!=="" ? pkmn.types[1].toLowerCase() : pkmn.types[0].toLowerCase()} py-5`}>
-					<div className={`bg-${pkmn.types[0].toLowerCase()} aspect-square h-fit my-auto p-4 rounded-full md:scale-100 scale-75`}>
-						<Image src={`/types/${pkmn.types[0].toLowerCase()}.svg`} height={70} width={70} alt={`Image du type ${pkmn.types[0]}`} />
-					</div>
+				<section className={`flex flex-row justify-around bg-gradient-to-r from-${pkmn.types[0].toLowerCase()} via-background to-${pkmn.types[1].toLowerCase()} py-5`}>
+					<Link href={`/?type=${pkmn.types[0].toLowerCase()}`} className={`bg-${pkmn.types[0].toLowerCase()} aspect-square h-fit my-auto p-4 rounded-full md:scale-100 scale-75`}>
+						<Image src={`/types/${pkmn.types[0].toLowerCase()}.svg`} height={70} width={70} alt={`Logo du type ${pkmn.types[0]}`} />
+					</Link>
 					<Image src={pkmn.image} width={250} height={250} priority alt={`Image de ${pkmn.name}`} />
-					<div className={`bg-${pkmn.types[1]!=="" ? pkmn.types[1].toLowerCase() : pkmn.types[0].toLowerCase()} aspect-square h-fit my-auto p-4 rounded-full md:scale-100 scale-75`}>
-						<Image src={`/types/${pkmn.types[1]!=="" ? pkmn.types[1].toLowerCase() : pkmn.types[0].toLowerCase()}.svg`} height={70} width={70} alt={`Image du type ${pkmn.types[1] !== "" ? pkmn.types[1] : pkmn.types[0]}`} />
-					</div>
+					<Link href={`/?type=${pkmn.types[1].toLowerCase()}`} className={`bg-${pkmn.types[1].toLowerCase()} aspect-square h-fit my-auto p-4 rounded-full md:scale-100 scale-75`}>
+						<Image src={`/types/${pkmn.types[1].toLowerCase()}.svg`} height={70} width={70} alt={`Logo du type ${pkmn.types[1]}`} />
+					</Link>
 				</section>
 				<section className="px-3 grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(50px,150px))] justify-center">
 					<DataCard title="Numéro" value={pkmn.num} />
@@ -53,5 +55,5 @@ export default function PokemonPage() {
 				{ShowWS(pkmn, rawWS)}
 			</main>
 		</>
-	)
+	) : <UILoadingScreen />
 }

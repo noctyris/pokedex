@@ -20,10 +20,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 				className={`${montserrat.className} antialiased`}
 			>
 				{children}
-				<noscript>
-					Le site n'est pas disponible ici<br />
-					Essayez d'activer JavaScript et revenez explorer le monde des Pokémons !
-				</noscript>
+				<noscript>Le JavaScript est désactivé, le monde des pokémons est inaccessible.</noscript>
 			</body>
 		</html>
 	);

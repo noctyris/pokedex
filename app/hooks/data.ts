@@ -58,7 +58,7 @@ export function useFetchPokemonData() {
 					id:			encodeURIComponent(row.name),
 					name:		row.name,
 					num:		row.num,
-					types:		[row.type1, row.type2],
+					types:		[row.type1, row.type2||row.type1],
 					category:	row.category,
 					image:		`/images/${row.name.toLowerCase()}.png`,
 					weight:		row.weight,
