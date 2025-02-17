@@ -24,7 +24,6 @@ export default function PokemonPage() {
 
 	const pkmn = rawPokemon.filter((pk) => pk.id === targetId)[0];
 
-	console.log(`/?type=${pkmn.types[0].toLowerCase()}`)
 
 	return pkmn.types && pkmn.types.length>0 ? (
 		<>
