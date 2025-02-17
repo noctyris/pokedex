@@ -47,7 +47,7 @@ export default function PokemonPage() {
 				<section className="px-3 grid gap-[20px] grid-cols-[repeat(auto-fit,minmax(50px,150px))] justify-center">
 					<DataCard title="Numéro" value={pkmn.num} />
 					<DataCard title="Catégorie" value={pkmn.category} />
-					<DataCard title="Génération" value={pkmn.gen.match(/^\d+$/)===null ? pkmn.gen : pkmn.gen + "ᵉ"} />
+					<DataCard title="Génération" value={pkmn.gen.match(/^\d+$/)===null ? pkmn.gen : <span>{pkmn.gen}<sup>e</sup></span>} />
 					<DataCard title="Poids" value={pkmn.weight ? pkmn.weight + " kg" : "Inconnu"} />
 					<DataCard title="Taille" value={pkmn.size ? pkmn.size + " m" : "Inconnu" } />
 				</section>
