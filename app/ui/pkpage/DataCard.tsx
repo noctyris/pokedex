@@ -1,6 +1,6 @@
 interface DataCardProps {
 	title:	string;
-	value:	string;
+	value:	string | React.ReactNode;
 }
 
 export default function DataCard(props: DataCardProps) {
