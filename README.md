@@ -15,7 +15,7 @@ Visit <a href="https://pokedex-he-dev.vercel.app">pokedex-he-dev</a><i> → Not 
 ```bash
 git clone https://github.com/noctyris/pokedex
 ```
-- Execure the code
+- Execute the code
 <details>
   <summary>Dev version</summary>
   <code>npm run dev</code>
