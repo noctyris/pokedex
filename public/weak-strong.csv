@@ -1,0 +1,172 @@
+﻿type,faiblesses,resistances
+normal,Combat ,Spectre 
+normal/feu,Combat  Eau  Roche  Sol ,Acier  Feu  Fée  Insecte  Plante  Spectre 
+normal/eau,Combat  Plante  Électrik ,Acier  Eau  Feu  Glace  Spectre 
+normal/électrik,Combat  Sol ,Acier  Spectre  Vol  Électrik 
+normal/plante,Combat  Feu  Glace  Insecte  Poison  Vol ,Eau  Plante  Sol  Spectre  Électrik 
+normal/glace,Acier  Combat  Feu  Roche ,Glace  Spectre 
+normal/combat,Combat  Fée  Psy  Vol ,Insecte  Roche  Spectre  Ténèbres 
+normal/poison,Combat  Psy  Sol ,Fée  Insecte  Plante  Poison  Spectre 
+normal/sol,Combat  Eau  Glace  Plante ,Poison  Roche  Spectre  Électrik 
+normal/vol,Glace  Roche  Électrik ,Combat  Insecte  Plante  Sol  Spectre 
+normal/psy,Insecte  Spectre  Ténèbres ,Combat  Psy  Spectre 
+normal/insecte,Feu  Roche  Vol ,Combat  Plante  Sol  Spectre 
+normal/roche,Acier  Combat  Eau  Plante  Sol ,Feu  Normal  Poison  Spectre  Vol 
+normal/spectre,Combat  Spectre  Ténèbres ,Combat  Insecte  Normal  Poison  Spectre 
+normal/dragon,Combat  Dragon  Fée  Glace ,Eau  Feu  Plante  Spectre  Électrik 
+normal/ténèbres,Combat  Fée  Insecte ,Psy  Spectre  Spectre  Ténèbres 
+normal/acier,Combat  Feu  Sol ,Acier  Dragon  Fée  Glace  Insecte  Normal  Plante  Poison  Psy  Roche  Spectre  Vol 
+normal/fée,Acier  Poison ,Combat  Dragon  Insecte  Spectre  Ténèbres 
+feu,Eau  Roche  Sol ,Plante  Feu  Insecte  Acier  Fée 
+feu/eau,Roche  Sol  Électrik ,Acier  Eau  Feu  Fée  Glace  Insecte  Plante 
+feu/électrik,Eau  Roche  Sol ,Acier  Feu  Fée  Insecte  Plante  Vol  Électrik 
+feu/plante,Glace  Poison  Roche  Vol ,Acier  Eau  Feu  Fée  Insecte  Plante  Sol  Électrik 
+feu/glace,Combat  Eau  Roche  Sol ,Acier  Feu  Fée  Glace  Insecte  Plante 
+feu/combat,Eau  Psy  Sol  Vol ,Acier  Feu  Fée  Insecte  Plante  Roche  Ténèbres 
+feu/poison,Eau  Psy  Roche  Sol ,Acier  Feu  Fée  Insecte  Plante  Poison 
+feu/sol,Eau  Glace  Sol ,Acier  Feu  Fée  Insecte  Plante  Poison  Roche  Électrik 
+feu/vol,Eau  Glace  Roche  Sol  Électrik ,Acier  Combat  Feu  Fée  Insecte  Plante  Sol 
+feu/psy,Eau  Roche  Sol  Spectre  Ténèbres ,Acier  Combat  Feu  Fée  Insecte  Plante  Psy 
+feu/insecte,Eau  Roche  Vol ,Acier  Combat  Feu  Fée  Insecte  Plante  Sol 
+feu/roche,Combat  Eau  Roche  Sol ,Acier  Feu  Fée  Insecte  Normal  Plante  Poison  Vol 
+feu/spectre,Eau  Roche  Sol  Spectre  Ténèbres ,Acier  Combat  Feu  Fée  Insecte  Normal  Plante  Poison 
+feu/dragon,Dragon  Glace  Roche  Sol ,Acier  Eau  Feu  Fée  Insecte  Plante  Électrik 
+feu/ténèbres,Combat  Eau  Roche  Sol ,Acier  Feu  Fée  Insecte  Plante  Psy  Spectre  Ténèbres 
+feu/acier,Combat  Eau  Sol ,Acier  Dragon  Feu  Fée  Glace  Insecte  Normal  Plante  Poison  Psy  Roche  Vol 
+feu/fée,Eau  Poison  Roche  Sol ,Acier  Combat  Dragon  Feu  Fée  Insecte  Plante  Ténèbres 
+eau,Plante  Électrik ,Feu  Eau  Glace  Acier 
+eau/électrik,Plante  Sol ,Acier  Eau  Feu  Glace  Vol  Électrik 
+eau/plante,Insecte  Poison  Vol ,Acier  Eau  Feu  Glace  Plante  Sol  Électrik 
+eau/glace,Combat  Plante  Roche  Électrik ,Acier  Eau  Feu  Glace 
+eau/combat,Fée  Plante  Psy  Vol  Électrik ,Acier  Eau  Feu  Glace  Insecte  Roche  Ténèbres 
+eau/poison,Psy  Sol  Électrik ,Acier  Eau  Feu  Fée  Glace  Insecte  Plante  Poison 
+eau/sol,Plante  Électrik ,Acier  Eau  Feu  Glace  Poison  Roche  Électrik 
+eau/vol,Roche  Électrik ,Acier  Combat  Eau  Feu  Glace  Insecte  Plante  Sol 
+eau/psy,Insecte  Plante  Spectre  Ténèbres  Électrik ,Acier  Combat  Eau  Feu  Glace  Psy 
+eau/insecte,Roche  Vol  Électrik ,Acier  Combat  Eau  Feu  Glace  Plante  Sol 
+eau/roche,Combat  Plante  Sol  Électrik ,Acier  Eau  Feu  Glace  Normal  Poison  Vol 
+eau/spectre,Plante  Spectre  Ténèbres  Électrik ,Acier  Combat  Eau  Feu  Glace  Insecte  Normal  Poison 
+eau/dragon,Dragon  Fée ,Acier  Eau  Feu  Glace  Plante  Électrik 
+eau/ténèbres,Combat  Fée  Insecte  Plante  Électrik ,Acier  Eau  Feu  Glace  Psy  Spectre  Ténèbres 
+eau/acier,Combat  Sol  Électrik ,Acier  Dragon  Eau  Feu  Fée  Glace  Insecte  Normal  Plante  Poison  Psy  Roche  Vol 
+eau/fée,Plante  Poison  Électrik ,Acier  Combat  Dragon  Eau  Feu  Glace  Insecte  Ténèbres 
+électrik,Sol ,Vol  Acier  Électrik 
+électrik/plante,Feu  Glace  Insecte  Poison ,Acier  Eau  Plante  Sol  Vol  Électrik 
+électrik/glace,Combat  Feu  Roche  Sol ,Acier  Glace  Vol  Électrik 
+électrik/combat,Fée  Psy  Sol ,Acier  Insecte  Roche  Ténèbres  Vol  Électrik 
+électrik/poison,Psy  Sol ,Acier  Fée  Insecte  Plante  Poison  Vol  Électrik 
+électrik/sol,Eau  Glace  Plante  Sol ,Acier  Poison  Roche  Vol  Électrik  Électrik 
+électrik/vol,Glace  Roche  Sol ,Acier  Combat  Insecte  Plante  Sol  Vol  Électrik 
+électrik/psy,Insecte  Sol  Spectre  Ténèbres ,Acier  Combat  Psy  Vol  Électrik 
+électrik/insecte,Feu  Roche ,Acier  Combat  Plante  Sol  Vol  Électrik 
+électrik/roche,Combat  Eau  Plante  Sol ,Acier  Feu  Normal  Poison  Vol  Électrik 
+électrik/spectre,Sol  Spectre  Ténèbres ,Acier  Combat  Insecte  Normal  Poison  Vol  Électrik 
+électrik/dragon,Dragon  Fée  Glace  Sol ,Acier  Eau  Feu  Plante  Vol  Électrik 
+électrik/ténèbres,Combat  Fée  Insecte  Sol ,Acier  Psy  Spectre  Ténèbres  Vol  Électrik 
+électrik/acier,Combat  Feu  Sol ,Acier  Dragon  Fée  Glace  Insecte  Normal  Plante  Poison  Psy  Roche  Vol  Électrik 
+électrik/fée,Poison  Sol ,Acier  Combat  Dragon  Insecte  Ténèbres  Vol  Électrik 
+plante,Feu  Glace  Poison  Vol  Insecte ,Eau  Plante  Électrik  Sol 
+plante/glace,Acier  Combat  Feu  Insecte  Poison  Roche  Vol ,Eau  Glace  Plante  Sol  Électrik 
+plante/combat,Feu  Fée  Glace  Poison  Psy  Vol ,Eau  Insecte  Plante  Roche  Sol  Ténèbres  Électrik 
+plante/poison,Feu  Glace  Psy  Vol ,Eau  Fée  Insecte  Plante  Poison  Sol  Électrik 
+plante/sol,Feu  Glace  Insecte  Vol ,Eau  Plante  Poison  Roche  Sol  Électrik  Électrik 
+plante/vol,Feu  Glace  Poison  Roche  Vol ,Combat  Eau  Insecte  Plante  Sol  Sol  Électrik 
+plante/psy,Feu  Glace  Insecte  Poison  Spectre  Ténèbres  Vol ,Combat  Eau  Plante  Psy  Sol  Électrik 
+plante/insecte,Feu  Glace  Insecte  Poison  Roche  Vol ,Combat  Eau  Plante  Sol  Électrik 
+plante/roche,Acier  Combat  Glace  Insecte ,Eau  Feu  Normal  Plante  Poison  Sol  Vol  Électrik 
+plante/spectre,Feu  Glace  Spectre  Ténèbres  Vol ,Combat  Eau  Insecte  Normal  Plante  Poison  Sol  Électrik 
+plante/dragon,Dragon  Fée  Glace  Insecte  Poison  Vol ,Eau  Feu  Plante  Sol  Électrik 
+plante/ténèbres,Combat  Feu  Fée  Glace  Insecte  Poison  Vol ,Eau  Plante  Psy  Sol  Spectre  Ténèbres  Électrik 
+plante/acier,Combat  Feu  Poison ,Acier  Dragon  Eau  Fée  Glace  Insecte  Normal  Plante  Poison  Psy  Roche  Sol  Vol  Électrik 
+plante/fée,Acier  Feu  Glace  Poison  Vol ,Combat  Dragon  Eau  Insecte  Plante  Sol  Ténèbres  Électrik 
+glace,Feu  Combat  Roche  Acier ,Glace 
+glace/combat,Acier  Combat  Feu  Fée  Psy  Vol ,Glace  Insecte  Roche  Ténèbres 
+glace/poison,Acier  Combat  Feu  Psy  Roche  Sol ,Fée  Glace  Insecte  Plante  Poison 
+glace/sol,Acier  Combat  Eau  Feu  Plante ,Glace  Poison  Roche  Électrik 
+glace/vol,Acier  Feu  Roche  Électrik ,Combat  Glace  Insecte  Plante  Sol 
+glace/psy,Acier  Feu  Insecte  Roche  Spectre  Ténèbres ,Combat  Glace  Psy 
+glace/insecte,Acier  Feu  Roche  Vol ,Combat  Glace  Plante  Sol 
+glace/roche,Acier  Combat  Eau  Plante  Roche  Sol ,Feu  Glace  Normal  Poison  Vol 
+glace/spectre,Acier  Combat  Feu  Roche  Spectre  Ténèbres ,Combat  Glace  Insecte  Normal  Poison 
+glace/dragon,Acier  Combat  Dragon  Fée  Roche ,Eau  Feu  Glace  Plante  Électrik 
+glace/ténèbres,Acier  Combat  Feu  Fée  Insecte  Roche ,Glace  Psy  Spectre  Ténèbres 
+glace/acier,Combat  Feu  Sol ,Acier  Dragon  Fée  Glace  Insecte  Normal  Plante  Poison  Psy  Roche  Vol 
+glace/fée,Acier  Feu  Poison  Roche ,Combat  Dragon  Glace  Insecte  Ténèbres 
+combat,Vol  Psy  Fée ,Insecte  Roche  Ténèbres 
+combat/poison,Psy  Sol  Vol ,Fée  Insecte  Plante  Poison  Roche  Ténèbres 
+combat/sol,Eau  Fée  Glace  Plante  Psy  Vol ,Insecte  Poison  Roche  Ténèbres  Électrik 
+combat/vol,Fée  Glace  Psy  Vol  Électrik ,Combat  Insecte  Plante  Roche  Sol  Ténèbres 
+combat/psy,Fée  Spectre  Vol ,Combat  Insecte  Psy  Roche  Ténèbres 
+combat/insecte,Feu  Fée  Psy  Vol ,Combat  Insecte  Plante  Roche  Sol  Ténèbres 
+combat/roche,Acier  Combat  Eau  Fée  Plante  Psy  Sol ,Feu  Insecte  Normal  Poison  Roche  Ténèbres  Vol 
+combat/spectre,Fée  Psy  Spectre  Vol ,Combat  Insecte  Normal  Poison  Roche  Ténèbres 
+combat/dragon,Dragon  Fée  Glace  Psy  Vol ,Eau  Feu  Insecte  Plante  Roche  Ténèbres  Électrik 
+combat/ténèbres,Combat  Fée  Psy  Vol ,Insecte  Psy  Roche  Spectre  Ténèbres 
+combat/acier,Combat  Feu  Sol ,Acier  Dragon  Fée  Glace  Insecte  Normal  Plante  Poison  Psy  Roche  Ténèbres  Vol 
+combat/fée,Acier  Fée  Poison  Psy  Vol ,Combat  Dragon  Insecte  Roche  Ténèbres 
+poison,Sol  Psy ,Plante  Poison  Insecte  Fée 
+poison/sol,Eau  Glace  Psy  Sol ,Fée  Insecte  Plante  Poison  Roche  Électrik 
+poison/vol,Glace  Psy  Roche  Sol  Électrik ,Combat  Fée  Insecte  Plante  Poison  Sol 
+poison/psy,Sol  Spectre  Ténèbres ,Combat  Fée  Insecte  Plante  Poison  Psy 
+poison/insecte,Feu  Psy  Roche  Vol ,Combat  Fée  Insecte  Plante  Poison  Sol 
+poison/roche,Acier  Combat  Eau  Psy  Sol ,Feu  Fée  Insecte  Normal  Plante  Poison  Vol 
+poison/spectre,Psy  Sol  Spectre  Ténèbres ,Combat  Fée  Insecte  Normal  Plante  Poison 
+poison/dragon,Dragon  Glace  Psy  Sol ,Eau  Feu  Fée  Insecte  Plante  Poison  Électrik 
+poison/ténèbres,Combat  Psy  Sol ,Fée  Insecte  Plante  Poison  Psy  Spectre  Ténèbres 
+poison/acier,Combat  Feu  Sol ,Acier  Dragon  Fée  Glace  Insecte  Normal  Plante  Poison  Poison  Psy  Roche  Vol 
+poison/fée,Acier  Psy  Sol ,Combat  Dragon  Fée  Insecte  Plante  Poison  Ténèbres 
+sol,Eau  Plante  Glace ,Poison  Roche  Électrik 
+sol/vol,Eau  Glace  Électrik ,Combat  Insecte  Plante  Poison  Roche  Sol  Électrik 
+sol/psy,Eau  Glace  Insecte  Plante  Spectre  Ténèbres ,Combat  Poison  Psy  Roche  Électrik 
+sol/insecte,Eau  Feu  Glace  Vol ,Combat  Plante  Poison  Roche  Sol  Électrik 
+sol/roche,Acier  Combat  Eau  Glace  Plante  Sol ,Feu  Normal  Poison  Roche  Vol  Électrik 
+sol/spectre,Eau  Glace  Plante  Spectre  Ténèbres ,Combat  Insecte  Normal  Poison  Roche  Électrik 
+sol/dragon,Dragon  Fée  Glace ,Eau  Feu  Plante  Poison  Roche  Électrik  Électrik 
+sol/ténèbres,Combat  Eau  Fée  Glace  Insecte  Plante ,Poison  Psy  Roche  Spectre  Ténèbres  Électrik 
+sol/acier,Combat  Eau  Feu  Sol ,Acier  Dragon  Fée  Glace  Insecte  Normal  Plante  Poison  Poison  Psy  Roche  Vol  Électrik 
+sol/fée,Acier  Eau  Glace  Plante ,Combat  Dragon  Insecte  Poison  Roche  Ténèbres  Électrik 
+vol,Électrik  Glace  Roche ,Plante  Combat  Insecte  Sol 
+vol/psy,Glace  Roche  Spectre  Ténèbres  Électrik ,Combat  Insecte  Plante  Psy  Sol 
+vol/insecte,Feu  Glace  Roche  Vol  Électrik ,Combat  Insecte  Plante  Sol  Sol 
+vol/roche,Acier  Eau  Glace  Roche  Sol  Électrik ,Combat  Feu  Insecte  Normal  Plante  Poison  Sol  Vol 
+vol/spectre,Glace  Roche  Spectre  Ténèbres  Électrik ,Combat  Combat  Insecte  Normal  Plante  Poison  Sol 
+vol/dragon,Dragon  Fée  Glace  Roche ,Combat  Eau  Feu  Insecte  Plante  Sol  Électrik 
+vol/ténèbres,Fée  Glace  Roche  Électrik ,Combat  Insecte  Plante  Psy  Sol  Spectre  Ténèbres 
+vol/acier,Feu  Sol  Électrik ,Acier  Combat  Dragon  Fée  Glace  Insecte  Normal  Plante  Poison  Psy  Roche  Sol  Vol 
+vol/fée,Acier  Glace  Poison  Roche  Électrik ,Combat  Dragon  Insecte  Plante  Sol  Ténèbres 
+psy,Insecte  Spectre  Ténèbres ,Combat  Psy 
+psy/insecte,Feu  Insecte  Roche  Spectre  Ténèbres  Vol ,Combat  Plante  Psy  Sol 
+psy/roche,Acier  Eau  Insecte  Plante  Sol  Spectre  Ténèbres ,Combat  Feu  Normal  Poison  Psy  Vol 
+psy/spectre,Spectre  Ténèbres ,Combat  Combat  Insecte  Normal  Poison  Psy 
+psy/dragon,Dragon  Fée  Glace  Insecte  Spectre  Ténèbres ,Combat  Eau  Feu  Plante  Psy  Électrik 
+psy/ténèbres,Fée  Insecte ,Combat  Psy  Psy  Spectre  Ténèbres 
+psy/acier,Feu  Sol  Spectre  Ténèbres ,Acier  Combat  Dragon  Fée  Glace  Insecte  Normal  Plante  Poison  Psy  Roche  Vol 
+psy/fée,Acier  Poison  Spectre ,Combat  Dragon  Insecte  Psy  Ténèbres 
+insecte,Feu  Vol  Roche ,Plante  Combat  Sol 
+insecte/roche,Acier  Eau  Roche ,Combat  Feu  Normal  Plante  Poison  Sol  Vol 
+insecte/spectre,Feu  Roche  Spectre  Ténèbres  Vol ,Combat  Combat  Insecte  Normal  Plante  Poison  Sol 
+insecte/dragon,Dragon  Fée  Glace  Roche  Vol ,Combat  Eau  Feu  Plante  Sol  Électrik 
+insecte/ténèbres,Feu  Fée  Insecte  Roche  Vol ,Combat  Plante  Psy  Sol  Spectre  Ténèbres 
+insecte/acier,Feu ,Acier  Combat  Dragon  Fée  Glace  Insecte  Normal  Plante  Poison  Psy  Roche  Sol  Vol 
+insecte/fée,Acier  Feu  Poison  Roche  Vol ,Combat  Dragon  Insecte  Plante  Sol  Ténèbres 
+roche,Eau  Plante  Combat  Sol  Acier ,Normal  Feu  Poison  Vol 
+roche/spectre,Acier  Combat  Eau  Plante  Sol  Spectre  Ténèbres ,Combat  Feu  Insecte  Normal  Normal  Poison  Vol 
+roche/dragon,Acier  Combat  Dragon  Fée  Glace  Sol ,Eau  Feu  Normal  Plante  Poison  Vol  Électrik 
+roche/ténèbres,Acier  Combat  Eau  Fée  Insecte  Plante  Sol ,Feu  Normal  Poison  Psy  Spectre  Ténèbres  Vol 
+roche/acier,Combat  Eau  Sol ,Acier  Dragon  Feu  Fée  Glace  Insecte  Normal  Plante  Poison  Poison  Psy  Roche  Vol 
+roche/fée,Acier  Eau  Plante  Sol ,Combat  Dragon  Feu  Insecte  Normal  Poison  Ténèbres  Vol 
+spectre,Spectre  Ténèbres ,Poison  Insecte  Normal  Combat 
+spectre/dragon,Dragon  Fée  Glace  Spectre  Ténèbres ,Combat  Eau  Feu  Insecte  Normal  Plante  Poison  Électrik 
+spectre/ténèbres,Combat  Fée ,Combat  Insecte  Normal  Poison  Psy  Spectre  Ténèbres 
+spectre/acier,Combat  Feu  Sol  Spectre  Ténèbres ,Acier  Combat  Dragon  Fée  Glace  Insecte  Normal  Normal  Plante  Poison  Poison  Psy  Roche  Vol 
+spectre/fée,Acier  Spectre ,Combat  Combat  Dragon  Insecte  Normal  Poison  Ténèbres 
+dragon,Glace  Dragon  Fée ,Feu  Eau  Électrik  Plante 
+dragon/ténèbres,Combat  Dragon  Fée  Glace  Insecte ,Eau  Feu  Plante  Psy  Spectre  Ténèbres  Électrik 
+dragon/acier,Combat  Sol ,Acier  Dragon  Eau  Feu  Fée  Glace  Insecte  Normal  Plante  Poison  Psy  Roche  Vol  Électrik 
+dragon/fée,Acier  Dragon  Fée  Glace  Poison ,Combat  Dragon  Eau  Feu  Insecte  Plante  Ténèbres  Électrik 
+ténèbres,Combat  Insecte  Fée ,Spectre  Ténèbres  Psy 
+ténèbres/acier,Combat  Feu  Sol ,Acier  Dragon  Fée  Glace  Insecte  Normal  Plante  Poison  Psy  Psy  Roche  Spectre  Ténèbres  Vol 
+ténèbres/fée,Acier  Fée  Poison ,Combat  Dragon  Insecte  Psy  Spectre  Ténèbres 
+acier,Feu  Combat  Sol ,Normal  Plante  Glace  Vol  Psy  Insecte  Roche  Dragon  Acier  Fée  Poison 
+acier/fée,Feu  Poison  Sol ,Acier  Combat  Dragon  Dragon  Fée  Glace  Insecte  Normal  Plante  Poison  Psy  Roche  Ténèbres  Vol 
+fée,Poison  Acier ,Combat  Insecte  Ténèbres  Dragon 
