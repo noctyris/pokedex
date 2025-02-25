@@ -33,7 +33,7 @@ export interface Pokemon {
 export interface WSRow {
 	type:		string;
 	faiblesses:	string;
-	resistance:	string;
+	resistances:	string;
 }
 
 export interface WSData {
@@ -89,7 +89,7 @@ export function useFetchWSData() {
 				setData((parsed.data as WSRow[]).map((row) => ({
 					type:	row.type,
 					weak:	row.faiblesses,
-					strong:	row.resistance,
+					strong:	row.resistances,
 				})))
 			})
 			.catch(error => console.error('Error fetching CSV:', error));
