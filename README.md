@@ -7,7 +7,7 @@ Just a pokedex...
 Just visit [pokedex-he](https://pokedex-he.vercel.app)
 <details>
 <summary>Dev version</summary>
-Visit [pokedex-he-dev](https://pokedex-he-dev.vercel.app)
+Visit <a href="https://pokedex-he-dev.vercel.app">pokedex-he-dev</a><i> → Not working without being logged in</i>
 </details>
 
 ## How to run locally
@@ -15,17 +15,13 @@ Visit [pokedex-he-dev](https://pokedex-he-dev.vercel.app)
 ```bash
 git clone https://github.com/noctyris/pokedex
 ```
-- Execure the code
+- Execute the code
 <details>
-<summary>Dev version</summary>
-```bash
-npm run dev
-```
+  <summary>Dev version</summary>
+  <code>npm run dev</code>
 </details>
 <details>
-<summary>Main version</summary>
-```bash
-npm run build
-npm start
-```
+  <summary>Main version</summary>
+  <code>npm run build
+npm start</code>
 </details>
