@@ -5,12 +5,14 @@
 :root {
   --background: 232,232,232;
   --foreground: 23,23,23;
+  --bg-url: url('/backgrounds/clair.jpg');
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: 11,18,21;
     --foreground: 237,237,237;
+    --bg-url: url('/backgrounds/sombre.jpg')
   }
 }
 
