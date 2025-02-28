@@ -100,7 +100,7 @@ function HomeView(props: HomeViewProps) {
 
   
 	return (isLoading ? <UILoadingScreen /> :
-		<>
+		<div className="bg-[image:--bg-url] bg-no-repeat bg-left bg-cover bg-fixed min-h-[100lvh]">
 			<header className="flex flex-col items-center">
 				<Link href="/"><h1 className="text-3xl my-6 flex flex-row justify-center items-center">P<Image width={30} height={30} alt="o" className="h-8" src="/favicon.svg" />kedex</h1></Link>
 				<div className="flex flex-col md:flex-row justify-center md:justify-around items-center md:w-full w-4/5 mb-6 space-x-0 md:space-x-10 md:px-10 space-y-2 md:space-y-0">
@@ -146,7 +146,7 @@ function HomeView(props: HomeViewProps) {
 				{pkmnsList}
 			</main>
 			{props.scrollY>0 && <ScrollUp />}
-		</>
+		</div>
 	);
 }
 
