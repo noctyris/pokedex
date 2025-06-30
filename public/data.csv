@@ -108,7 +108,7 @@ Grolem,76,Roche,Sol,Titanesque,1.4,300,1,74-1_3,Échange
 Grolem d'Alola,76,Roche,Électrik,Titanesque,1.7,316,7,74-2_3,Échange
 Ponyta,77,Feu,,Cheval Feu,1,30,1,77-1_1,
 Ponyta de Galar,77,Psy,,Monocorne,0.8,24,8,77-2_1,
-Galopa ,78,Feu,,Cheval Feu,1.7,95,1,77-1_2,Niveau 40
+Galopa,78,Feu,,Cheval Feu,1.7,95,1,77-1_2,Niveau 40
 Galopa de Galar,78,Psy,Fée,Monocorne,1.7,80,8,77-2_2,Niveau 40
 Ramoloss,79,Eau,Psy,Crétin,1.2,36,1,79-1_1,
 Ramoloss de Galar,79,Psy,,Crétin,1.2,36,8,79-2_1,
@@ -551,7 +551,7 @@ Carmache,444,Dragon,Sol,Caverne,1.4,56,4,443_2,Niveau 24
 Carchacrok,445,Dragon,Sol,Supersonic,1.9,95,4,443_3,Niveau 48
 Méga-Carchacrok,445,Dragon,Sol,Supersonic,1.9,95,Méga,443_4,Carchacrokite
 Goinfrex,446,Normal,,Goinfre,0.6,105,4,446_1,
-Riolu ,447,Combat,,Émanation,0.7,20.2,4,447_1,
+Riolu,447,Combat,,Émanation,0.7,20.2,4,447_1,
 Lucario,448,Combat,Acier,Aura,1.2,54,4,447_2,Bonheur de jour
 Méga-Lucario,448,Combat,Acier,Aura,1.3,57.5,Méga,447_3,Lucarite
 Hippopotas,449,Sol,,Hippo,0.8,49.5,4,449_1,
@@ -597,7 +597,7 @@ Créfollet,481,Psy,,Émotion,0.3,0.3,4,481_1,
 Créfadet,482,Psy,,Volonté,0.3,0.3,4,482_1,
 Dialga,483,Acier,Dragon,Temps,5.4,683,4,483_1,
 Dialga originel,483,Acier,Dragon,Temps,6.99,848.67,8,483_2,
-Palkia ,484,Eau,Dragon,Espace,4.2,336,4,484_1,
+Palkia,484,Eau,Dragon,Espace,4.2,336,4,484_1,
 Palkia originel,484,Eau,Dragon,Espace,6.3,658.97,8,484_2,
 Heatran,485,Feu,Acier,Caldeira,1.7,430,4,485_1,
 Regigigas,486,Normal,,Prodigieux,3.7,420,4,486_1,
