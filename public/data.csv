@@ -1,0 +1,970 @@
+﻿name,num,type1,type2,category,size,weight,gen,CHE,COE,gif
+Bulbizarre,1,Plante,Poison,Graine,0.7,6.9,1,1_1,,0
+Herbizarre,2,Plante,Poison,Graine,1,13,1,1_2,Niveau 16,0
+Florizarre,3,Plante,Poison,Graine,2,100,1,1_3,Niveau 32,0
+Méga-Florizarre,3,Plante,Poison,Graine,2.4,155.5,Méga,1_4-1,Florazarrite,0
+Florizarre Gigamax,3,Plante,Poison,Graine,24,,Gigamax,1_4-2,Poignet Dyamax,0
+Salamèche,4,Feu,,Lézard,0.6,8.5,1,4_1,,0
+Reptincel,5,Feu,,Flamme,1.1,19,1,4_2,Niveau 16,0
+Dracaufeu,6,Feu,Vol,Flamme,1.7,90.5,1,4_3,Niveau 32,0
+Méga-Dracaufeu X,6,Feu,Dragon,Flamme,1.7,110.5,Méga,4_4-1,Dracaufite X,0
+Méga-Dracaufeu Y,6,Feu,Vol,Flamme,1.7,100.5,Méga,4_4-2,Dracaufite Y,0
+Dracaufeu Gigamax,6,Feu,Vol,Flamme,28,,Gigamax,4_4-3,Poignet Dyamax,0
+Carapuce,7,Eau,,Minitortue,0.5,9,1,7_1,,0
+Carabaffe,8,Eau,,Tortue,1,22.5,1,7_2,Niveau 16,0
+Tortank,9,Eau,,Carapace,1.6,85.5,1,7_3,Niveau 36,0
+Méga-Tortank,9,Eau,,Carapace,1.6,101.1,Méga,7_4-1,Tortankite,0
+Tortank Gigamax,9,Eau,,Carapace,25,,Gigamax,7_4-2,Poignet Dyamax,0
+Chenipan,10,Insecte,,Ver,0.3,2.9,1,10_1,,0
+Chrysacier,11,Insecte,,Cocon,0.7,9.9,1,10_2,Niveau 7,0
+Papilusion,12,Insecte,Vol,Papillon,1.1,32,1,10_3,Niveau 10,0
+Papilusion Gigamax,12,Insecte,Vol,Papillon,17,,Gigamax,10_4,Poignet Dyamax,0
+Aspicot,13,Insecte,Poison,Insectopic,0.3,3.2,1,13_1,,0
+Coconfort,14,Insecte,Poison,Cocon,0.6,10,1,13_2,Niveau 7,0
+Dardargnan,15,Insecte,Poison,Guêpoison,1,29.5,1,13_3,Niveau 10,0
+Méga-Dardargnan,15,Insecte,Poison,Guêpoison,1.4,40.5,Méga,13_4,Dardargnite,0
+Roucool,16,Normal,Vol,Minoiseau,0.3,1.8,1,16_1,,0
+Roucoups,17,Normal,Vol,Oiseau,1.1,30,1,16_2,Niveau 18,0
+Roucarnage,18,Normal,Vol,Oiseau,1.5,39.5,1,16_3,Niveau 36,0
+Méga-Roucarnage,18,Normal,Vol,Oiseau,2.2,50.5,Méga,16_4,Roucarnagite,0
+Rattata,19,Normal,,Souris,0.3,3.5,1,19-1_1,,0
+Rattata d'Alola,19,Ténèbres,Normal,Souris,0.3,3.8,7,19-2_1,,0
+Rattatac,20,Normal,,Souris,0.7,18.5,1,19-1_2,Niveau 20,0
+Rattatac d'Alola,20,Ténèbres,Normal,Souris,0.7,25.5,7,19-2_2,Niveau 20 de Nuit,0
+Piafabec,21,Normal,Vol,Minoiseau,0.3,2,1,21_1,,0
+Rapasdepic,22,Normal,Vol,Bec-Oiseau,1.2,38,1,21_2,Niveau 20,0
+Abo,23,Poison,,Serpent,2,6.9,1,22_1,,0
+Arbok,24,Poison,,Cobra,3.5,65,1,22_2,Niveau 22,0
+Pikachu,25,Électrik,,Souris,0.4,6,1,172_2,Bonheur,0
+Pikachu Gigamax,25,Électrik,,Souris,21,,Gigamax,172_3-1,Poignet Dyamax,0
+Raichu,26,Électrik,,Souris,0.8,30,1,172_3-2,Pierre foudre,0
+Raichu d'Alola,26,Électrik,Psy,Souris,0.7,21,7,172_3-3,Pierre foudre à Alola,0
+Sabelette,27,Sol,,Souris,0.6,12,1,27-1_1,,0
+Sabelette d'Alola,27,Glace,Acier,Souris,0.7,40,7,27-2_1,,0
+Sablaireau,28,Sol,,Souris,1,29.5,1,27-1_2,Niveau 22,0
+Sablaireau d'Alola,28,Glace,Acier,Souris,1.2,55,7,27-2_2,Pierre glace,0
+Nidoran ♀,29,Poison,,Vénépic,0.4,7,1,29_1,,0
+Nidorina,30,Poison,,Vénépic,0.9,20,1,29_2,Niveau 16,0
+Nidoqueen,31,Poison,Sol,Perceur,1.3,60,1,29_3,Pierre lune,0
+Nidoran ♂,32,Poison,,Vénépic,0.5,9,1,32_1,,0
+Nidorino,33,Poison,,Vénépic,0.9,19.5,1,32_2,Niveau 16,0
+Nidoking,34,Poison,Sol,Vénépic,1.4,62,1,32_3,Pierre lune,0
+Mélofée,35,Fée,,Fée,0.6,7.5,1,173_2,Bonheur,0
+Mélodelfe,36,Fée,,Fée,1.3,40,1,173_3,Pierre lune,0
+Goupix,37,Feu,,Renard,0.6,9.9,1,37-1_1,,0
+Goupix d'Alola,37,Glace,,Renard,0.6,9.9,7,37-2_1,,0
+Feunard,38,Feu,,Renard,1.1,19.9,1,37-1_2,Pierre feu,0
+Feunard d'Alola,38,Glace,,Renard,1.1,19.9,7,37-2_2,Pierre glace,0
+Rondoudou,39,Normal,Fée,Bouboule,0.5,5.5,1,174_2,Bohneur,0
+Grodoudou,40,Normal,Fée,Bouboule,1,12,1,174_3,Pierre lune,0
+Nosferapti,41,Poison,Vol,Chovsouris,0.8,7.5,1,41_1,,0
+Nosferalto,42,Poison,Vol,Chovsouris,1.6,55,1,41_2,Niveau 22,0
+Mystherbe,43,Plante,Poison,Racine,0.5,5.4,1,43_1,,0
+Ortide,44,Plante,Poison,Racine,0.8,8.6,1,43_2,Niveau 21,0
+Rafflesia,45,Plante,Poison,Fleur,1.2,18.6,1,43_3-1,Pierre plante,0
+Paras,46,Insecte,Plante,Champignon,0.3,5.4,1,46_1,,0
+Parasect,47,Insecte ,Plante,Champignon,1,29.5,1,46_2,Niveau 24,0
+Mimitoss,48,Insecte,Poison,Vermine,1,30,1,48_1,,0
+Aéromite,49,Insecte,Poison,Papipoison,1.5,12.5,1,48_2,Niveau 31,0
+Taupiqueur,50,Sol,,Taupe,0.2,0.8,1,50-1_1,,0
+Taupiqueur d'Alola,50,Sol,Acier,Taupe,0.2,1,7,50-2_1,,0
+Triopikeur,51,Sol,,Taupe,0.7,33.3,1,50-1_2,Niveau 26,0
+Triopikeur d'Alola,51,Sol,Acier,Taupe,0.7,66.6,7,50-2_2,Niveau 26,0
+Miaouss,52,Normal,,Chadégout,0.4,4.2,1,52-1_1,,0
+Miaouss Gigamax,52,Normal,,Chadégout,33,,Gigamax,52-1_2-1,Poignet Dyamax,0
+Miaouss d'Alola,52,Ténèbres,,Chadégout,0.4,4.2,7,52-2_1,,0
+Miaouss de Galar,52,Acier,,Chadégout,0.4,7.5,8,52-3_1,,0
+Persian,53,Normal,,Chadeville,1,32,1,52-1_2-2,Niveau 28,0
+Persian d'Alola,53,Ténèbres,,Chadeville,1.1,33,7,52-2_2,Bonheur,0
+Psykokwak,54,Eau,,Canard,0.8,19.6,1,54_1,,0
+Akwakwak,55,Eau,,Canard,1.7,76.6,1,54_2,Niveau 33,0
+Férosinge,56,Combat,,Porsinge,0.5,28,1,56_1,,0
+Colossinge,57,Combat,,Porsinge,1,32,1,56_2,Niveau 28,0
+Caninos,58,Feu,,Chiot,0.7,19,1,58-1_1,,0
+Caninos de Hisui,58,Feu,Roche,Espion,0.8,22.7,8,58-2_1,,0
+Arcanin,59,Feu,,Légendaire,1.9,155,1,58-1_2,Pierre feu,0
+Arcanin de Hisui,59,Feu,Roche,Légendaire,1.85,148.04,8,58-2_2,Pierre feu,0
+Ptitard,60,Eau,,Têtard,0.6,12.4,1,60_1,,0
+Têtarte,61,Eau,,Têtard,1,20,1,60_2,Niveau 25,0
+Tartard,62,Eau,Combat,Têtard,1.3,54,1,60_3-1,Pierre eau,0
+Abra,63,Psy,,Psy,0.9,19.5,1,63_1,,0
+Kadabra,64,Psy,,Psy,1.3,56.5,1,63_2,Niveau 16,0
+Alakazam,65,Psy,,Psy,1.5,48,1,63_3,Échange,0
+Méga-Alakazam,65,Psy,,Psy,1.2,48,Méga,63_4,Alakazamite,0
+Machoc,66,Combat,,Colosse,0.8,19.5,1,66_1,,0
+Machopeur,67,Combat,,Colosse,1.5,70.5,1,66_2,Niveau 28,0
+Mackogneur,68,Combat,,Colosse,1.6,130,1,66_3,Échange,0
+Mackogneur Gigamax,68,Combat,,Colosse,25,,Gigamax,66_4,Poignet Dyamax,0
+Chétiflor,69,Plante,Poison,Fleur,0.7,4,1,69_1,,0
+Boustiflor,70,Plante,Poison,Carnivore,1,6.4,1,69_2,Niveau 21,0
+Empiflor,71,Plante,Poison,Carnivore,1.7,15.5,1,69_3,Pierre plante,0
+Tentacool,72,Eau,Poison,Mollusque,0.9,45.5,1,72_1,,0
+Tentacruel,73,Eau,Poison,Mollusque,1.6,55,1,72_2,Niveau 30,0
+Racaillou,74,Roche,Sol,Roche,0.4,20,1,74-1_1,,0
+Racaillou d'Alola,74,Roche,Électrik,Roche,0.4,20.3,7,74-2_1,,0
+Gravalanch,75,Roche,Sol,Roche,1,105,1,74-1_2,Niveau 25,0
+Gravalanch d'Alola,75,Roche,Électrik,Roche,1,110,7,74-2_2,Niveau 25,0
+Grolem,76,Roche,Sol,Titanesque,1.4,300,1,74-1_3,Échange,0
+Grolem d'Alola,76,Roche,Électrik,Titanesque,1.7,316,7,74-2_3,Échange,0
+Ponyta,77,Feu,,Cheval Feu,1,30,1,77-1_1,,0
+Ponyta de Galar,77,Psy,,Monocorne,0.8,24,8,77-2_1,,0
+Galopa,78,Feu,,Cheval Feu,1.7,95,1,77-1_2,Niveau 40,0
+Galopa de Galar,78,Psy,Fée,Monocorne,1.7,80,8,77-2_2,Niveau 40,0
+Ramoloss,79,Eau,Psy,Crétin,1.2,36,1,79-1_1,,0
+Ramoloss de Galar,79,Psy,,Crétin,1.2,36,8,79-2_1,,0
+Flagadoss,80,Eau ,Psy,Symbiose,1.6,78.5,1,79-1_2-1,Niveau 37,0
+Flagadoss de Galar,80,Poison,Psy,Symbiose,1.6,70.5,8,79-2_2-1,Bracelet Galanoa,0
+Méga-Flagadoss,80,Eau,Psy,Symbiose,2,120,Méga,79-1_3-1,Flagadossite,0
+Magnéti,81,Électrik,Acier,Magnétique,0.3,6,1,81_1,,0
+Magnéton,82,Électrik,Acier,Magnétique,1,60,1,81_2,Niveau 30,0
+Canarticho,83,Normal,Vol,Canard Fou,0.8,15,1,83-1_1,,0
+Canarticho de Galar,83,Combat,,Canard Fou,0.8,42,8,83-2_1,,0
+Doduo,84,Normal,Vol,Duoiseau,1.4,39.2,1,84_1,,0
+Dodrio,85,Normal,Vol,Trioiseau,1.8,85.2,1,84_2,Niveau 31,0
+Otaria,86,Eau,,Otarie,1.1,90,1,86_1,,0
+Lamantine,87,Eau,Glace,Otarie,1.7,120,1,86_2,Niveau 34,0
+Tadmorv,88,Poison,,Dégueu,0.9,30,1,88-1_1,,0
+Tadmorv d'Alola,88,Poison,Ténèbres,Dégueu,0.7,42,7,88-2_1,,0
+Grotadmorv,89,Poison,,Dégueu,1.2,30,1,88-1_2,Niveau 38,0
+Grotadmorv d'Alola,89,Poison,Ténèbres,Dégueu,1,52,7,88-2_2,Niveau 38,0
+Kokiyas,90,Eau,,Bivalve,0.3,4,1,90_1,,0
+Crustabri,91,Eau,Glace,Bivalve,1.5,132.5,1,90_2,Pierre eau,0
+Fantominus,92,Spectre,Poison,Gaz,1.3,0.1,1,92_1,,0
+Spectrum,93,Spectre,Poison,Gaz,1.6,0.1,1,92_2,Niveau 25,0
+Ectoplasma,94,Spectre,Poison,Ombre,1.5,40.5,1,92_3,Échange,0
+Méga-Ectoplasma,94,Spectre,Poison,Ombre,1.4,40.5,Méga,92_4-1,Ectoplasmite,0
+Ectoplasma Gigamax,94,Spectre,Poison,Ombre,20,,Gigamax,92_4-2,Poignet Dyamax,0
+Onix,95,Roche,Sol,Serpenroc,8.8,210,1,95_1,,0
+Soporifik,96,Psy,,Hypnose,1,32.4,1,96_1,,0
+Hypnomade,97,Psy,,Hypnose,1.6,75.6,1,96_2,Niveau 26,0
+Krabby,98,Eau,,Doux Crabe,0.4,6.5,1,98_1,,0
+Krabboss,99,Eau,,Pince,1.3,60,1,98_2,Niveau 28,0
+Krabboss Gigamax,99,Eau,,Pince,19,,Gigamax,98_3,Poignet Dyamax,0
+Voltorbe,100,Électrik,,Balle,0.5,10.4,1,100-1_1,,0
+Voltorbe de Hisui,100,Électrik,Plante,Sphère ,0.5,13,8,100-2_1,,0
+Électrode,101,Électrik,,Balle,1.2,66.6,1,100-1_2,Niveau 30,0
+Électrode de Hisui,101,Électrik,Plante,Sphère ,1.17,68.67,8,100-2_2,Pierre plante,0
+Nœunœuf,102,Plante,Psy,Œuf,0.4,2.5,1,102_1,,0
+Noadkoko,103,Plante,Psy,Fruitpalme,2,120,1,102_2-1,Pierre plante,0
+Noadkoko d'Alola,103,Plante,Dragon,Fruitpalme,10.9,415.6,7,102_2-2,Pierre plante à Alola,0
+Osselait,104,Sol,,Solitaire,0.4,6.5,1,104_1,,0
+Ossatueur,105,Sol,,Gard'Os,1,45,1,104_2-1,Niveau 28,0
+Ossatueur d'Alola,105,Feu,Spectre,Gard'Os,1,34,7,104_2-2,Niveau 28 de nuit à Alola,0
+Kicklee,106,Combat,,Latteur,1.5,49.8,1,236_2-1,Niveau 20 si Att > Def,0
+Tygnon,107,Combat,,Puncheur,1.4,50.2,1,236_2-2,Niveau 20 si Att < Def,0
+Excelangue,108,Normal,,Lécheur,1.2,65.5,1,108_1,,0
+Smogo,109,Poison,,Gaz Mortel,0.6,1,1,109_1,,0
+Smogogo,110,Poison,,Gaz Mortel,1.2,9.5,1,109_2-1,Niveau 35,0
+Smogogo de Galar,110,Poison,Fée,Gaz Mortel,3,16,8,109_2-2,Niveau 35 à Galar,0
+Rhinocorne,111,Sol,Roche,Piquant,1,115,1,111_1,,0
+Rhinoféros,112,Sol,Roche,Perceur,1.9,120,1,111_2,Niveau 42,0
+Leveinard,113,Normal,,Œuf,1.1,34.6,1,440_2,Pierre ovale et +1 Niveau de jour,0
+Saquedeneu,114,Plante,,Vigne,1,35,1,114_1,,0
+Kangourex,115,Normal,,Maternel,2.2,80,1,115_1,,0
+Méga-Kangourex,115,Normal,,Maternel,2.2,100,Méga,115_2,Kangourexite,0
+Hypotrempe,116,Eau,,Dragon,0.4,8,1,116_1,,0
+Hypocéan,117,Eau,,Dragon,1.2,25,1,116_2,Niveau 32,0
+Poissirène,118,Eau,,Poisson,0.6,15,1,118_1,,0
+Poissoroy,119,Eau,,Poisson,1.3,39,1,118_2,Niveau 33,0
+Stari,120,Eau,,Étoile,0.8,34.5,1,120_1,,0
+Staross,121,Eau,Psy,Mystérieux,1.1,80,1,120_2,Pierre eau,0
+M.Mime,122,Psy,Fée,Bloqueur,1.3,54.5,1,439_2-1,apprendre copie et +1 Niveau,0
+M.Mime de Galar,122,Glace,Psy,Danse,1.4,56.8,8,439_2-2,apprendre copie et +1 Niveau à Galar,0
+Insécateur,123,Insecte,Vol,Mante,1.5,56,1,123_1,,0
+Lippoutou,124,Glace,Psy,Humanoïde,1.4,40.6,1,238_2,Niveau 30,0
+Élektek,125,Électrik,,Électrique,1.1,30,1,239_2,Niveau 30,0
+Magmar,126,Feu,,Crache-feu,1.3,44.5,1,240_2,Niveau 30,0
+Scarabrute,127,Insecte,,Scarabée,1.5,55,1,127_1,,0
+Méga-Scarabrute,127,Insecte,Vol,Scarabée,1.7,59,Méga,127_2,Scarabruite,0
+Tauros,128,Normal,,Buffle,1.4,88.4,1,128-1_1,,0
+Tauros de Paldéa (race combative),128,Combat,,Buffle,1.4,115,9,128-2_1,,0
+Tauros de Paldéa (race Flamboyante),128,Combat,Feu,Buffle,1.4,85,9,128-2_2,,0
+Tauros de Paldéa (race Aquatique),128,Combat,Eau,Buffle,1.4,110,9,128-2_3,,0
+Magicarpe,129,Eau,,Poisson,0.9,10,1,129_1,,0
+Léviator,130,Eau,Vol,Terrifiant,6.5,235,1,129_2,Niveau 20,0
+Méga-Léviator,130,Eau,Ténèbres,Terrifiant,6.5,305,Méga,129_3,Léviatorite,0
+Lokhlass,131,Eau,Glace,Transport,2.5,220,1,131_1,,0
+Lokhlass Gigamax,131,Eau,Glace,Transport,24,,Gigamax,131_2,Poignet Dyamax,0
+Métamorph,132,Normal,,Morphing ,0.3,4,1,132_1,,0
+Évoli,133,Normal,,Évolutif,0.3,6.5,1,133_2,,0
+Évoli Gigamax,133,Normal,,Évolutif,18,,Gigamax,133_3,Poignet Dyamax,0
+Aquali,134,Eau,,Bulleur,1,29,1,133_1-1,Pierre eau,0
+Voltali,135,Électrik,,Orage,0.8,24.5,1,133_1-2,Pierre foudre,0
+Pyroli,136,Feu,,Flamme,0.9,25,1,133_1-3,Pierre feu,0
+Porygon,137,Normal,,Virtuel,0.8,36.5,1,137_1,,0
+Amonita,138,Roche,Eau,Spirale,0.4,7.5,1,138_1,,0
+Amonistar,139,Roche,Eau,Spirale,1,35,1,138_2,Niveau 40,0
+Kabuto,140,Roche,Eau,Carapace,0.5,11.5,1,140_1,,0
+Kabutops,141,Roche,Eau,Carapace,1.3,40.5,1,140_2,Niveau 40,0
+Ptéra,142,Roche,Vol,Fossile,1.8,59,1,142_1,,0
+Méga-Ptéra,142,Roche,Vol,Fossile,2.1,79,Méga,142_2,Ptéraïte,0
+Ronflex,143,Normal,,Pionceur,2.1,460,1,446_2,Bonheur,0
+Ronflex Gigamax,143,Normal,,Pionceur,35,,Gigamax,446_3,Poignet Dyamax,0
+Artikodin,144,Glace,Vol,Glaciaire,1.7,55.4,1,144-1_1,,0
+Artikodin de Galar,144,Psy,Vol,Implacable,1.7,50.9,8,144-2_1,,0
+Électhor,145,Électrik,Vol,Électrique,1.6,52.6,1,145-1_1,,0
+Électhor de Galar,145,Combat,Vol,Fort-Pied,1.6,58.2,8,145-2_1,,0
+Sulfura,146,Feu,Vol,Flamme,2,60,1,146-1_1,,0
+Sulfura de Galar,146,Ténèbres,Vol,Maléfique,2,66,8,146-2_1,,0
+Minidraco,147,Dragon,,Dragon,1.8,3.3,1,147_1,,0
+Draco,148,Dragon,,Dragon,4,16.5,1,147_2,Niveau 30,0
+Dracolosse,149,Dragon,Vol,Dragon,2.2,210,1,147_3,Niveau 55,0
+Mewtwo,150,Psy,,Génétique,2,122,1,150_1,,0
+Méga-Mewtwo X,150,Psy,Combat,Génétique,2.3,127,Méga,150_2-1,Mewtwoïte X,0
+Méga-Mewtwo Y,150,Psy,,Génétique,1.5,33,Méga,150_2-2,Mewtwoïte Y,0
+Mew,151,Psy,,Nouveau,0.4,4,1,151_1,,0
+Germignon,152,Plante,,Feuille,0.9,6.4,2,152_1,,0
+Macronium,153,Plante,,Feuille,1.2,15.8,2,152_2,Niveau 16,0
+Méganium,154,Plante,,Herbe,1.8,100.5,2,152_3,Niveau 32,0
+Héricendre,155,Feu,,Souris Feu,0.5,7.9,2,155_1,,0
+feurisson,156,Feu,,Volcan,0.9,19,2,155_2,Niveau 16,0
+Typhlosion,157,Feu,,Volcan,1.7,79.5,2,155_3-1,Niveau 32,0
+Typhlosion de Hisui,157,Feu,Spectre,Feu Follet,1.6,69.69,8,155_3-2,Niveau 32 à Hisui,0
+Kaiminus,158,Eau,,Mâchoire,0.6,9.5,2,158_1,,0
+Crocrodil,159,Eau,,Mâchoire,1.1,25,2,158_2,Niveau 18,0
+Aligatueur,160,Eau,,Mâchoire,2.3,88.8,2,158_3,Niveau 30,0
+Fouinette,161,Normal,,Espion,0.8,6,2,161_1,,0
+Fouinar,162,Normal,,Allongé,1.8,32.5,2,161_2,Niveau 15,0
+Hoothoot,163,Normal,Vol,Hibou,0.7,21.2,2,163_1,,0
+Noarfang,164,Normal,Vol,5 Étoiles,1.6,40.8,2,163_2,Niveau 20,0
+Coxy,165,Insecte,Vol,5 Étoiles,1,10.8,2,165_1,,0
+Coxyclaque,166,Insecte,Vol,Crache Fil,1.4,35.6,2,165_2,Niveau 18,0
+Mimigal,167,Insecte,Poison,Long-Patte,0.5,8.5,2,167_1,,0
+Migalos,168,Insecte,Poison,Chovsouris,1.1,33.5,2,167_2,Niveau 32,0
+Nostenfer,169,Poison,Vol,Poisson,1.8,75,2,41_3,Bonheur,0
+Loupio,170,Eau,Électrik,Lumière,0.5,12,2,170_1,,0
+Lanturn,171,Eau,Électrik,Minisouris,1.2,22.5,2,170_2,Niveau 28,0
+Pichu,172,Électrik,,Étoile,0.3,2,2,172_1,,0
+Mélo,173,Fée,,Bouboule,0.3,3,2,173_1,,0
+Toudoudou,174,Normal,Fée,Balle Pic,0.3,1,2,174_1,,0
+Togepi,175,Fée,,Bonheur,0.3,1.5,2,175_1,,0
+Togetic,176,Fée,Vol,Bonheur,0.6,3.2,2,175_2,Bonheur,0
+Natu,177,Psy,Vol,Minoiseau,0.2,2,2,177_1,,0
+Xatu,178,Psy,Vol,Mystique,1.5,15,2,177_2,Niveau 25,0
+Wattouat,179,Électrik,,Laine,0.6,7.8,2,179_1,,0
+Lainergie,180,Électrik,,Laine,0.8,13.3,2,179_2,Niveau 15,0
+Pharamp,181,Électrik,,Lumière,1.4,61.5,2,179_3,Niveau 30,0
+Méga-Pharamp,181,Électrik,Dragon,Lumière,1.4,61.5,Méga,179_4,Pharampite,0
+Joliflor,182,Plante,,Fleur,0.4,5.8,2,43_3-2,Pierre soleil,0
+Marill,183,Eau,Fée,Aquasouris,0.4,8.5,2,298_2,Bonheur,0
+Azumarill,184,Eau,Fée,Aqualapin,0.8,28.5,2,298_3,Niveau 18,0
+Simularbre,185,Roche,,Imitation,1.2,38,2,438_2,apprendre copie +1 Niveau,0
+Tarpaud,186,Eau,,Grenouille,1.1,33.9,2,60_3-2,Roche royale,0
+Granivol,187,Plante,Vol,Pissenlit,0.4,0.5,2,187_1,,0
+Floravol,188,Plante,Vol,Pissenlit,0.6,1,2,187_2,Niveau 18,0
+Cotovol,189,Plante,Vol,Pissenlit,0.8,3,2,187_3,Niveau 27,0
+Capumain,190,Normal,,Longqueue,0.8,11.5,2,190_1,,0
+Tournegrin,191,Plante,,Graine,0.3,1.8,2,191_1,,0
+Héliatronc,192,Plante,,Soleil,0.8,8.5,2,191_2,Pierre soleil,0
+Yanma,193,Insecte,Vol,Translaile,1.2,38,2,193_1,,0
+Axoloto,194,Eau,Sol,Poisson,0.4,8.5,2,194-1_1,,0
+Axoloto de Paldéa,194,Poison,Sol,Poizzon,0.4,11,9,194-2_1,,0
+Maraiste,195,Eau,Sol,Poisson,1.4,75,2,194-1_2,Niveau 20,0
+Mentali,196,Psy,,Soleil,0.9,26.5,2,133_4-1,Bonheur de jour,0
+Noctali,197,Ténèbres,,Lune,1,27,2,133_4-2,Bohneur de nuit,0
+Cornèbre,198,Ténèbres,Vol,Obscurité,0.5,2.1,2,198_1,,0
+Roigada,199,Eau,Psy,Royal,2,79.5,2,79-1_2-2,Échange avec Roche royale,0
+Roigada de Galar,199,Poison,Psy,Ensorceleur,1.8,79.5,8,79-2_2-2,Couronne Galanoa,0
+Feuforêve,200,Spectre,,Strident,0.7,1,2,200_1,,0
+Zarbi,201,Psy,,Symbolique,0.5,5,2,201_1,,0
+Qulbutoké,202,Psy,,Patient,1.3,28.5,2,360_2,Niveau 15,0
+Girafarig,203,Normal,Psy,Long-Cou,1.5,41.5,2,203_1,,0
+Pomdepik,204,Insecte,,Ver Caché,0.6,7.2,2,204_1,,0
+Foretress,205,Insecte,Acier,Ver Caché,1.2,125.8,2,204_2,Niveau 31,0
+Insolourdo,206,Normal,,Serpent,1.5,14,2,206_1,,0
+Scorplane,207,Sol,Vol,Scorpivol,1.1,64.8,2,207_1,,0
+Steelix,208,Acier,Sol,Serpenfer,9.2,400,2,95_2,Peau métal,0
+Méga-Steelix,208,Acier,Sol,Serpenfer,10.5,740,Méga,95_3,Stellixite,0
+Snubbull,209,Fée,,Fée,0.6,7.8,2,209_1,,0
+Granbull,210,Fée,,Fée,1.4,48.7,2,209_2,Niveau 23,0
+Qwilfish,211,Eau,Poison,Bouboule,0.5,3.9,2,211-1_1,,0
+Qwilfish de Hisui,211,Ténèbres,Poison,Bouboule,0.45,3.02,8,211-2_1,,0
+Cizayox,212,Insecte,Acier,Pince,1.8,118,2,123_2-1,Échange avec peau métal,0
+Méga-Cizayox,212,Insecte,Acier,Pince,2,125,Méga,123_3-1,Cizayoxite,0
+Caratroc,213,Insecte,Roche,Pourri,0.6,20.5,2,213_1,,0
+Scarhino,214,Insecte,Combat,Unicorne,1.5,54,2,214_1,,0
+Méga-Scarhino,214,Insecte,Combat,Unicorne,1.7,62.5,Méga,214_2,Scarhinoïte,0
+Farfuret,215,Ténèbres,Glace,Grifacérée,0.9,28,2,215-1_1,,0
+Farfuret de Hisui,215,Combat,Poison,Grifacérée,0.8,25.38,8,215-2_1,,0
+Teddiursa,216,Normal,,Mini Ours,0.6,8.8,2,216_1,,0
+Ursaring,217,Normal,,Hibernant,1.8,125.6,2,216_2,Niveau 30,0
+Limagma,218,Feu,,Lave,0.7,35,2,218_1,,0
+Volcaropod,219,Feu,Roche,Lave,0.8,55,2,218_2,Niveau 38,0
+Marcacrin,220,Glace,Sol,Cocohon,0.4,6.5,2,220_1,,0
+Cochignon,221,Glace,Sol,Porc ,1.1,55.8,2,220_2,Niveau 33,0
+Corayon,222,Eau,Roche,Corail,0.6,5,2,222-1_1,,0
+Corayon de Galar,222,Spectre,,Corail,0.6,0.5,8,222-2_1,,0
+Rémoraid,223,Eau,,Jet,0.6,12,2,223_1,,0
+Octillery,224,Eau,,Jet,0.9,28.5,2,223_2,Niveau 25,0
+Cadoizo,225,Glace,Vol,Livraison,0.9,16,2,225_1,,0
+Démanta,226,Eau,Vol,Cervolant,2.1,220,2,458_2,Rémoraid dans l'équipe +1 Niveau,0
+Airmure,227,Acier,Vol,Armoiseau,1.7,50.5,2,227_1,,0
+Malosse,228,Ténèbres,Feu,Sombre,0.6,10.8,2,228_1,,0
+Démolosse,229,Ténèbres,Feu,Sombre,1.4,35,2,228_2,Niveau 24,0
+Méga-Démolosse,229,Ténèbres,Feu,Sombre,1.9,49.5,Méga,228_3,Démolossite,0
+Hyporoi,230,Eau,,Dragon,1.8,152,2,116_3,Échange avec écaille draco,0
+Phanpy,231,Sol,,Long-Nez,0.5,33.5,2,231_1,,0
+Donphan,232,Sol,,Armure,1.3,120,2,231_2,Niveau 25,0
+Porygon2,233,Normal,,Virtuel,0.6,32.5,2,137_2,Échange avec améliorator,0
+Cerfrousse,234,Normal,,Maxi Corne,1.4,71.2,2,234_1,,0
+Queulorior,235,Normal,,Peintre,1.2,58,2,235_1,,0
+Debugant,236,Combat,,Bagarreur,0.7,21,2,236_1,,0
+Kapoera,237,Combat,,Poirier,1.4,48,2,236_2-3,Niveau 20 si Att = Def,0
+Lippouti,238,Glace,Psy,Bisou,0.6,6,2,238_1,,0
+Élekid,239,Électrik,,Électrique,0.6,23.5,2,239_1,,0
+Magby,240,Feu,,Charbon,0.7,21.4,2,240_1,,0
+Écrémeuh,241,Normal,,Vachalait,1.2,75.5,2,241_1,,0
+Leuphorie,242,Normal,,Bonheur,1.5,46.8,2,440_3,Bonheur,0
+Raikou,243,Électrik,,Foudre,1.9,178,2,243_1,,0
+Entei,244,Feu,,Volcan,2.1,198,2,244_1,,0
+Suicune,245,Eau,,Aurore,2,187,2,245_1,,0
+Embrylex,246,Roche,Sol,Peaupierre,0.6,72,2,246_1,,0
+Ymphect,247,Roche,Sol,Carapadure,1.2,152,2,246_2,Niveau 30,0
+Tyranocif,248,Roche,Ténèbres,Armure,2,202,2,246_3,Niveau 55,0
+Méga-Tyranocif,248,Roche,Ténèbres,Armure,2.5,255,Méga,246_4,Tyranocivite,0
+Lugia,249,Psy,Vol,Plongeon,5.2,216,2,249_1,,0
+Ho-oh,250,Feu,Vol,Arc-en-ciel,3.8,199,2,250_1,,0
+Celebi,251,Psy,Plante,Temporel,0.6,5,2,251_1,,0
+Arcko,252,Plante,,Bois Gecko,0.5,5,3,252_1,,0
+Massko,253,Plante,,Bois Gecko,0.9,21.6,3,252_2,Niveau 16,0
+Jungko,254,Plante,,Forêt,1.7,52.2,3,252_3,Niveau 36,0
+Méga-Jungko,254,Plante,Dragon,Forêt,1.9,55.2,Méga,252_4,Jungkite,0
+Poussifeu,255,Feu,Combat,Poussin,0.4,2.5,3,255_1,,0
+Galifeu,256,Feu,Combat,Poulet,0.9,19.5,3,255_2,Niveau 16,0
+Braségali,257,Feu,Combat,Ardent,1.9,52,3,255_3,Niveau 36,0
+Méga-Braségali,257,Feu,Combat,Ardent,1.9,52,Méga,255_4,Braségalite,0
+Gobou,258,Eau,,Poissonboue,0.4,7.6,3,258_1,,0
+Flobio,259,Eau,Sol,Poissonboue,0.7,28,3,258_3,Niveau 16,0
+Laggron,260,Eau,Sol,Poissonboue,1.6,81.9,3,258_3,Niveau 36,0
+Méga-Laggron,260,Eau,Sol,Poissonboue,1.9,102,Méga,258_4,Laggronite,0
+Medhyèna,261,Ténèbres,,Morsure,0.5,13.6,3,261_1,,0
+Grahyèna,262,Ténèbres,,Morsure,1,37,3,261_2,Niveau 18,0
+Zigzaton,263,Normal,,Petit Raton,0.4,17.5,3,263-1_1,,0
+Zigzaton de Galar,263,Ténèbres,Normal,Petit Raton,0.4,17.5,8,263-2_1,,0
+Linéon,264,Normal,,Fonceur,0.5,32.5,3,263-1_2,Niveau 20,0
+Linéon de Galar,264,Ténèbres,Normal,Fonceur,0.5,32.5,8,263-2_2,Niveau 20,0
+Chenipotte,265,Insecte,,Ver Caché,0.3,3.6,3,265_1,,0
+Armulys,266,Insecte,,Cocon,0.6,10,3,265_2-1,Niveau 7 selon valeur interne,0
+Charmillon,267,Insecte,Vol,Papillon,1,28.4,3,265_2-2,Niveau 7 selon valeur interne,0
+Blindalys,268,Insecte,,Cocon,0.7,11.5,3,265_3-1,Niveau 10,0
+Papinox,269,Insecte,Poison,Papipoison,1.2,31.6,3,265_3-2,Niveau 10,0
+Nénupiot,270,Eau,Plante,Aquaplante,0.5,2.6,3,270_1,,0
+Lombre,271,Eau,Plante,Jovial,1.2,32.5,3,270_2,Niveau 14,0
+Ludicolo,272,Eau,Plante,Insouciant,1.5,55,3,270_3,Pierre eau,0
+Grainipiot,273,Plante,,Gland,0.5,4,3,273_1,,0
+Pifeuil,274,Plante,,Malin,1,28,3,273_2,Niveau 14,0
+Tengalice,275,Plante,Ténèbres,Malveillant,1.3,59.6,3,273_3,Pierre plante,0
+Nirondelle,276,Normal,Vol,Minirondel,0.3,2.3,3,276_1,,0
+Hélédelle,277,Normal,Vol,Hirondelle,0.7,19.8,3,276_2,Niveau 22,0
+Goélise,278,Eau,Vol,Mouette,0.6,9.5,3,278_1,,0
+Bekipan,279,Eau,Vol,Oiseaudo,1.2,28,3,278_2,Niveau 25,0
+Tarsal,280,Psy,Fée,Sentiment,0.4,1.2,3,280_1,,0
+Kirlia,281,Psy,Fée,Émotion,0.8,20.2,3,280_2,Niveau 20,0
+Gardevoir,282,Psy,Fée,Étreinte,1.6,48.4,3,280_3-1,Niveau 30,0
+Méga-Gardevoir,282,Psy,Fée,Étreinte,1.6,48.4,Méga,280_4-1,Gardevoirite,0
+Arakdo,283,Insecte,Eau,Maresurfeur,0.5,1.7,3,283_1,,0
+Maskadra,284,Insecte,Eau,Boule Œil,0.8,3.6,3,283_2,Niveau 22,0
+Balignon,285,Plante,,Champignon,0.4,4.5,3,285_1,,0
+Chapignon,286,Plante,Combat,Champignon,1.2,39.2,3,285_2,Niveau 23,0
+Parecool,287,Normal,,Flâneur,0.8,24,3,287_1,,0
+Vigoroth,288,Normal,,Turbusinge,1.4,46.5,3,287_2,Niveau 18,0
+Monaflèmit,289,Normal,,Fainéant,2,130.5,3,287_3,Niveau 36,0
+Ningale,290,Insecte,Sol,Apprenti,0.5,5.5,3,290_1,,0
+Ninjask,291,Insecte,Vol,Ninja,0.8,12,3,290_2-1 ,Niveau 20,0
+Munja,292,Insecte,Spectre,Exuvie,0.8,1.2,3,290_2-2,Niveau 20 si emplacement libre et pokéball dans l'inventaire,0
+Chuchmur,293,Normal,,Chuchoteur,0.6,16.3,3,293_1,,0
+Ramboum,294,Normal,,Grosse Voix,1,40.5,3,293_2,Niveau 20,0
+Brouhabam,295,Normal,,Bruit Sourd,1.5,84,3,293_3,Niveau 40,0
+Makuhita,296,Combat,,Tenace,1,86.4,3,296_1,,0
+Hariyama,297,Combat,,Cogneur,2.3,253.8,3,296_2,Niveau 24,0
+Azurill,298,Normal,Fée,Point Polka,0.2,2,3,298_1,,0
+Tarinor,299,Roche,,Boussole,1,97,3,299_1,,0
+Skitty,300,Normal,,Chaton,0.6,11,3,300_1,,0
+Delcatty,301,Normal,,Guindé,1.1,32.6,3,300_2,Pierre lune,0
+Ténéfix,302,Ténèbres,Spectre,Obscurité,0.5,11,3,302_1,,0
+Méga-Ténéfix,302,Ténèbres,Spectre,Joyau,0.5,161,Méga,302_2,Ténéfixite,0
+Mysdibule,303,Acier,Fée,Trompeur,0.6,11.5,3,303_1,,0
+Méga-Mysdibule,303,Acier,Fée,Trompeur,1,23.5,Méga,303_2,Mysdibulite,0
+Galekid,304,Acier,Roche,Armurfer,0.4,60,3,304_1,,0
+Galegon,305,Acier,Roche,Armurfer,0.9,120,3,304_2,Niveau 32,0
+Galeking,306,Acier,Roche,Armurfer,2.1,360,3,304_3,Niveau 42,0
+Méga-Galeking,306,Acier,,Armurfer,2.2,395,Méga,304_4,Galekingite,0
+Méditikka,307,Combat,Psy,Méditation,0.6,11.2,3,307_1,,0
+Charmina,308,Combat,Psy,Méditation,1.3,31.5,3,307_2,Niveau 37,0
+Méga-Charmina,308,Combat,Psy,Méditation,1.3,31.5,Méga,307_3,Xharminite,0
+Dynavolt,309,Électrik,,Orage,0.6,15.2,3,309_1,,0
+Élecsprint,310,Électrik,,Décharge,1.5,40.2,3,309_2,Niveau 26,0
+Méga-Élecsprint,310,Électrik,,Décharge,1.8,44,Méga,309_3,Élecsprintite,0
+Posipi,311,Électrik,,Acclameur,0.4,4.2,3,311_1,,0
+Négapi,312,Électrik,,Acclameur,0.4,4.2,3,312_1,,0
+Muciole,313,Insecte,,Luciole,0.7,17.7,3,313_1,,0
+Lumivole,314,Insecte,,Luciole,0.6,17.7,3,314_1,,0
+Rosélia,315,Plante,Poison,Épine,0.3,2,3,406_2,Bonheur de jour,0
+Gloupti,316,Poison,,Estomac,0.4,10.3,3,316_1,,0
+Avaltout,317,Poison,,Sac Poison,1.7,80,3,316_2,Niveau 26,0
+Carvanha,318,Eau,Ténèbres,Féroce,0.8,20.8,3,318_1,,0
+Sharpedo,319,Eau,Ténèbres,Brutal,1.8,88.8,3,318_2,Niveau 30,0
+Méga-Sharpedo,319,Eau,Ténèbres,Brutal,2.5,130.3,Méga,318_3,Sharpedite,0
+Wailmer,320,Eau,,Baleinboule,2,130,3,320_1,,0
+Wailord,321,Eau,,Cachabouée,14.5,398,3,320_2,Niveau 40,0
+Chamallot,322,Feu,Sol,Engourdi,0.7,24,3,322_1,,0
+Camérupt,323,Feu,Sol,Éruption,1.9,220,3,322_2,Niveau 33,0
+Méga-Camérupt,323,Feu,Sol,Éruption,2.5,320.5,Méga,322_3,Caméruptite,0
+Chartor,324,Feu,,Charbon,0.5,80.4,3,324_1,,0
+Spoink,325,Psy,,Rebond,0.7,30.6,3,325_1,,0
+Groret,326,Psy,,Magouilleur,0.9,71.5,3,325_2,Niveau 32,0
+Spinda,327,Normal,,Panda Tache,1.1,5,3,327_1,,0
+Kraknoix,328,Sol,,Piégeur,0.7,15,3,328_1,,0
+Vibraninf,329,Sol,Dragon,Vibration,1.1,15.3,3,328_2,Niveau 35,0
+Libégon,330,Sol,Dragon,Mystique,2,82,3,328_3,Niveau 45,0
+Cacnea,331,Plante,,Cactus,0.4,51.3,3,331_1,,0
+Cacturne,332,Plante,Ténèbres,Épouvantail,1.3,77.4,3,331_2,Niveau 32,0
+Tylton,333,Normal,Vol,Oiseaucoton,0.4,1.2,3,333_1,,0
+Altaria,334,Dragon,Vol,Virevolteur,1.1,20.6,3,333_2,Niveau 35,0
+Méga-Altaria,334,Dragon,Fée,Virevolteur,1.5,20.6,Méga,333_3,Altarite,0
+Mangriff,335,Normal,,Chat Furet,1.3,40.3,3,335_1,,0
+Séviper,336,Poison,,Serpacroc,2.7,52.5,3,336_1,,0
+Séléroc,337,Roche,Psy,Météorite,1,168,3,337_1,,0
+Solaroc,338,Roche,Psy,Météorite,1.2,154,3,338_1,,0
+Barloche,339,Eau,Sol,Barbillon,0.4,1.9,3,339_1,,0
+Barbicha,340,Eau,Sol,Barbillon,0.9,23.6,3,339_1,Niveau 30,0
+Écrapince,341,Eau,,Brute,0.6,11.5,3,341_1,,0
+Colhomard,342,Eau,Ténèbres,Crapule,1.1,32.8,3,341_2,Niveau 30,0
+Balbuto,343,Sol,Psy,Poupargile,0.5,21.5,3,343_1,,0
+Kaorine,344,Sol,Psy,Poupargile,1.5,108,3,343_2,Niveau 36,0
+Lilia,345,Roche,Plante,Lis d'Eau,1,23.8,3,345_1,,0
+Vacilys,346,Roche,Plante,Bernacle,1.5,60.4,3,345_2,Niveau 40,0
+Anorith,347,Roche,Insecte,Crustage,0.7,12.5,3,347_1,,0
+Armaldo,348,Roche,Insecte,Blindage,1.5,68.2,3,347_2,Niveau 40,0
+Barpau,349,Eau,,Poisson,0.6,7.4,3,349_1,,0
+Milobellus,350,Eau,,Tendre,6.2,162,3,349_2,Échange avec Bel'écaille,0
+Morphéo (normale),351,Normal,,Climat,0.3,0.8,3,351_1-1,,0
+Morphéo (solaire),351,Feu,,Climat,0.3,0.8,3,351_1-2,,0
+Morphéo (eau de pluie),351,Eau,,Climat,0.3,0.8,3,351_2-1,,0
+Morphéo (blizzard),351,Glace,,Climat,0.3,0.8,3,351_2-2,,0
+Kecleon,352,Normal,,Multicolor,1,22,3,352_1,,0
+Polichombr,353,Spectre,,Poupée,0.6,2.3,3,353_1,,0
+Branette,354,Spectre,,Marionnette,1.1,12.5,3,353_2,Niveau 37,0
+Méga-Branette,354,Spectre,,Marionnette,1.2,13,Méga,353_3,Branettite,0
+Skelénox,355,Spectre,,Requiem,0.8,15,3,355_1,,0
+Téraclope,356,Spectre,,Appel,1.6,30.6,3,355_2,Niveau 37,0
+Tropius,357,Plante,Vol,Fruitpalme,2,100,3,357_1,,0
+Éoko,358,Psy,,Carillon,0.6,1,3,433_2,Bonheur de nuit,0
+Absol,359,Ténèbres,,Désastre,1.2,47,3,359_1,,0
+Méga-Absol,359,Ténèbres,,Désastre,1.2,49,Méga,359_2,Absolite,0
+Okéoké,360,Psy,,Ravi,0.6,14,3,360_1,,0
+Stalgamin,361,Glace,,Capuche,0.7,16.8,3,361_1,,0
+Oniglali,362,Glace,,Face,1.5,256.5,3,361_2-1,Niveau 42,0
+Méga-Oniglali,362,Glace,,Face,2.1,350.2,Méga,361_3-1,Oniglalite,0
+Obalie,363,Glace,Eau,Clap Clap,0.8,39.5,3,363_1,,0
+Phogleur,364,Glace,Eau,Roule Boule,1.1,87.6,3,363_2,Niveau 32,0
+Kaimorse,365,Glace,Eau,Brise Glace,1.4,150.6,3,363_3,Niveau 44,0
+Coquiperl,366,Eau,,Bivalve,0.4,52.5,3,366_1,,0
+Serpang,367,Eau,,Abysse,1.7,27,3,366_2-1,Échange avec Dent océan,0
+Rosabyss,368,Eau,,Mer du Sud,1.8,22.6,3,366_2-2,Échange avec Écaille océan,0
+Relicanth,369,Eau,Roche,Longévité,1,23.4,3,369_1,,0
+Lovdisc,370,Eau,,Rendezvous,0.6,8.7,3,370_1,,0
+Draby,371,Dragon,Vol,Tête de Roc,0.6,42.1,3,371_1,,0
+Drackhaus,372,Dragon,Vol,Endurant,1.1,110.5,3,371_2,Niveau 30,0
+Drattak,373,Dragon,Vol,Dragon,1.5,102.6,3,371_3,Niveau 50,0
+Méga-Drattak,373,Dragon,Vol,Dragon,1.8,112.6,Méga,371_4,Drattakite,0
+Terhal,374,Acier,Psy,Boulefer,0.6,95.2,3,374_1,,0
+Métang,375,Acier,Psy,Pincefer,1.2,202.5,3,374_2,Niveau 20,0
+Métalosse,376,Acier,Psy,Pattefer,1.6,550,3,374_3,Niveau 45,0
+Méga-Métalosse,376,Acier,Psy,Pattefer,2.5,942.9,Méga,374_4,Métalossite,0
+Regirock,377,Roche,,Pic Rocheux,1.7,230,3,377_1,,0
+Regice,378,Glace,,Iceberg,1.8,175,3,378_1,,0
+Registeel,379,Acier,,Fer,1.9,205,3,379_1,,0
+Latias,380,Dragon,Psy,Éon,1.4,40,3,380_1,,0
+Méga-Latias,380,Dragon,Psy,Éon,1.8,52,Méga,380_2,Latiasite,0
+Latios,381,Dragon,Psy,Éon,2,60,3,381_1,,0
+Méga-Latios,381,Dragon,Psy,Éon,2.3,70,Méga,381_2,Latiosite,0
+Kyogre,382,Eau,,Bassinmarin,4.5,352,3,382_1,,0
+Primo-Kyogre,382,Eau,,Bassinmarin,9.8,430,Méga,382_2,Gemme bleue,0
+Groudon,383,Sol,,Continent,3.5,950,3,383_1,,0
+Primo-Groudon,383,Sol,Feu,Continent,5,999.7,Méga,383_2,Gemme rouge,0
+Rayquaza,384,Dragon,Vol,Cieux,7,206.5,3,384_1,,0
+Méga-Rayquaza,384,Dragon,Vol,Cieux,10.8,392,Méga,384_2,Apprendre Draco Ascension,0
+Jirachi,385,Acier,Psy,Souhait,0.3,1.1,3,385_1,,0
+Deoxys,386,Psy,,ADN,1.7,60.8,3,386_1,,0
+Tortipouss,387,Plante,,Minifeuille,0.4,10.2,4,387_1,,0
+Boskara,388,Plante,,Bosquet,1.1,97,4,387_2,Niveau 18,0
+Torterra,389,Plante,Sol,Continent,2.2,310,4,387_3,Niveau 32,0
+Ouisticram,390,Feu,,Chimpanzé,0.5,6.2,4,390_1,,0
+Chimpenfeu,391,Feu,,Garnement,0.9,22,4,390_2,Niveau 14,0
+Simiabraz,392,Feu,Combat,Flamme,1.2,55,4,390_3,Niveau  36,0
+Tiplouf,393,Eau,,Pingouin,0.4,5.2,4,393_1,,0
+Prinplouf,394,Eau,,Pingouin,0.8,23,4,393_2,Niveau 16,0
+Pingoléon,395,Eau,Acier,Empereur,1.7,84.5,4,393_3,Niveau 36,0
+Étourmi,396,Normal,Vol,Étourneau,0.3,2,4,396_1,,0
+Étourvol,397,Normal,Vol,Étourneau,0.6,15.5,4,396_2,Niveau 14,0
+Étouraptor,398,Normal,Vol,Rapace,1.2,24.9,4,396_3,Niveau 34,0
+Keunotor,399,Normal,,Souridodue,0.5,20,4,399_1,,0
+Castorno,400,Normal,Eau,Castor,1,31.5,4,399_2,Niveau 15,0
+Crikzik,401,Insecte,,Criquet,0.3,2.2,4,401_1,,0
+Mélokrik,402,Insecte,,Criquet,1,25.5,4,401_2,Niveau 10,0
+Lixy,403,Électrik,,Flash,0.5,9.5,4,403_1,,0
+Luxio,404,Électrik,,Étincelle,0.9,30.5,4,403_2,Niveau 15,0
+Luxray,405,Électrik,,Brilloeil,1.4,42,4,403_3,Niveau 30,0
+Rozbouton,406,Plante,Poison,Bourgeon,0.2,1.2,4,406_1,,0
+Roserade,407,Plante,Poison,Bouquet,0.9,14.5,4,406_3,Pierre éclat,0
+Kranidos,408,Roche,,Coud'Boule,0.9,31.5,4,408_1,,0
+Charkos,409,Roche,,Coud'Boule,1.6,102.5,4,408_2,Niveau 30,0
+Dinoclier,410,Roche,Acier,Bouclier,0.5,57,4,410_1,,0
+Bastiodon,411,Roche,Acier,Bouclier,1.3,149.5,4,410_2,Niveau 30,0
+Cheniti,412,Insecte,,Ver Caché,0.2,3.4,4,412_1,,0
+Cheniselle (cape plante),413,Insecte,Psy,Ver Caché,0.5,6.5,4,412_2-1,Nivea 20 si ♀,0
+Cheniselle (cape sable),413,Insecte,Sol,Ver Caché,0.5,6.5,4,412_2-2,Nivea 20 si ♀,0
+Cheniselle (cape déchet),413,Insecte,Acier,Ver Caché,0.5,6.5,4,412_2-3,Nivea 20 si ♀,0
+Papilord,414,Plante,Vol,Phalène,0.9,23.3,4,412_2-4,Nivea 20 si ♂,0
+Apitrini,415,Insecte,Vol,Miniabeille,0.3,5.5,4,415_1,,0
+Apireine,416,Insecte,Vol,Ruche,1.2,38.5,4,415_2,Niveau 21 si ♀,0
+Pachirisu,417,Électrik,,Ecurélec,0.4,3.9,4,417_1,,0
+Mustébouée,418,Eau,,Aquabelette,0.7,29.5,4,418_1,,0
+Mustéflott,419,Eau,,Aquabelette,1.1,33.5,4,418_2,Niveau 26,0
+Ceribou,420,Plante,,Cerise,0.4,3.3,4,420_1,,0
+Ceriflor,421,Plante,,Floraison,0.5,9.3,4,420_2,Niveau 25,0
+Sancoki,422,Eau,,Aqualimace,0.3,6.3,4,422_1,,0
+Tritosor,423,Eau,,Aqualimace,0.9,29.9,4,422_2,Niveau 30,0
+Capidextre,424,Normal,,Longqueue,1.2,20.3,4,190_2,Apprendre coup double,0
+Baudrive,425,Spectre,Vol,Bouboule,0.4,1.2,4,425_1,,0
+Grodrive,426,Spectre,Vol,Ballon,1.2,15,4,425_2,Niveau 28,0
+Laporeille,427,Normal,,Lapin,0.4,5.5,4,427_1,,0
+Lockpin,428,Normal,,Lapin,1.2,33.3,4,427_2,Bonheur,0
+Méga-Lockpin,428,Normal,Combat,Lapin,1.3,28.3,Méga,427_3,Lockpinite,0
+Magirêve,429,Spectre,,Magique,0.9,4.4,4,200_2,Pierre nuit,0
+Corboss,430,Ténèbres,Vol,Big Boss,0.9,27.3,4,198_2,Pierre nuit,0
+Chaglam,431,Normal,,Chafouin,0.5,3.9,4,431_1,,0
+Chaffreux,432,Normal,,Chatigre,1,43.8,4,431_2,Niveau 38,0
+Korillon,433,Psy,,Clochette,0.2,0.6,4,433_1,,0
+Moufouette,434,Poison,Ténèbres,Moufette,0.4,19.2,4,434_1,,0
+Moufflair,435,Poison,Ténèbres,Moufette,1,38,4,434_2,Niveau 34,0
+Archéomire,436,Acier,Psy,Bronze,0.5,60.5,4,436_1,,0
+Archéodong,437,Acier,Psy,Clochebronze,1.3,187,4,436_2,Niveau 33,0
+Manzaï,438,Roche,,Bonsaï,0.5,15,4,438_1,,0
+Mime JR.,439,Psy,Fée,Mime,0.6,13,4,439_1,,0
+Ptiravi,440,Normal,,Maisonjouet,0.6,24.4,4,440_1,,0
+Pijako,441,Normal,Vol,Note Musique,0.5,1.9,4,441_1,,0
+Spiritomb,442,Spectre,Ténèbres,Interdit,1,108,4,442_1,,0
+Griknot,443,Dragon,Sol,Terrequin,0.7,20.5,4,443_1,,0
+Carmache,444,Dragon,Sol,Caverne,1.4,56,4,443_2,Niveau 24,0
+Carchacrok,445,Dragon,Sol,Supersonic,1.9,95,4,443_3,Niveau 48,0
+Méga-Carchacrok,445,Dragon,Sol,Supersonic,1.9,95,Méga,443_4,Carchacrokite,0
+Goinfrex,446,Normal,,Goinfre,0.6,105,4,446_1,,0
+Riolu,447,Combat,,Émanation,0.7,20.2,4,447_1,,0
+Lucario,448,Combat,Acier,Aura,1.2,54,4,447_2,Bonheur de jour,0
+Méga-Lucario,448,Combat,Acier,Aura,1.3,57.5,Méga,447_3,Lucarite,0
+Hippopotas,449,Sol,,Hippo,0.8,49.5,4,449_1,,0
+Hippodocus,450,Sol,,Poids Lourd,2,300,4,449_2,Niveau 34,0
+Rapion,451,Poison,Insecte,Scorpion,0.8,12,4,451_1,,0
+Drascore,452,Poison,Ténèbres,Scorpogre,1.3,61.5,4,451_2,Niveau 40,0
+Cradopaud,453,Poison,Combat,Toxique,0.7,23,4,453_1,,0
+Coatox,454,Poison,Combat,Toxique,1.3,44.4,4,453_2,Niveau 37,0
+Vortente,455,Plante,,Chopinsecte,1.4,27,4,455_1,,0
+Écayon,456,Eau,,Poisson Ailé,0.4,7,4,456_1,,0
+Luminéon,457,Eau,,Néon,1.2,24,4,456_2,Niveau 31,0
+Babimanta,458,Eau,Vol,Cervolant,1,65,4,458_1,,0
+Blizzi,459,Plante,Glace,Arbregelé,1,50.5,4,459_1,,0
+Blizzaroi,460,Plante,Glace,Arbregelé,2.2,135.5,4,459_2,Niveau 40,0
+Méga-Blizzaroi,460,Plante,Glace,Arbregelé,3.7,185,Méga,459_3,Blizzarite,0
+Dimoret,461,Ténèbres,Glace,Grifacérée,1.1,34,4,215-1_2,Griffe rasoir de nuit,0
+Magnézone,462,Électrik,Acier,Aimant,1.2,180,4,81_3,Pierre foudre,0
+Coudlangue,463,Normal,,Lécheur,1.7,140,4,108_2,Apprendre roulade,0
+Rhinastoc,464,Sol,Roche,Perceur,2.4,282.8,4,111_3,Échange avec Protecteur,0
+Bouldeneu,465,Plante,,Vigne,2,128.6,4,114_2,Apprende Pouvoir antique,0
+Élekable,466,Électrik,,Foudrélec,1.8,138.6,4,239_3,Échange avec électriseur,0
+Maganon,467,Feu,,Explosion,1.6,68,4,240_3,Échange avec magmariseur,0
+Togekiss,468,Fée,Vol,Célébration,1.5,38,4,175_3,Pierre éclat,0
+Yanmega,469,Insecte,Vol,Libellogre,1.9,51.5,4,193_2,Apprendre Pouvoir antique,0
+Phyllali,470,Plante,,Verdoyant,1,25.5,4,133_4-3,Pierre plante,0
+Givrali,471,Glace,,Poudreuse,0.8,25.9,4,133_4-4,Pierre glace,0
+Scorvol,472,Sol,Vol,Scorpiroc,2,42.5,4,207_2,Croc rasoir de nuit,0
+Mammochon,473,Glace,Sol,Deudéfenses,2.5,291,4,220_3,Apprendre Pouvoir antique,0
+Porygon-Z,474,Normal,,Vietuel,0.9,34,4,137_3,Échange avec CD douteux,0
+Gallame,475,Psy,Combat,Lame,1.6,52,4,280_3-2,Pierre aube si ♂,0
+Méga-Gallame,475,Psy,Combat,Lame,1.6,56.4,Méga,280_4-2,Gallamite,0
+Tarinorme,476,Roche,Acier,Boussole,1.4,340,4,299_2,lieu indiqué +1 Niveau,0
+Noctunoir,477,Spectre,,Mainpince,2.2,106.6,4,355_3,Échange avec Tissu fauche,0
+Momartik,478,Glace,Spectre,Enneigement,1.3,26.6,4,361_2-2,Pierre aube si ♀,0
+Motisma,479,Électrik,Spectre,Plasma,0.3,0.3,4,479-1_1,,0
+Motisma chaleur,479,Électrik,Feu,Plasma,0.3,0.3,4,479-2_1,,0
+Motisma froid,479,Électrik,Glace,Plasma,0.3,0.3,4,479-1_2,,0
+Motisma hélice,479,Électrik,Vol,Plasma,0.3,0.3,4,479-2_2,,0
+Motisma tonte,479,Électrik,Plante,Plasma,0.3,0.3,4,479-1_3,,0
+Motisma lavage,479,Électrik,Eau,Plasma,0.3,0.3,4,479-2_3,,0
+Créhelf,480,Psy,,Savoir,0.3,0.3,4,480_1,,0
+Créfollet,481,Psy,,Émotion,0.3,0.3,4,481_1,,0
+Créfadet,482,Psy,,Volonté,0.3,0.3,4,482_1,,0
+Dialga,483,Acier,Dragon,Temps,5.4,683,4,483_1,,0
+Dialga originel,483,Acier,Dragon,Temps,6.99,848.67,8,483_2,,0
+Palkia,484,Eau,Dragon,Espace,4.2,336,4,484_1,,0
+Palkia originel,484,Eau,Dragon,Espace,6.3,658.97,8,484_2,,0
+Heatran,485,Feu,Acier,Caldeira,1.7,430,4,485_1,,0
+Regigigas,486,Normal,,Prodigieux,3.7,420,4,486_1,,0
+Giratina,487,Spectre,Dragon,Renégat,4.5,750,4,487_1,,0
+Giratina originel,487,Spectre,Dragon,Renégat,6.9,650,4,487_2,,0
+Cresselia,488,Psy,,Lunaire,1.5,85.6,4,488_1,,0
+Phione,489,Eau,,Dérivenmer,0.4,3.1,4,489_1,,0
+Manaphy,490,Eau,,Voyagenmer,0.3,1.4,4,490_1,,0
+Darkrai,491,Ténèbres,,Noirtotal,1.5,50.5,4,491_1,,0
+Shaymin terrestre,492,Plante,,Gratitude,0.2,2.1,4,492_1,,0
+Shaymin céleste,492,Plante,Vol,Gratitude,0.4,5.2,4,492_2,,0
+Arceus,493,Normal,,Alpha,3.2,320,4,493_1,,0
+Victini,494,Psy,Feu,Victoire,0.4,4,5,494_1,,0
+Vipélierre,495,Plante,,Serpenterbe,0.6,8.1,5,495_1,,0
+Lianaja,496,Plante,,Serpenterbe,0.8,16,5,495_2,Niveau 17,0
+Majaspic,497,Plante,,Serpenterbe,3.3,63,5,495_3,Niveau 36,0
+Gruikui,498,Feu,,Cochon Feu,0.5,9.9,5,498_1,,0
+Grotichon,499,Feu,Combat,Cochon Feu,1,55.5,5,498_2,Niveau 17,0
+Roitiflam,500,Feu,Combat,Grochon Feu,1.6,150,5,498_3,Niveau 36,0
+Moustillon,501,Eau,,Loutre,0.5,5.9,5,501_1,,0
+Mateloutre,502,Eau,,Entraînement,0.8,24.5,5,501_2,Niveau 17,0
+Clamiral,503,Eau,,Dignitaire,1.5,94.6,5,501_3-1,Niveau 36,0
+Clamiral de Hisui,503,Eau,Ténèbres,Dignitaire,1.5,58.11,8,501_3-2,Niveau 36 à Hisui,0
+Ratentif,504,Normal,,Espion,0.5,11.6,5,504_1,,0
+Miradar,505,Normal,,Vigilant,1.1,27,5,504_2,Niveau 20,0
+Ponchiot,506,Normal,,Chiot,0.4,.41,5,506_1,,0
+Ponchien,507,Normal,,Chien Fidèle,0.9,14.7,5,506_2,Niveau 16,0
+Mastouffe,508,Normal,,Magnanime,1.2,61,5,506_3,Niveau 32,0
+Chacripan,509,Ténèbres,,Scélérat,0.4,10.1,5,509_1,,0
+Léopardus,510,Ténèbres,,Implacable,1.1,37.5,5,509_2,Niveau 20,0
+Feuillajou,511,Plante,,Singe Herbe,0.6,10.5,5,511_1,,0
+Feuiloutan,512,Plante,,Singépine,1.1,30.5,5,511_2,Pierre plante,0
+Flamajou,513,Feu,,Brûlant,0.5,11,5,513_1,,0
+Flamoutan,514,Feu,,Braise,1,28,5,513_2,Pierre feu,0
+Flotajou,515,Eau,,Jet d'Eau,0.6,13.5,5,515_1,,0
+Flotoutan,516,Eau,,Drainage,1,29,5,515_2,Pierre eau,0
+Munna,517,Psy,,Mangerêve,0.6,23.3,5,517_1,,0
+Mushana,518,Psy,,Rêveur,1.1,60.5,5,517_2,Pierre lune,0
+Poichigeon,519,Normal,Vol,Tipigeon,0.3,2.1,5,519_1,,0
+Colombeau,520,Normal,Vol,Sauvapigeon,0.6,15,5,519_2,Niveau 21,0
+Déflaisan,521,Normal,Vol,Fier,1.2,29,5,519_3,Niveau 32,0
+Zébibron,522,Électrik,,Étincélec,0.8,29.8,5,522_1,,0
+Zéblitz,523,Électrik,,Foudrélec,1.6,79.5,5,522_2,Niveau 27,0
+Nodulithe,524,Roche,,Manteau,0.4,18,5,524_1,,0
+Géolithe,525,Roche,,Minerai,0.9,102,5,524_2,Niveau 25,0
+Gigalithe,526,Roche,,Surpression,1.7,260,5,524_3,Échange,0
+Chovsourir,527,Psy,Vol,Chovsouris,0.4,2.1,5,527_1,,0
+Rhinolove,528,Psy,Vol,Cupidon,0.9,10.5,5,527_2,Bonheur,0
+Rototaupe,529,Sol,,Taupe,0.3,8.5,5,529_1,,0
+Minotaupe,530,Sol,Acier,Souterrain,0.7,40.4,5,529_2,Niveau 31,0
+Nanméouïe,531,Normal,,Audition,1.1,31,5,531_1,,0
+Méga-Nanméouïe,531,Normal,Fée,Audition,1.5,32,Méga,531_2,Nanméouite,0
+Charpenti,532,Combat,,Costaud,0.6,12.5,5,532_1,,0
+Ouvrifier,533,Combat,,Costaud,1.2,40,5,532_2,Niveau 25,0
+Bétochef,534,Combat,,Costaud,1.4,87,5,532_3,Échange,0
+Tritonde,535,Eau,,Têtard,0.5,4.5,5,535_1,,0
+Batracné,536,Eau,Sol,Vibration,0.8,17,5,535_2,Niveau 25,0
+Crapustule,537,Eau,Sol,Vibration,1.5,62,5,535_3,Niveau 36,0
+Judokrak,538,Combat,,Judo,1.3,55.5,5,538_1,,0
+Karaclée,539,Combat,,Karaté,1.4,51,5,539_1,,0
+Larveyette,540,Insecte,Plante,Couture,0.3,2.5,5,540_1,,0
+Couverdure,541,Insecte,Plante,Capefeuille,0.5,7.3,5,540_2,Niveau 20,0
+Manternel,542,Insecte,Plante,Précepteur,1.2,20.5,5,540_3,Échange,0
+Venipatte,543,Insecte,Poison,Chilopode,0.4,5.3,5,543_1,,0
+Scobolide,544,Insecte,Poison,Coconplopode,1.2,58.5,5,543_2,Niveau 22,0
+Brutapode,545,Insecte,Poison,Mégaplopode,2.5,200.5,5,543_3,Niveau 30,0
+Doudouvet,546,Plante,Fée,Boule Coton,0.3,0.6,5,546_1,,0
+Farfaduvet,547,Plante,Fée,Vole Vent,0.7,6.6,5,546_2,Pierre soleil,0
+Chlorobule,548,Plante,,Racine,0.5,6.6,5,548_1,,0
+Fragilady,549,Plante,,Chef-Fleur,1.1,16.3,5,548_2-1,Pierre soleil,0
+Fragilady de Hisui,549,Plante,Combat,Pirouette,1.18,20.36,8,548_2-2,Pierre soleil à Hisui,0
+Bargantua (motif rouge ou bleu),550,Eau,,Violent,1,18,5,550_1-1,,0
+Bargantua ( motif blanc),550,Eau,,Pacifique,0.9,16.03,8,550_1-2,,0
+Mascaïman,551,Sol,Ténèbres,Croco Sable,0.7,15.2,5,551_1,Niveau 29,0
+Escroco,552,Sol,Ténèbres,Croco Sable,1,33.4,5,551_2,Niveau 40,0
+Crocorible,553,Sol,Ténèbres,Intimidation,1.5,96.3,5,551_3,,0
+Darumarond,554,Feu,,Daruma,0.6,37.5,5,554_1-1,,0
+Darumarond de Galar,554,Glace,,Daruma,0.7,40,8,554_1-2,,0
+Darumacho (normal),555,Feu,,Enflammé,1.3,92.9,5,554_2-1,Niveau 35,0
+Darumacho (transe),555,Feu,Psy,Enflammé,1.3,92.9,5,554_2-2,Niveau 35,0
+Darumacho de Galar (normal),555,Glace,,Daruma,1.7,120,8,554_3-1,Pierre glace,0
+Darumacho de Galar (transe),555,Glace,Feu,Enflammé,1.7,120,8,554_3-2,Pierre glace,0
+Maracachi,556,Plante,,Cactus,1,28,5,556_1,,0
+Crabicoque,557,Insecte,Roche,Lithicole,0.3,14.5,5,557_1,,0
+Crabaraque,558,Insecte,Roche,Lapidicole,1.4,200,5,557_2,Niveau 34,0
+Baggiguane,559,Ténèbres,Combat,Mue,0.6,11.8,5,559_1,,0
+Baggaïd,560,Ténèbres,Combat,Gang,1.1,30,5,559_2,Niveau 39,0
+Cryptéro,561,Psy,Vol,Similoiseau,1.4,14,5,561_1,,0
+Tutafeh,562,Spectre,,Âme,0.5,1.5,5,562_1-1,,0
+Tutafeh de Galar,562,Sol,Spectre,Âme,0.5,1.5,8,562_1-2,,0
+Tutankafer,563,Spectre,,Cercueil,1.7,76.5,5,562_2-1,Niveau 34,0
+Carapagos,564,Eau,Roche,Tortantique,0.7,16.5,5,564_1,,0
+Mégapagos,565,Eau,Roche,Tortantique,1.2,81,5,564_2,Niveau 37,0
+Arkéapti,566,Roche,Vol,Oisancien,0.5,9.5,5,566_1,,0
+Aéroptéryx,567,Roche,Vol,Oisancien,1.4,32,5,566_2,Niveau 37,0
+Miamiasme,568,Poison,,Sac Poubelle,0.6,31,5,568_1,,0
+Miasmax,569,Poison,,Dépotoir,1.9,107.3,5,568_2,Niveau 36,0
+Miasmax Gigamax,569,Poison,,Dépotoir,21,,Gigamax,568_3,Poignet dynamax,0
+Zorua,570,Ténèbres,,Sombrenard,0.7,12.5,5,570-1_1,,0
+Zorua de Hisui,570,Normal,Spectre,Rancœurenard,0.7,12.5,8,570-2_1,,0
+Zoroark,571,Ténèbres,,Polymorfox,1.6,81.1,5,570-1_2,Niveau 30,0
+Zoroark de Hisui,571,Normal,Spectre,Maudirenard,1.6,73,8,570-2_2,Niveau 30,0
+Chinchidou,572,Normal,,Chinchilla,0.4,5.8,5,572_1,,0
+Pashmilla,573,Normal,,Écharpe,0.5,7.5,5,572_2,Pierre éclat,0
+Scrutella,574,Psy,,Dévisageur,0.4,5.8,5,574_1,,0
+Mesmérella,575,Psy,,Magouilleur,0.7,18,5,574_2,Niveau 32,0
+Sidérella,576,Psy,,Cosmique,1.5,44,5,574_3,Niveau 41,0
+Nucléos,577,Psy,,Cellule ,0.3,1,5,577_1,,0
+Méios,578,Psy,,Divisé,0.6,0.8,5,577_2,Niveau 32,0
+Symbios,579,Psy,,Multiplié,1,20.1,5,577_3,Niveau 41,0
+Couaneton,580,Eau,Vol,Oiseaudo,0.5,5.5,5,580_1,,0
+Lakmécygne,581,Eau,Vol,Cygne,1.3,24.2,5,580_2,Niveau 35,0
+Sorbébé,582,Glace,,Poudreuse,0.4,5.7,5,582_1,,0
+Sorboul,583,Glace,,Grêle,1.1,41,5,582_2,Niveau 35,0
+Sorbouboul,584,Glace,,Congère,1.3,57.5,5,582_3,Niveau 47,0
+Vivaldaim,585,Normal,Plante,Saison,0.6,19.5,5,585_1,,0
+Haydaim,586,Normal,Plante,Saison,1.9,92.5,5,585_2,Niveau 34,0
+Emolga,587,Électrik,Vol,Pteromys,0.4,5,5,587_1,,0
+Carabing,588,Insecte,,Carabe,0.5,5.9,5,588_1,,0
+Lançargot,589,Insecte,Acier,Chevalier,1,33,5,588_2,Échange avec Escargaume,0
+Trompignon,590,Plante,Poison,Champignon,0.2,1,5,590_1,,0
+Gaulet,591,Plante,Poison,Champignon,0.6,10.5,5,590_2,Niveau 39,0
+Viskuse,592,Eau,Spectre,Flottaison,1.2,33,5,592_1,,0
+Moyade,593,Eau,Spectre,Flottaison,2.2,135,5,592_2,Niveau 40,0
+Mamanbo,594,Eau,,Soigneur,1.2,31.5,5,594_1,,0
+Statitik,595,Insecte,Électrik,Crampon,0.1,0.6,5,595_1,,0
+Mygavolt,596,Insecte,Électrik,Araclectrik,0.8,14.3,5,595_2,Niveau 36,0
+Grindur,597,Plante,Acier,Graine Épine,0.6,18.8,5,597_1,,0
+Noacier,598,Plante,Acier,Boule Épine,1,110,5,597_2,Niveau 40,0
+Tic,599,Acier,,Engrenage,0.3,21,5,599_1,,0
+Clic,600,Acier,,Engrenage,0.6,51,5,599_2,Niveau 38,0
+Cliticlic,601,Acier,,Engrenage,0.6,81,5,599_3,Niveau 49,0
+Anchwatt,602,Électrik,,Électrophore,0.2,0.3,5,602_1,,0
+Lampéroie,603,Électrik,,Électrophore,1.2,22,5,602_2,Niveau 39,0
+Ohmassacre,604,Électrik,,Électrophore,2.1,80.5,5,602_3,Pierre foudre,0
+Lewsor,605,Psy,,Cerveau,0.5,9,5,605_1,,0
+Neitram,606,Psy,,Cerveau,1,34.5,5,605_2,Niveau 42,0
+Funécire,607,Spectre,Feu,Chandelle,0.3,3.1,5,607_1,,0
+Mélancolux,608,Spectre,Feu,Lampe,0.6,13,5,607_2,Niveau 41,0
+Lugulabre,609,Spectre,Feu,Invitation,1,34.3,5,607_3,Pierre nuit,0
+Coupenotte,610,Dragon,,Crocs,0.6,18,5,610_1,,0
+Incisache,611,Dragon,,Hachomenton,1,36,5,610_2,Niveau 38,0
+Tranchodon,612,Dragon,,Hachomenton,1.8,105.5,5,610_3,Niveau 48,0
+Polarhume,613,Glace,,Gelé,0.5,8.5,5,613_1,,0
+Polagriffe,614,Glace,,Congelé,2.6,260,5,613_2,Niveau 37,0
+Hexagel,615,Glace,,Cristal,1.1,148,5,615_1,,0
+Escargaume,616,Insecte,,Escargot,0.4,7.7,5,616_1,,0
+Limaspeed,617,Insecte,,Exuviateur,0.8,25.3,5,616_2,Échange avec Carabing,0
+Limonde,618,Sol,Électrik,Piège,0.7,11,5,618-1_1,,0
+Limonde de Galar,618,Sol,Acier,Piège,0.7,20.5,8,618-2_1,,0
+Kungfouine,619,Combat,,Art Martial,0.8,20,5,619_1,,0
+Shaofouine,620,Combat,,Art Martial,1.4,35.5,5,619_2,Niveau 50,0
+Drakkarmin,621,Dragon,,Caverne,1.6,139,5,621_1,,0
+Gringolem,622,Sol,Spectre,Golem Ancien,1,92,5,622_1,,0
+Golemastoc,623,Sol,Spectre,Golem Ancien,2.8,330,5,622_2,Niveau 43,0
+Scalpion,624,Ténèbres,Acier,Coupant,0.5,10.2,5,624_1,,0
+Scalproie,625,Ténèbres,Acier,Tranchant,1.6,70,5,624_2,Niveau 52,0
+Frison,626,Normal,,Coup d'Bœuf,1.6,94.5,5,626_1,,0
+Furaiglon,627,Normal,Vol,Aiglon,0.5,10.5,5,627_1,,0
+Gueriaigle,628,Normal,Vol,Vaillant,1.5,41,5,627_2-1,Niveau 54,0
+Gueriaigle de Hisui,629,Psy,Vol,Cri Guerrier,1.7,43.4,8,627_2-2,Niveau 54 à Hisui,0
+Vostourno,629,Ténèbres,Vol,Couche,0.5,9,5,629_1,,0
+Vaututrice,630,Ténèbres,Vol,Vostour,1.2,39.5,5,629_2,Niveau 54,0
+Aflamanoir,631,Feu,,Tamanoir,1.4,58,5,631_1,,0
+Fermite,632,Insecte,Acier,Fourmi Dure,0.3,33,5,632_1,,0
+Solochi,633,Ténèbres,Dragon,Rude,0.8,17.3,5,633_1,,0
+Diamat,634,Ténèbres,Dragon,Violent,1.4,50,5,633_2,Niveau 50,0
+Trioxhydre,635,Ténèbres,Dragon,Brutal,1.8,160,5,633_3,Niveau 64,0
+Pyronille,636,Insecte,Feu,Torche,1.1,28.8,5,636_1,,0
+Pyrax,637,Insecte,Feu,Soleil,1.6,46,5,636_2,Niveau 59,0
+Cobaltium,638,Acier,Combat,Cœur de Fer,2.1,250,5,638_1,,0
+Terrakium,639,Roche,Combat,Grotte,1.9,260,5,639_1,,0
+Viridium,640,Plante,Combat,Plaine Verte,2,200,5,640_1,,0
+Boréas (Avatar),641,Vol,,Tornade,1.5,63,5,641_1,,0
+Boréas (Totémique),642,Vol,,Tornade,1.4,63,5,641_2,Avec miroir sacré,0
+Fulguris (Avatar),642,Électrik,Vol,Foudroyeur,1.5,61,5,642_1,,0
+Fulguris (Totémique),643,Électrik,Vol,Foudroyeur,3,61,5,642_2,Avec miroir sacré,0
+Reshiram,643,Dragon,Feu,Blanc Réel,3.2,330,5,643_1,,1
+Zekrom,644,Dragon,Électrik,Noir Idéal,2.9,345,5,644_1,,1
+Démétéros (Avatar),645,Sol,Vol,Fertilité,1.5,68,5,645_1,,0
+Démétéros (Totémique),645,Sol,Vol,Fertilité,1.3,68,5,645_2,Avec miroir sacré,0
+Kyurem,646,Dragon,Glace,Frontière,3,325,5,646_1,,0
+Kyurem blanc,646,Dragon,Glace,Frontière,3.6,325,5,646_2,,1
+Kyurem noir,646,Dragon,Glace,Frontière,3.3,325,5,646_3,,1
+Keldeo (normal),647,Eau,Combat,Poulain,1.4,48.5,5,647_1,,0
+Keldeo (décidé),647,Eau,Combat,Poulain,1.4,48.5,5,647_2,,0
+Meloetta (chant),648,Normal,Psy,Mélodie,0.6,6.5,5,648_1,,0
+Meloetta (danse),649,Normal,Combat,Mélodie,0.6,6.5,5,648_2,,0
+Genesect,649,Insecte,Acier,Paléozoïque,1.5,82.5,5,649_1,,0
+Marisson,650,Plante,,Bogue,0.4,9,6,650_1,,0
+Boguérisse,651,Plante,,Épinarmure,0.7,29,6,650_2,Niveau 16,0
+Blindépique,652,Plante,Combat,Épinarmure,1.6,90,6,650_3,Niveau 36,0
+Feunnec,653,Feu,,Renard,0.4,9.4,6,653_1,,0
+Roussil,654,Feu,,Renard,1,14.5,6,653_2,Niveau 16,0
+Goupelin,655,Feu,Psy,Renard,1.5,39,6,653_3,Niveau 36,0
+Grenousse,656,Eau,,Crapobulle,0.3,7,6,656_1,,0
+Croâporal,657,Eau,,Crapobulle,0.6,10.9,6,656_2,Niveau 16,0
+Amphinobi,658,Eau,Ténèbres,Ninja,1.5,40,6,656_3,Niveau 36,0
+Sapereau,659,Normal,,Fouisseur,0.4,5,6,659_1,,0
+Excavarenne,660,Normal,Sol,Fouisseur,1,42.4,6,659_2,Niveau 20,0
+Passerouge,661,Normal,Vol,Rougegorge,0.3,1.7,6,661_1,,0
+Braisillon,662,Feu,Vol,Braise,0.7,16,6,661_2,Niveau 17,0
+Flambusard,663,Feu,Vol,Fournaise,1.2,24.5,6,661_3,Niveau 35,0
+Lépidonille,664,Insecte,,Exhalécaille,0.3,2.5,6,664_1,,0
+Pérégrain,665,Insecte,,Exhalécaille,0.3,8.4,6,664_2,Niveau 9,0
+Prismillon,666,Insecte,Vol,Lépidécaille,1.2,17,6,664_3,Niveau 12,0
+Hélionceau,667,Feu,Normal,Lionceau,0.6,13.5,6,667_1,,0
+Némélios,668,Feu,Normal,Royal,1.5,81.5,6,667_2,Niveau 35,0
+Flabébé,669,Fée,,Uniflore,0.1,0.1,6,669_1,,0
+Floette,670,Fée,,Uniflore,0.2,0.9,6,669_2,Niveau 19,0
+Florges,671,Fée,,Jardin,1.1,10,6,669_3,Pierre éclat,0
+Cabriolaine,672,Plante,,Monture,0.9,31,6,672_1,,0
+Chevroum,673,Plante,,Monture,1.7,91,6,672_2,Niveau 32,0
+Pandespiègle,674,Combat,,Garnement,0.6,8,6,674_1,,0
+Pandarbare,675,Combat,Ténèbres,Patibulaire,2.1,136,6,674_2,Niveau 32 + pokémon ténèbres dans l'équipe,0
+Couafarel,676,Normal,,Caniche,1.2,28,6,676_1,,0
+Psystigri,677,Psy,,Retenue,0.3,3.5,6,677_1,,0
+Mistigrix (mâle),678,Psy,,Selfcontrôle,0.6,8.5,6,677_2-1,Niveau 25,0
+Mistigrix (femelle),679,Psy,,Selfcontrôle,0.6,8.5,6,677_2-2,Niveau 25,0
+Monorpale,679,Acier,Spectre,Glaive,0.8,2,6,679_1,,0
+Dimoclès,680,Acier,Spectre,Glaive,0.8,4.5,6,679_2,Niveau 35,0
+Exagide (parade),681,Acier,Spectre,Noble Lame,1.7,53,6,679_3-1,Pierre nuit,0
+Exagide (assaut),682,Acier,Spectre,Noble Lame,1.7,53,6,679_3-2,Pierre nuit,0
+Fluvetin,682,Fée,,Fragrance,0.2,0.5,6,682_1,,0
+Cocotine,683,Fée,,Parfum,0.8,15.5,6,682_2,Échange avec sachet senteur,0
+Sucroquin,684,Fée,,Confiserie,0.4,3.5,6,684_1,,0
+Cupcanaille,685,Fée,,Mousseline,0.8,5,6,684_2,Échange avec Chantibonbon,0
+Sepiatop,686,Ténèbres,Psy,Rotation,0.4,3.5,6,685_1,,0
+Sepiatroce,687,Ténèbres,Psy,Révolution,1.5,47,6,685_2,Niveau 30 + retourner la console,0
+Opermine,688,Roche,Eau,Bimane,0.5,31,6,686_1,,0
+Golgopathe,689,Roche,Eau,Assemblage,1.3,96,6,686_2,Niveau 39,0
+Venalgue,690,Poison,Eau,Simulalgue,0.5,7.3,6,687_1,,0
+Kravarech,691,Poison,Eau,Simulalgue,1.8,81.5,6,687_2,Niveau 48,0
+Flingouste,692,Eau,,Lance à Eau,0.5,8.3,6,688_1,,0
+Gamblast,693,Eau,,Blaster,1.3,35.3,6,688_2,Niveau 37,0
+Galvaran,694,Électrik,Normal,Générateur,0.5,6,6,694_1,,0
+Iguolta,695,Électrik,Normal,Générateur,1,21,6,694_2,Pierre soleil,0
+Ptyranidur,696,Roche,Dragon,Prince,0.8,26,6,696_1,,0
+Rexillius,697,Roche,Dragon,Tyran,2.5,270,6,696_2,Niveau 39 + jour,0
+Amagara,698,Roche,Glace,Toundra,1.3,25.2,6,698_1,,0
+Dragmara,699,Roche,Glace,Toundra,2.7,225,6,698_2,Niveau 39 + nuit,0
+Nymphali,700,Fée,,Attachant,1,23.5,6,133_1-4,Bonheur + attaque de type fée,0
+Brutalibré,701,Combat,Vol,Catcheur,0.8,21.5,6,701_1,,0
+Dedenne,702,Électrik,Fée,Antenne,0.2,2.2,6,702_1,,0
+Strassie,703,Roche,Fée,Joyau,0.3,5.7,6,703_1,,0
+Mucuscule,704,Dragon,,Mollusque,0.3,2.8,6,704_1,,0
+Colimucus,705,Dragon,,Mollusque,0.8,17.5,6,704_2-1,Niveau 40,0
+Colimucus de Hisui,705,Acier,Dragon,Escargot,0.67,69.56,8,704_2-2,Niveau 40 à Hisui,0
+Muplodocus,706,Dragon,,Dragon,2,150.5,6,704_3-1,Niveau 50 sous la pluie,0
+Muplodocus de Hisui,706,Acier,Dragon,Escamoquille,1.62,339.26,8,704_3-2,Niveau 50 sous la pluie,0
+Trousselin,707,Acier,Fée,Trousseau,0.2,3,6,707_1,,0
+Brocélôme,708,Spectre,Plante,Souche,0.4,7,6,708_1,,0
+Desséliande,709,Spectre,Plante,Vieillarbre,1.5,71,6,708_2,Échange,0
+Pitrouille,710,Spectre,Plante,Citrouille,0.8,15,6,710_1,,0
+Banshitrouye,711,Spectre,Plante,Citrouille,1.1,39,6,710_2,Échange,0
+Grelaçon,712,Glace,,Glaçon,1,99.5,6,712_1,,0
+Séracrawl,713,Glace,,Iceberg,2,505,6,712_2-1,Niveau 37,0
+Séracrawl de Hisui,713,Glace,Roche,Iceberg,1.45,290.59,8,712_2-2,Niveau 37 à Hisui,0
+Sonistrelle,714,Vol,Dragon,Ondes,0.5,8,6,714_1,,0
+Bruyverne,715,Vol,Dragon,Ondes,1.5,85,6,714_2,Niveau 48,0
+Xerneas,716,Fée,,Existence,3,215,6,716_1,,0
+Yveltal,717,Ténèbres,Vol,Annihilation,5.8,203,6,717_1,,0
+Zygarde 10%,718,Dragon,Sol,Équilibre,1.2,33.5,6,718_1,,0
+Zygarde 50%,718,Dragon,Sol,Équilibre,5,305,6,718_2,,0
+Zygarde parfait,718,Dragon,Sol,Équilibre,4.5,610,6,718_3,,0
+Diancie,719,Roche,Fée,Joyau,0.7,8.8,6,719_1,,0
+Méga-Diancie,719,Roche,Fée,Joyau,1.1,27.8,Méga,719_2,Diancite,0
+Hoopa (Enchaîné),720,Psy,Spectre,Chenapan,0.5,9,6,720_1,,0
+Hoopa (Déchaîné),720,Psy,Ténèbres,Djinn,6.5,490,6,720_2,,0
+Volcanion,721,Feu,Eau,Vapeur,1.7,195,6,721_1,,0
+Brindibou,722,Plante,Vol,Plumefeuille,0.3,1.5,7,722_1,,0
+Efflèche,723,Plante,Vol,Plum'acérée,0.7,16,7,722_2,Niveau 17,0
+Archéduc,724,Plante,Spectre,Plumeflèche,1.6,36.6,7,722_3-1,Niveau 34,0
+Archéduc de Hisui,724,Plante,Combat,Plumeflèche,1.6,36.94,8,722_3-2,Niveau 36 à Hisui,0
+Flamiaou,725,Feu,,Chat Feu,0.4,4.3,7,725_1,,0
+Matoufeu,726,Feu,,Chat Feu,0.7,25,7,725_2,Niveau 17,0
+Félinferno,727,Feu,Ténèbres,Vif Catcheur,1.8,83,7,725_3,Niveau 34,0
+Otaquin,728,Eau,,Otarie,0.4,7.5,7,728_1,,0
+Otarlette,729,Eau,,Starlette,0.6,17.5,7,728_2,Niveau 17,0
+Oratoria,730,Eau,Fée,Soliste,1.8,44,7,728_3,Niveau 34,0
+Picassaut,731,Normal,Vol,Pivert,0.3,1.2,7,731_1,,0
+Piclairon,732,Normal,Vol,Bec Clairon,0.6,14.8,7,731_2,Niveau 14,0
+Bazoucan,733,Normal,Vol,Canon,1.1,26,7,731_3,Niveau 28,0
+Manglouton,734,Normal,,Patrouille,0.4,6,7,734_1,,0
+Argouste,735,Normal,,Filature,0.7,14.2,7,734_2,Niveau 20 +  jour,0
+Larvibule,736,Insecte,,Larve,0.4,4.4,7,736_1,,0
+Chrysapile,737,Insecte,Électrik,Batterie,0.5,10.5,7,736_2,Niveau 20,0
+Lucanon,738,Insecte,Électrik,Scarabée,1.5,45,7,736_3,Pierre foudre,0
+Crabagarre,739,Combat,,Boxeur,0.6,7,7,739_1,,0
+Crabominable,740,Combat,Glace,Crabe Velu,1.7,180,7,739_2,Mont lanakila + 1 niveau ou  pierre glace,0
+Plumeline (flamenco),741,Feu,Vol,Danse,0.6,3.4,7,741_1,,0
+Plumeline (pom-pom),741,Électrik,Vol,Danse,0.6,3.4,7,741_2,,0
+Plumeline (hula),741,Psy,Vol,Danse,0.6,3.4,7,741_3,,0
+Plumeline (buyô),741,Spectre,Vol,Danse,0.6,3.4,7,741_4,,0
+Bombydou,742,Insecte,Fée,Bombyle,0.1,0.2,7,742_1,,0
+Rubombelle,743,Insecte,Fée,Bombyle,0.2,0.5,7,742_2,Niveau 25,0
+Rocabot,744,Roche,,Chiot,0.5,9.2,7,744_2,,0
+Lougaroc (diurne),745,Roche,,Loup,0.8,25,7,744_3-1,Niveau 25 de jour,0
+Lougaroc (nocturne),745,Roche,,Loup,1.1,25,7,744_3-2,Niveau 25 de nuit,0
+Lougaroc (crépusculaire),745,Roche,,Loup,0.8,25,7,744_1,Niveau 25 avec temps perso + heure précise,0
+Froussardine (solitaire),746,Eau,,Minipoisson,0.2,0.3,7,746_1,,0
+Froussardine (banc),746,Eau,,Minipoisson,8.2,78.6,7,746_2,,0
+Vorastérie,747,Poison,Eau,Cruel,0.4,8,7,747_1,,0
+Prédastérie,748,Poison,Eau,Cruel,0.7,14.5,7,747_2,Niveau 38,0
+Tiboudet,749,Sol,,Âne,1,110,7,749_1,,0
+Bourrinos,750,Sol,,Cheval Trait,2.5,920,7,749_2,Niveau 30,0
+Araqua,751,Insecte,Eau,Aquabulle,0.3,4,7,751_1,,0
+Tarenbulle,752,Insecte,Eau,Aquabulle,1.8,82,7,751_2,Niveau 22,0
+Mimantis,753,Plante,,Fauch'Herbe,0.3,1.5,7,753_1,,0
+Floramantis,754,Plante,,Fauch'Fleur,0.9,18.5,7,753_2,Niveau 34 + jour,0
+Spododo,755,Plante,Fée,Luminescent,0.2,1.5,7,755_1,,0
+Lampignon,756,Plante,Fée,Luminescent,1,11.5,7,755_2,Niveau 24,0
+Tritox,757,Poison,Feu,Toxilézard,0.6,4.8,7,757_1,,0
+Malamandre,758,Poison,Feu,Toxilézard,1.2,22.2,7,757_2,Niveau 33 + ♀,0
+Nounourson,759,Normal,Combat,Gigoteur,0.5,6.8,7,759_1,,0
+Chelours,760,Normal,Combat,Biscoteaux,2.1,135,7,759_2,Niveau 27,0
+Croquine,761,Plante,,Fruit,0.3,3.2,7,761_1,,0
+Candine,762,Plante,,Fruit,0.7,8.2,7,761_2,Niveau 18,0
+Sucreine,763,Plante,,Fruit,1.2,21.4,7,761_3,capacité ecrasement + 1 niveau,0
+Guérilande,764,Fée,,Tressefleur,0.1,0.3,7,764_1,,0
+Gouroutan,765,Normal,Psy,Grand Sage,1.5,76,7,765_1,,0
+Quartermac,766,Combat,,Coopération,2,82.8,7,766_1,,0
+Sovkipou,767,Insecte,Eau,Cavaleur,0.5,12,7,767_1,,0
+Sarmuraï,768,Insecte,Eau,Blindé,2,108,7,767_2,Niveau 30,0
+Bacabouh,769,Spectre,Sol,Pâtéd'Sable,0.5,70,7,769_1,,0
+Trépassable,770,Spectre,Sol,Châtod'Sable,1.3,250,7,769_2,Niveau 42,0
+Concombaffe,771,Eau,,Holothurie,0.3,1.2,7,771_1,,0
+Type:0,772,Normal,,Multigénome,1.9,120.5,7,772_1,,0
+Silvallié,773,Normal,,Multigénome,2.3,100.5,7,772_2,Bonheur au max + 1 niveau,0
+Météno (météore),774,Roche,Vol,Météore,0.3,40,7,774_1,,0
+Météno (noyau),774,Roche,Vol,Météore,0.3,0.3,7,774_2,,1
+Dodoala,775,Normal,,Rêveur,0.4,19.9,7,775_1,,0
+Boumata,776,Feu,Dragon,Tortue Boum,2,212,7,776_1,,0
+Togedemaru,777,Électrik,Acier,Roulenboule,0.3,3.3,7,777_1,,0
+Mimiqui,778,Spectre,Fée,Fantômasque,0.2,0.7,7,778_1,,0
+Denticrisse,779,Eau,Psy,Grincedent,0.9,19,7,779_1,,0
+Draïeul,780,Normal,Dragon,Nonchalant,3,185,7,780_1,,0
+Sinistrail,781,Spectre,Plante,Varech,3.9,210,7,781_1,,0
+Bébécaille,782,Dragon,,Écailles,0.6,29.7,7,782_1,,0
+Écaïd,783,Dragon,Combat,Écailles,1.2,47,7,782_2,Niveau 35,0
+Ékaïser,784,Dragon,Combat,Écailles,1.6,78.2,7,782_3,Niveau 45,0
+Tokorico,785,Électrik,Fée,Tutélaire,1.8,20.5,7,785_1,,0
+Tokopiyon,786,Psy,Fée,Tutélaire,1.2,18.6,7,786_1,,0
+Tokotoro,787,Plante,Fée,Tutélaire,1.9,45.5,7,787_1,,0
+Tokopisco,788,Eau,Fée,Tutélaire,1.3,21.2,7,788_1,,0
+Cosmog,789,Psy,,Nébuleuse,0.2,0.1,7,789_1,,0
+Cosmovum,790,Psy,,Proto-Étoile,0.1,999.9,7,789_2,Niveau 43,0
+Solgaleo,791,Psy,Acier,Halo Solaire,3.4,230,7,789_3-1,Niveau 53 + pokémon soleil/épée/écarlate,0
+Lunala,792,Psy,Spectre,Halo Lunaire,4,120,7,789_3-2,Niveau 53 + pokémon lune/bouclier/violet,0
+Zéroïd,793,Roche,Poison,Parasite,1.2,55.5,7,793_1,,0
+Mouscoto,794,Insecte,Combat,enflé,2.4,333.6,7,794_1,,0
+Cancrelove,795,Insecte,Combat,Gracile,1.8,25,7,795_1,,0
+Câblifère,796,Électrik,,Luminaire,3.8,100,7,796_1,,0
+Bamboiselle,797,Acier,Vol,Décollage,9.2,999.9,7,797_1,,0
+Katagami,798,Plante,Acier,Battô,0.3,0.1,7,798_1,,0
+Engloutyran,799,Ténèbres,Dragon,Bizarrovore,5.5,888,7,799_1,,0
+Necrozma,800,Psy,,Prisme,2.4,230,7,800_1,,0
+Necrozma crinière du couchant,800,Psy,Acier,Prisme,3.8,460,7,800_2-1,fusion avec Necrosol,0
+Necrozma ailes de l'aurore,800,Psy,Spectre,Prisme,4.2,350,7,800_2-2,fusion avec Necroluna,0
+Ultra-Necrozma,800,Psy,Dragon,Prisme,7.5,230,7,800_3,Ultra-explosion avec Ultranécrozélite,0
+Magearna,801,Acier,Vol,Artificiel,1,80.5,7,801_1,,0
+Marshadow,802,Combat,Spectre,Ombrefuge,0.7,22.2,7,802_1,,0
+Vémini,803,Poison,,Vénépic,0.6,1.8,7,803_1,,0
+Mandrillon,804,Poison,,Vénépic,3.6,150,7,803_2,capacité Dracochoc + 1 niveau,0
+Ama-Ama,805,Roche,Acier,Muraille,5.5,820,7,805_1,,0
+Pierroteknik,806,Feu,Spectre,Artificier,1.8,13,7,806_1,,0
+Zeraora,807,Électrik,,Vif Éclair,1.5,44.5,7,807_1,,0
+Meltan,808,Acier,,Écrou,0.2,8,7,808_1,,0
+Melmetal,809,Acier,,Écrou,2.5,800,7,808_2,400 bonbon meltan dans pokémon go,0
+Melmetal Gigamax ,809,Acier,,Écrou,25,,Gigamax,808_3,Poignet dynamax,0
