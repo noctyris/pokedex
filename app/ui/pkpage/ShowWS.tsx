@@ -12,6 +12,19 @@ function WS(tList: string) {
 		)
 	}
 
+    const ws = getTypesList()
+        .map((type) =>
+          tList.toLowerCase().includes(type)
+            && tList.slice(tList.toLowerCase().indexOf(type))
+            .toLowerCase()
+            .split(' ')
+            .slice(0, 2)
+        )
+        .filter((item): item is string[] => Boolean(item))
+        .sort((a, b) => parseFloat(b[1]) - parseFloat(a[1]))
+        .reverse();
+    console.log(tList);
+    console.log(ws);
 
 	return getTypesList().map((type) => {
 		if (!tList.toLowerCase().includes(type)) {
