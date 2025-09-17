@@ -209,6 +209,7 @@ Sulfura de Galar,146,Ténèbres,Vol,Maléfique,2,66,8,146-2_1,,,,
 Minidraco,147,Dragon,,Dragon,1.8,3.3,1,147_1,,147,147,241
 Draco,148,Dragon,,Dragon,4,16.5,1,147_2,Niveau 30,148,148,242
 Dracolosse,149,Dragon,Vol,Dragon,2.2,210,1,147_3,Niveau 55,149,149,243
+Méga-Dracolosse,149,,,,,,,,,,,
 Mewtwo,150,Psy,,Génétique,2,122,1,150_1,,150,150,249
 Méga-Mewtwo X,150,Psy,Combat,Génétique,2.3,127,Méga,150_2-1,Mewtwoïte X,,150,
 Méga-Mewtwo Y,150,Psy,,Génétique,1.5,33,Méga,150_2-2,Mewtwoïte Y,,150,
@@ -1218,8 +1219,8 @@ Roc-De-Fer,1022,Roche,Psy,Paradoxe,1.5,162.5,9,1022_1,,,,
 Chef-De-Fer,1023,Acier,Psy,Paradoxe,1.6,156,9,1023_1,,,,
 Terapagos (normal),1024,Normal,,Téracristal,0.2,6.5,9,1024_1,,,,
 Terapagos (téracristal),1024,Normal,,Téracristal,0.3,16,9,1024_2,,,,
-Pêchaminus,1025,Poison,Spectre,Emprise,0.3,0.3,9,1025_1,,,,
 Terapagos (stellaire),1024,Normal,,Téracristal,1.7,77,9,1024_3,,,,
+Pêchaminus,1025,Poison,Spectre,Emprise,0.3,0.3,9,1025_1,,,,
 
 
 
