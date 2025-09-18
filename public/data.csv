@@ -802,7 +802,7 @@ Méga-Goupelin,655,,,,,,Méga,653_4,Goupelinite,,,
 Grenousse,656,Eau,,Crapobulle,0.3,7,6,656_1,,,,
 Croâporal,657,Eau,,Crapobulle,0.6,10.9,6,656_2,Niveau 16,,,
 Amphinobi,658,Eau,Ténèbres,Ninja,1.5,40,6,656_3,Niveau 36,,,
-Méga-Amphinobi,658,,,,,,,Méga,656_4,Amphinolite,,,
+Méga-Amphinobi,658,,,,,,Méga,656_4,Amphinolite,,,
 Sapereau,659,Normal,,Fouisseur,0.4,5,6,659_1,,,,
 Excavarenne,660,Normal,Sol,Fouisseur,1,42.4,6,659_2,Niveau 20,,,
 Passerouge,661,Normal,Vol,Rougegorge,0.3,1.7,6,661_1,,,,
@@ -1228,6 +1228,7 @@ Terapagos (normal),1024,Normal,,Téracristal,0.2,6.5,9,1024_1,,,,
 Terapagos (téracristal),1024,Normal,,Téracristal,0.3,16,9,1024_2,,,,
 Terapagos (stellaire),1024,Normal,,Téracristal,1.7,77,9,1024_3,,,,
 Pêchaminus,1025,Poison,Spectre,Emprise,0.3,0.3,9,1025_1,,,,
+
 
 
 
