@@ -53,6 +53,7 @@ Nidorino,33,Poison,,Vénépic,0.9,19.5,1,32_2,Niveau 16,33,33,99
 Nidoking,34,Poison,Sol,Vénépic,1.4,62,1,32_3,Pierre lune,34,34,100
 Mélofée,35,Fée,,Fée,0.6,7.5,1,173_2,Bonheur,35,35,41
 Mélodelfe,36,Fée,,Fée,1.3,40,1,173_3,Pierre lune,36,36,42
+Méga-Mélodelfe,36,Fée,Vol,Fée,1.7,42.4,Méga,173_4,Mélodelfite,,,
 Goupix,37,Feu,,Renard,0.6,9.9,1,37-1_1,,37,37,125
 Goupix d'Alola,37,Glace,,Renard,0.6,9.9,7,37-2_1,,,37,
 Feunard,38,Feu,,Renard,1.1,19.9,1,37-1_2,Pierre feu,38,38,126
@@ -100,7 +101,7 @@ Mackogneur Gigamax,68,Combat,,Colosse,25,,Gigamax,66_4,Poignet Dyamax,,,
 Chétiflor,69,Plante,Poison,Fleur,0.7,4,1,69_1,,69,69,64
 Boustiflor,70,Plante,Poison,Carnivore,1,6.4,1,69_2,Niveau 21,70,70,65
 Empiflor,71,Plante,Poison,Carnivore,1.7,15.5,1,69_3,Pierre plante,71,71,66
-Méga-Empiflor,71,,,,,,Méga,69_4,,,,
+Méga-Empiflor,71,Plante,Poison,Carnivore,4.5,125.5,Méga,69_4,Empiflorite,,,
 Tentacool,72,Eau,Poison,Mollusque,0.9,45.5,1,72_1,,72,72,162
 Tentacruel,73,Eau,Poison,Mollusque,1.6,55,1,72_2,Niveau 30,73,73,163
 Racaillou,74,Roche,Sol,Roche,0.4,20,1,74-1_1,,74,74,34
@@ -171,6 +172,7 @@ Poissirène,118,Eau,,Poisson,0.6,15,1,118_1,,118,118,78
 Poissoroy,119,Eau,,Poisson,1.3,39,1,118_2,Niveau 33,119,119,79
 Stari,120,Eau,,Étoile,0.8,34.5,1,120_1,,120,120,167
 Staross,121,Eau,Psy,Mystérieux,1.1,80,1,120_2,Pierre eau,121,121,168
+Méga-Staross,121,Eau,Psy,Mystérieux,2.3,80,Méga,120_3,Starossite,,,
 M.Mime,122,Psy,Fée,Bloqueur,1.3,54.5,1,439_2-1,apprendre copie et +1 Niveau,122,122,156
 M.Mime de Galar,122,Glace,Psy,Danse,1.4,56.8,8,439_2-2,apprendre copie et +1 Niveau à Galar,,,
 Insécateur,123,Insecte,Vol,Mante,1.5,56,1,123_1,,123,123,110
@@ -212,7 +214,7 @@ Sulfura de Galar,146,Ténèbres,Vol,Maléfique,2,66,8,146-2_1,,,,
 Minidraco,147,Dragon,,Dragon,1.8,3.3,1,147_1,,147,147,241
 Draco,148,Dragon,,Dragon,4,16.5,1,147_2,Niveau 30,148,148,242
 Dracolosse,149,Dragon,Vol,Dragon,2.2,210,1,147_3,Niveau 55,149,149,243
-Méga-Dracolosse,149,,,,,,Méga,147_4,,,,
+Méga-Dracolosse,149,Dragon,Vol,Dragon,2.2,290,Méga,147_4,,,,
 Mewtwo,150,Psy,,Génétique,2,122,1,150_1,,150,150,249
 Méga-Mewtwo X,150,Psy,Combat,Génétique,2.3,127,Méga,150_2-1,Mewtwoïte X,,150,
 Méga-Mewtwo Y,150,Psy,,Génétique,1.5,33,Méga,150_2-2,Mewtwoïte Y,,150,
@@ -220,6 +222,7 @@ Mew,151,Psy,,Nouveau,0.4,4,1,151_1,,151,151,250
 Germignon,152,Plante,,Feuille,0.9,6.4,2,152_1,,,,1
 Macronium,153,Plante,,Feuille,1.2,15.8,2,152_2,Niveau 16,,,2
 Méganium,154,Plante,,Herbe,1.8,100.5,2,152_3,Niveau 32,,,3
+Méga-Méganium,154,Plante,Fée,Herbe,2.4,201,Méga,152_4,Méganiumite,,,
 Héricendre,155,Feu,,Souris Feu,0.5,7.9,2,155_1,,,,4
 feurisson,156,Feu,,Volcan,0.9,19,2,155_2,Niveau 16,,,5
 Typhlosion,157,Feu,,Volcan,1.7,79.5,2,155_3-1,Niveau 32,,,6
@@ -227,6 +230,7 @@ Typhlosion de Hisui,157,Feu,Spectre,Feu Follet,1.6,69.69,8,155_3-2,Niveau 32 à 
 Kaiminus,158,Eau,,Mâchoire,0.6,9.5,2,158_1,,,,7
 Crocrodil,159,Eau,,Mâchoire,1.1,25,2,158_2,Niveau 18,,,8
 Aligatueur,160,Eau,,Mâchoire,2.3,88.8,2,158_3,Niveau 30,,,9
+Méga-Aligatueur,160,Eau,Dragon,Mâchoire,2.3,108.8,Méga,158_4,Aligatueurite,,,
 Fouinette,161,Normal,,Espion,0.8,6,2,161_1,,,,19
 Fouinar,162,Normal,,Allongé,1.8,32.5,2,161_2,Niveau 15,,,20
 Hoothoot,163,Normal,Vol,Hibou,0.7,21.2,2,163_1,,,,15
@@ -303,6 +307,7 @@ Octillery,224,Eau,,Jet,0.9,28.5,2,223_2,Niveau 25,,,173
 Cadoizo,225,Glace,Vol,Livraison,0.9,16,2,225_1,,,,190
 Démanta,226,Eau,Vol,Cervolant,2.1,220,2,458_2,Rémoraid dans l'équipe +1 Niveau,,,197
 Airmure,227,Acier,Vol,Armoiseau,1.7,50.5,2,227_1,,,,198
+Méga-Airmure,227,Acier,Vol,Armoiseau,1.7,40.4,Méga,227_2,Airmurite,,,
 Malosse,228,Ténèbres,Feu,Sombre,0.6,10.8,2,228_1,,,,209
 Démolosse,229,Ténèbres,Feu,Sombre,1.4,35,2,228_2,Niveau 24,,,210
 Méga-Démolosse,229,Ténèbres,Feu,Sombre,1.9,49.5,Méga,228_3,Démolossite,,,
@@ -590,6 +595,7 @@ Méga-Gallame,475,Psy,Combat,Lame,1.6,56.4,Méga,280_4-2,Gallamite,,,
 Tarinorme,476,Roche,Acier,Boussole,1.4,340,4,299_2,lieu indiqué +1 Niveau,,,
 Noctunoir,477,Spectre,,Mainpince,2.2,106.6,4,355_3,Échange avec Tissu fauche,,,
 Momartik,478,Glace,Spectre,Enneigement,1.3,26.6,4,361_2-2,Pierre aube si ♀,,,
+Méga-Momartik,478,Glace,Spectre,Enneigement,2.6,29.6,Méga,361_3-2,Momartikite,,,
 Motisma,479,Électrik,Spectre,Plasma,0.3,0.3,4,479_1-1,,,,
 Motisma chaleur,479,Électrik,Feu,Plasma,0.3,0.3,4,479_2-1,,,,
 Motisma froid,479,Électrik,Glace,Plasma,0.3,0.3,4,479_1-2,,,,
@@ -621,6 +627,7 @@ Majaspic,497,Plante,,Serpenterbe,3.3,63,5,495_3,Niveau 36,,,
 Gruikui,498,Feu,,Cochon Feu,0.5,9.9,5,498_1,,,,
 Grotichon,499,Feu,Combat,Cochon Feu,1,55.5,5,498_2,Niveau 17,,,
 Roitiflam,500,Feu,Combat,Grochon Feu,1.6,150,5,498_3,Niveau 36,,,
+Méga-Roitiflam,500,Feu,Combat,Grochon Feu,1.8,180.3,Méga,498_4,Roitiflamite,,,
 Moustillon,501,Eau,,Loutre,0.5,5.9,5,501_1,,,,
 Mateloutre,502,Eau,,Entraînement,0.8,24.5,5,501_2,Niveau 17,,,
 Clamiral,503,Eau,,Dignitaire,1.5,94.6,5,501_3-1,Niveau 36,,,
@@ -652,6 +659,7 @@ Chovsourir,527,Psy,Vol,Chovsouris,0.4,2.1,5,527_1,,,,
 Rhinolove,528,Psy,Vol,Cupidon,0.9,10.5,5,527_2,Bonheur,,,
 Rototaupe,529,Sol,,Taupe,0.3,8.5,5,529_1,,,,
 Minotaupe,530,Sol,Acier,Souterrain,0.7,40.4,5,529_2,Niveau 31,,,
+Méga-Minotaupe,530,Sol,Acier,Souterrain,0.9,60,Méga,529_3,Minotaupite,,,
 Nanméouïe,531,Normal,,Audition,1.1,31,5,531_1,,,,
 Méga-Nanméouïe,531,Normal,Fée,Audition,1.5,32,Méga,531_2,Nanméouite,,,
 Charpenti,532,Combat,,Costaud,0.6,12.5,5,532_1,,,,
@@ -668,6 +676,7 @@ Manternel,542,Insecte,Plante,Précepteur,1.2,20.5,5,540_3,Échange,,,
 Venipatte,543,Insecte,Poison,Chilopode,0.4,5.3,5,543_1,,,,
 Scobolide,544,Insecte,Poison,Coconplopode,1.2,58.5,5,543_2,Niveau 22,,,
 Brutapode,545,Insecte,Poison,Mégaplopode,2.5,200.5,5,543_3,Niveau 30,,,
+Méga-Brutapode,545,Insecte,Poison,Mégaplopode,3.2,230.5,Méga,543_4,Brutapodite,,,
 Doudouvet,546,Plante,Fée,Boule Coton,0.3,0.6,5,546_1,,,,
 Farfaduvet,547,Plante,Fée,Vole Vent,0.7,6.6,5,546_2,Pierre soleil,,,
 Chlorobule,548,Plante,,Racine,0.5,6.6,5,548_1,,,,
@@ -689,6 +698,7 @@ Crabicoque,557,Insecte,Roche,Lithicole,0.3,14.5,5,557_1,,,,
 Crabaraque,558,Insecte,Roche,Lapidicole,1.4,200,5,557_2,Niveau 34,,,
 Baggiguane,559,Ténèbres,Combat,Mue,0.6,11.8,5,559_1,,,,
 Baggaïd,560,Ténèbres,Combat,Gang,1.1,30,5,559_2,Niveau 39,,,
+Méga-Baggaïd,560,Ténèbres,Combat,Gang,1.1,31,Méga,559_3,Baggaïdite,,,
 Cryptéro,561,Psy,Vol,Similoiseau,1.4,14,5,561_1,,,,
 Tutafeh,562,Spectre,,Âme,0.5,1.5,5,562_1-1,,,,
 Tutafeh de Galar,562,Sol,Spectre,Âme,0.5,1.5,8,562_1-2,,,,
@@ -737,11 +747,13 @@ Cliticlic,601,Acier,,Engrenage,0.6,81,5,599_3,Niveau 49,,,
 Anchwatt,602,Électrik,,Électrophore,0.2,0.3,5,602_1,,,,
 Lampéroie,603,Électrik,,Électrophore,1.2,22,5,602_2,Niveau 39,,,
 Ohmassacre,604,Électrik,,Électrophore,2.1,80.5,5,602_3,Pierre foudre,,,
+Méga-Ohmassacre,604,Électrik,,Électrophore,3,180,Méga,602_4,Ohmassacrite,,,
 Lewsor,605,Psy,,Cerveau,0.5,9,5,605_1,,,,
 Neitram,606,Psy,,Cerveau,1,34.5,5,605_2,Niveau 42,,,
 Funécire,607,Spectre,Feu,Chandelle,0.3,3.1,5,607_1,,,,
 Mélancolux,608,Spectre,Feu,Lampe,0.6,13,5,607_2,Niveau 41,,,
 Lugulabre,609,Spectre,Feu,Invitation,1,34.3,5,607_3,Pierre nuit,,,
+Méga-Lugulabre,609,Spectre,Feu,Invitation,2.5,69.6,Méga,607_4,Lugulabrite,,,
 Coupenotte,610,Dragon,,Crocs,0.6,18,5,610_1,,,,
 Incisache,611,Dragon,,Hachomenton,1,36,5,610_2,Niveau 38,,,
 Tranchodon,612,Dragon,,Hachomenton,1.8,105.5,5,610_3,Niveau 48,,,
@@ -1228,6 +1240,7 @@ Terapagos (normal),1024,Normal,,Téracristal,0.2,6.5,9,1024_1,,,,
 Terapagos (téracristal),1024,Normal,,Téracristal,0.3,16,9,1024_2,,,,
 Terapagos (stellaire),1024,Normal,,Téracristal,1.7,77,9,1024_3,,,,
 Pêchaminus,1025,Poison,Spectre,Emprise,0.3,0.3,9,1025_1,,,,
+
 
 
 
