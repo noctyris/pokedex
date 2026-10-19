@@ -38,8 +38,8 @@ Arbok,24,Poison,,Cobra,3.5,65,1,22_2,Niveau 22,24,24,51
 Pikachu,25,Électrik,,Souris,0.4,6,1,172_2,Bonheur,25,25,22
 Pikachu Gigamax,25,Électrik,,Souris,21,,Gigamax,172_3-1,Poignet Dyamax,,,
 Raichu,26,Électrik,,Souris,0.8,30,1,172_3-2,Pierre foudre,26,26,23
-Méga-Raichu X,26,,,,,,Méga,172_4-1,,,,
-Méga-Raichu Y,26,,,,,,Méga,172_4-2,,,,
+Méga-Raichu X,26,Électrik,,Souris,1.2,38,Méga,172_4-1,Raichuïte X,,,
+Méga-Raichu Y,26,Électrik,,Souris,1,26,Méga,172_4-2,Raichuïte Y,,,
 Raichu d'Alola,26,Électrik,Psy,Souris,0.7,21,7,172_3-3,Pierre foudre à Alola,,26,
 Sabelette,27,Sol,,Souris,0.6,12,1,27-1_1,,27,27,48
 Sabelette d'Alola,27,Glace,Acier,Souris,0.7,40,7,27-2_1,,,27,
@@ -302,7 +302,7 @@ Marcacrin,220,Glace,Sol,Cocohon,0.4,6.5,2,220_1,,,,191
 Cochignon,221,Glace,Sol,Porc ,1.1,55.8,2,220_2,Niveau 33,,,192
 Corayon,222,Eau,Roche,Corail,0.6,5,2,222-1_1,,,,171
 Corayon de Galar,222,Spectre,,Corail,0.6,0.5,8,222-2_1,,,,
-Rémoraid,223,Eau,,Jet,0.6,12,2,223_1,,,,172
+Rémoraid,223,Eau,,Jet,0.6,12,2,223_1,,,,172Électrik
 Octillery,224,Eau,,Jet,0.9,28.5,2,223_2,Niveau 25,,,173
 Cadoizo,225,Glace,Vol,Livraison,0.9,16,2,225_1,,,,190
 Démanta,226,Eau,Vol,Cervolant,2.1,220,2,458_2,Rémoraid dans l'équipe +1 Niveau,,,197
@@ -806,15 +806,15 @@ Genesect,649,Insecte,Acier,Paléozoïque,1.5,82.5,5,649_1,,,,
 Marisson,650,Plante,,Bogue,0.4,9,6,650_1,,,,
 Boguérisse,651,Plante,,Épinarmure,0.7,29,6,650_2,Niveau 16,,,
 Blindépique,652,Plante,Combat,Épinarmure,1.6,90,6,650_3,Niveau 36,,,
-Méga-Blindépique,652,,,,,,Méga,650_4,Blindépiquite,,,
+Méga-Blindépique,652,Plante,Combat,Épinarmure,1.6,90,Méga,650_4,Blindépiquite,,,
 Feunnec,653,Feu,,Renard,0.4,9.4,6,653_1,,,,
 Roussil,654,Feu,,Renard,1,14.5,6,653_2,Niveau 16,,,
 Goupelin,655,Feu,Psy,Renard,1.5,39,6,653_3,Niveau 36,,,
-Méga-Goupelin,655,,,,,,Méga,653_4,Goupelinite,,,
+Méga-Goupelin,655,Feu,Psy,Renard,1.5,39,Méga,653_4,Goupelinite,,,
 Grenousse,656,Eau,,Crapobulle,0.3,7,6,656_1,,,,
 Croâporal,657,Eau,,Crapobulle,0.6,10.9,6,656_2,Niveau 16,,,
 Amphinobi,658,Eau,Ténèbres,Ninja,1.5,40,6,656_3,Niveau 36,,,
-Méga-Amphinobi,658,,,,,,Méga,656_4,Amphinolite,,,
+Méga-Amphinobi,658,Eau,Ténèbres,Ninja,1.5,40,Méga,656_4,Amphinolite,,,
 Sapereau,659,Normal,,Fouisseur,0.4,5,6,659_1,,,,
 Excavarenne,660,Normal,Sol,Fouisseur,1,42.4,6,659_2,Niveau 20,,,
 Passerouge,661,Normal,Vol,Rougegorge,0.3,1.7,6,661_1,,,,
@@ -846,7 +846,7 @@ Sucroquin,684,Fée,,Confiserie,0.4,3.5,6,684_1,,,,
 Cupcanaille,685,Fée,,Mousseline,0.8,5,6,684_2,Échange avec Chantibonbon,,,
 Sepiatop,686,Ténèbres,Psy,Rotation,0.4,3.5,6,685_1,,,,
 Sepiatroce,687,Ténèbres,Psy,Révolution,1.5,47,6,685_2,Niveau 30 + retourner la console,,,
-Méga-Sepiatroce,687,,,,,,Méga,685_3,,,,
+Méga-Sepiatroce,687,Ténèbres,Psy,Révolution,2.9,69.8,Méga,685_3,,,,
 Opermine,688,Roche,Eau,Bimane,0.5,31,6,686_1,,,,
 Golgopathe,689,Roche,Eau,Assemblage,1.3,96,6,686_2,Niveau 39,,,
 Venalgue,690,Poison,Eau,Simulalgue,0.5,7.3,6,687_1,,,,
@@ -861,7 +861,7 @@ Amagara,698,Roche,Glace,Toundra,1.3,25.2,6,698_1,,,,
 Dragmara,699,Roche,Glace,Toundra,2.7,225,6,698_2,Niveau 39 + nuit,,,
 Nymphali,700,Fée,,Attachant,1,23.5,6,133_1-4,Bonheur + attaque de type fée,,,
 Brutalibré,701,Combat,Vol,Catcheur,0.8,21.5,6,701_1,,,,
-Méga-Brutalibré,701,,,,,,Méga,701_2,,,,
+Méga-Brutalibré,701,Combat,Vol,Catcheur,1,25,Méga,701_2,,,,
 Dedenne,702,Électrik,Fée,Antenne,0.2,2.2,6,702_1,,,,
 Strassie,703,Roche,Fée,Joyau,0.3,5.7,6,703_1,,,,
 Mucuscule,704,Dragon,,Mollusque,0.3,2.8,6,704_1,,,,
