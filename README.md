@@ -22,6 +22,6 @@ git clone https://github.com/noctyris/pokedex
 </details>
 <details>
   <summary>Main version</summary>
-  <code>npm run build
+  <code>npm run build<br/>
 npm start</code>
 </details>
